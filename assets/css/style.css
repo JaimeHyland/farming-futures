@@ -7,12 +7,23 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
 }
 
 /* Header styling */
 header {
+    background-color: aquamarine;
     font-family: 'Lato', sans-serif;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 3px 2px seagreen;
 }
 
 header h1 {
@@ -29,5 +40,48 @@ header a {
 header p {
     text-align: center;
     color:seagreen;
+}
+
+#header-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+
+/* Hide nav-toggle checkbox */
+#nav-toggle {
+    display: none;
+}
+
+/* Checking the checkbox makes nav menu appear, unchecking makes it disappear again. */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+/* nav menu initially hidden */
+nav {
+    position: absolute;
+    color: white;
+    width: 100%;
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 3rem;
+}
+
+/* main section styling */
+
+main {
+    background-color: bisque;
+    padding-top: 60px;
+}
+
+/* footer styling */
+
+footer {
+    background-color: skyblue;
+    margin-top: auto;
 }
 
