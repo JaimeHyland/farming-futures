@@ -11,6 +11,10 @@
 }
 
 /* Header styling */
+header {
+    font-family: 'Lato', sans-serif;
+}
+
 header h1 {
     text-align: center;
     color: seagreen;
