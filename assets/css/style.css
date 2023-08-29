@@ -19,34 +19,105 @@ body {
 
 /* Header styling */
 header {
-    background-color: aquamarine;
+    background-color: seagreen;
     font-family: 'Lato', sans-serif;
     position: fixed;
     width: 100%;
-    box-shadow: 0 3px 2px seagreen;
+    z-index: 9;
+    box-shadow: 0 2px 2px rgb(18, 55, 34);
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-content: center;
 }
 
+/* overlapping icons on the left of the header */
+/* icon container */
+#anchor-icons {
+    margin-top: 12px;
+    height: 80%;
+    position: relative;
+}
+
+/* all three icons */
+#anchor-icons .fas {
+    font-size: 12px;
+    background-color: seagreen;
+    color: #ffffff;
+    position: absolute;
+    border-radius: 2px;
+}
+
+/* tractor-ag-science */
+#anchor-icons .fa-tractor {
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#anchor-icons .fa-tractor:hover {
+    font-size: 24px;
+    color: seagreen;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+/* robot */
+#anchor-icons .fa-robot {
+    top: 6px;
+    left: 6px;
+    margin-top: 3px;
+    margin-left: 3px;
+    z-index: 2;
+}
+
+#anchor-icons .fa-robot:hover {
+    font-size: 24px;
+    color: seagreen;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+/* AI */
+#anchor-icons .fa-brain {
+    top: 12px;
+    left: 0;
+    margin-top: 3px;
+    margin-right: 3px;
+    z-index: 3;
+}
+
+#anchor-icons .fa-brain:hover {
+    font-size: 24px;
+    color: seagreen;
+    background-color: #ffffff;
+    position: absolute;
+    border-radius: 4px;
+    z-index: 99;
+}
+
+/* main header title text */
 header h1 {
     text-align: center;
-    color: seagreen;
+    color: #ffffff;
+    font-size: 150%;
 }
 
+/* sub-heading */
 header a {
     text-align: center;
-    color: seagreen;
+    color: #ffffff;
     text-decoration: none;
 }
 
 header p {
     text-align: center;
-    color:seagreen;
-}
-
-#header-top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 3rem;
+    color: #ffffff;
 }
 
 /* Hide nav-toggle checkbox */
@@ -59,23 +130,53 @@ header p {
     display: block;
 }
 
-/* nav menu initially hidden */
+/* nav menu (initially hidden) */
 nav {
-    position: absolute;
-    color: white;
-    width: 100%;
     display: none;
+    background-color: #ffffff;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px rgb(18, 55, 34);
+    position: absolute;
+    top: 100%;
+    color: seagreen;
 }
 
 .nav-toggle-label {
-    font-size: 3rem;
+    font-size: 2rem;
+    color: #ffffff;
 }
 
 /* main section styling */
-
 main {
-    background-color: bisque;
-    padding-top: 60px;
+    background-color: white;
+    flex: 1 0 auto;
+    margin-top: 60px;
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero_robots_in_farming.jpg") no-repeat center center/cover;
+    position: relative;
+}
+
+#cover-text {
+    background-color: rgba(46, 139, 87, .6);
+    color: #ffffff;
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    left: 15px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+#cover-text h1 {
+    font-weight: 700;
 }
 
 /* footer styling */
@@ -84,4 +185,3 @@ footer {
     background-color: skyblue;
     margin-top: auto;
 }
-
