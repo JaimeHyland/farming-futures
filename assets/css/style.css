@@ -30,7 +30,7 @@ header {
     display: flex;
     flex: row;
     justify-content: space-between;
-    padding: 0 2rem;
+    padding: 20px 2rem;
     align-content: center;
 }
 
@@ -159,7 +159,7 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url("../images/hero_robots_in_farming.jpg") no-repeat center center/cover;
+    background: url("../images/hero_robots_in_farming.webp") no-repeat center center/cover;
     position: relative;
 }
 
@@ -239,11 +239,11 @@ main {
 }
 
 #upcoming-events {
-    background: url("../images/strawberries-field.jpeg") no-repeat center/cover;
+    background: url("../images/strawberries-field.webp") no-repeat center/cover;
 }
 
 #recent-events {
-    background: url("../images/raspberry-picking-manipulator.jpeg") no-repeat center/cover;
+    background: url("../images/raspberry-picking-manipulator.webp") no-repeat center/cover;
 }
 
 .upcoming, .recent {
