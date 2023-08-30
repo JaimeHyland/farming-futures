@@ -11,14 +11,16 @@
 
 /* Body styling */
 body {
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    color: seagreen;
 }
 
 /* Header styling */
 header {
+    flex: 1 0 auto;
     background-color: seagreen;
     font-family: 'Lato', sans-serif;
     position: fixed;
@@ -108,13 +110,11 @@ header h1 {
     font-size: 150%;
 }
 
-/* sub-heading */
 header a {
-    text-align: center;
-    color: #ffffff;
     text-decoration: none;
 }
 
+/* sub-heading */
 header p {
     text-align: center;
     color: #ffffff;
@@ -146,13 +146,14 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
     color: #ffffff;
+    align-self: center;
 }
 
 /* main section styling */
 main {
     background-color: white;
     flex: 1 0 auto;
-    margin-top: 60px;
+    margin-top: 45px;
 }
 
 #hero {
@@ -165,23 +166,33 @@ main {
 #cover-text {
     background-color: rgba(46, 139, 87, .6);
     color: #ffffff;
-    font-size: 130%;
+    font-size: 110%;
     position: absolute;
     bottom: 30px;
-    left: 15px;
     width: 80%;
     min-height: 200px;
-    padding-top: 20px;
+    padding-top: 40px;
     padding-left: 20px;
+    padding-bottom: 40px;
 }
 
 #cover-text h1 {
     font-weight: 700;
 }
 
+#breakthroughs h2 {
+    text-align: center;
+}
+
 /* footer styling */
 
 footer {
-    background-color: skyblue;
     margin-top: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    bottom: 0;
 }
