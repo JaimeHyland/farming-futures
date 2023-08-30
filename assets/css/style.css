@@ -230,21 +230,33 @@ main {
     text-align: center;
 }
 
-#upcoming-events {
-    background: url("../images/strawberries-field.jpeg") no-repeat center center/cover;
+#upcoming-events, #recent-events {
     color: #ffffff;
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.upcoming {
-    background-color: rgba(46, 139, 87, .3);
+#upcoming-events {
+    background: url("../images/strawberries-field.jpeg") no-repeat center/cover;
 }
 
 #recent-events {
-    background: url("../images/raspberry-picking-manipulator.jpeg") no-repeat center center/cover;
-    color: #ffffff;
+    background: url("../images/raspberry-picking-manipulator.jpeg") no-repeat center/cover;
+}
+
+.upcoming, .recent {
+    min-width: 120px;
+    max-width: 400px;
+    margin: 10px 10px;
+    padding: 0 45px;
+    text-indent: -15px;
+    flex-grow: 1;
+}
+    
+.upcoming  {
+    background-color: rgba(46, 139, 87, .7);
 }
 
 .recent {
@@ -253,14 +265,37 @@ main {
 
 
 /* footer styling */
-
 footer {
-    margin-top: auto;
     text-align: center;
+    padding: 20px 0;
     display: flex;
-    justify-content: space-evenly;
+    flex-wrap: nowrap;
     position: fixed;
     background-color: #ffffff;
-    width: 100%;
+    padding: 10px;
     bottom: 0;
+    width: 100%;
+}
+
+footer > ul#social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex: 1;
+    width: 100%;
+}
+
+ul#social-networks a {
+    color: seagreen;
+}
+footer button {
+    flex: 1;
+    max-width: 90px;
+    min-width: 60px;
+    background-color: seagreen;
+    color: #fff;
+    border-radius: 20%;
+    box-shadow: inset;
+
 }
