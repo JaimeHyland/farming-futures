@@ -220,6 +220,38 @@ main {
     margin-top: 10px;
 }
 
+/* Events styling */
+
+#events-title {
+    text-align: center;
+}
+
+#upcoming-events-subtitle, #recent-events-subtitle {
+    text-align: center;
+}
+
+#upcoming-events {
+    background: url("../images/strawberries-field.jpeg") no-repeat center center/cover;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.upcoming {
+    background-color: rgba(46, 139, 87, .3);
+}
+
+#recent-events {
+    background: url("../images/raspberry-picking-manipulator.jpeg") no-repeat center center/cover;
+    color: #ffffff;
+}
+
+.recent {
+    background-color: rgba(40, 85, 40, .7);
+}
+
+
 /* footer styling */
 
 footer {
