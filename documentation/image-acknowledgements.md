@@ -21,3 +21,15 @@ https://ilovegraz.files.wordpress.com/2021/06/3.jpg
 Description:
 
 ‘Pick your own’ berry fields in Graz – My Graz
+
+
+Background image for subscription form
+
+Description:
+
+Agricultural drone in action
+
+original url
+
+https://www.foxtech.com/wp-content/uploads/2020/09/QQ%E6%88%AA%E5%9B%BE20200915142659.jpg
+

@@ -42,25 +42,29 @@
         </nav>
     </header>
     <main>
-        <form id="signup-form" action="https://formdump.codeinstitute.net" method="post">
-            <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up!</h2>
+        <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
+            <h2><i class="fa-solid fa-inbox"></i> Subscribe to our newsletter!</h2>
+            <div id="shaded-area">
             <div id="text-inputs">
                 <label for="first-name">First Name</Label>
-                <input type="text" id="first-name" name="first-name" class="text-input">
+                <input type="text" id="first-name" name="first-name" class="text-input" required>
                 <label for="last-name">Last Name</label>
-                <input type="text" id="last-name" name="last-name"  class="text-input">
+                <input type="text" id="last-name" name="last-name"  class="text-input" required>
                 <label for="email-address">Email Address</label>
-                <input type="email" name="email-address" id="email-address"  class="text-input">
+                <input type="email" name="email-address" id="email-address"  class="text-input" required>
+                <label for="last-name">Postal Address</label>
+                <input type="text" id="address" name="address"  class="text-input">
             </div>
             <div id="radio-buttons">
-                <label for="road">Road</label>
-                <input type="radio" name="running-preference" id="road" value="road" required checked><br>
-                <label for="trail">Trail</label>
-                <input type="radio" name="running-preference" id="trail" value="trail" required><br>
-                <label for="both">Both</label>
-                <input type="radio" name="running-preference" id="both" value="both" required><br>
+                <label for="email" class="radio-label">Email only</label>
+                <input type="radio" name="subscription-type" id="email" value="email" required checked><br>
+                <label for="hard-copy" class="radio-label">Hard copy only (by mail)</label>
+                <input type="radio" name="subscription-type" id="hard-copy" value="hard-copy" required><br>
+                <label for="both" class="radio-label">Both</label>
+                <input type="radio" name="subscription-type" id="both" value="both" required><br>
             </div>
-            <input id="submit" type="submit" class="join-button" value="Let's run!">
+            <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
+        </div>
         </form>
     </main>
     <footer>
