@@ -43,7 +43,7 @@ header {
 }
 
 /* all three icons */
-#anchor-icons .fas {
+#anchor-icons .fa-solid {
     font-size: 12px;
     background-color: seagreen;
     color: #ffffff;
@@ -149,6 +149,11 @@ nav {
     align-self: center;
 }
 
+/* underline link to active page */
+.active {
+    border-bottom: 1px solid seagreen;
+}
+
 /* main section styling */
 main {
     background-color: white;
@@ -171,9 +176,7 @@ main {
     bottom: 30px;
     width: 80%;
     min-height: 200px;
-    padding-top: 40px;
-    padding-left: 20px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
 }
 
 #cover-text h1 {
@@ -288,6 +291,7 @@ footer > ul#social-networks {
 
 ul#social-networks a {
     color: seagreen;
+
 }
 footer button {
     flex: 1;
@@ -297,5 +301,18 @@ footer button {
     color: #fff;
     border-radius: 20%;
     box-shadow: inset;
-
 }
+
+/* code for header outside homepage */
+
+#home-icon {
+    font-size: 30px;
+    background-color: seagreen;
+    color: #ffffff;
+    position: absolute;
+    border-radius: 2px;
+    margin-top: 12px;
+    height: 80%;
+    position: relative;
+}
+
