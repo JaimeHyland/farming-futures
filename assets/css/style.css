@@ -20,15 +20,15 @@ body {
 
 /* Header styling */
 header {
+    display: flex;
     flex: 1 0 auto;
+    flex-direction: row;
     background-color: seagreen;
     font-family: 'Lato', sans-serif;
     position: fixed;
     width: 100%;
     z-index: 9;
     box-shadow: 0 2px 2px rgb(18, 55, 34);
-    display: flex;
-    flex: row;
     justify-content: space-between;
     padding: 20px 2rem;
     align-content: center;
@@ -36,14 +36,13 @@ header {
 
 /* overlapping icons on the left of the header */
 /* icon container */
-#anchor-icons {
-    margin-top: 12px;
+.anchor-icon-container {
     height: 80%;
     position: relative;
 }
 
 /* all three icons */
-#anchor-icons .fa-solid {
+.anchor-icon-container .fa-solid {
     font-size: 12px;
     background-color: seagreen;
     color: #ffffff;
@@ -52,23 +51,14 @@ header {
 }
 
 /* tractor-ag-science */
-#anchor-icons .fa-tractor {
+.anchor-icon-container .fa-tractor {
     top: 0;
     left: 0;
     z-index: 1;
 }
 
-#anchor-icons .fa-tractor:hover {
-    font-size: 24px;
-    color: seagreen;
-    background-color: #ffffff;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 99;
-}
-
 /* robot */
-#anchor-icons .fa-robot {
+.anchor-icon-container .fa-robot {
     top: 6px;
     left: 6px;
     margin-top: 3px;
@@ -76,17 +66,8 @@ header {
     z-index: 2;
 }
 
-#anchor-icons .fa-robot:hover {
-    font-size: 24px;
-    color: seagreen;
-    background-color: #ffffff;
-    position: absolute;
-    border-radius: 4px;
-    z-index: 99;
-}
-
 /* AI */
-#anchor-icons .fa-brain {
+.anchor-icon-container .fa-brain {
     top: 12px;
     left: 0;
     margin-top: 3px;
@@ -94,50 +75,56 @@ header {
     z-index: 3;
 }
 
-#anchor-icons .fa-brain:hover {
-    font-size: 24px;
-    color: seagreen;
-    background-color: #ffffff;
+#nav-anchor {
     position: absolute;
-    border-radius: 4px;
-    z-index: 99;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    width: 200px;
+    height: 50px;
+    background: rgb(46, 139, 87);
+    color:#fafafa;
+    border: 2px black;
+    box-shadow: -5px 5px 5px -5px;
+    transition: background 0.3s ease-in;
 }
 
 /* main header title text */
-header h1 {
+.logo-title {
     text-align: center;
+    letter-spacing: 1px;
     color: #ffffff;
-    font-size: 150%;
+    font-size: 110%;
     text-transform: uppercase;
 }
 
-header a {
-    text-decoration: none;
-    color: inherit
-}
-
 /* sub-heading */
-header p {
+.logo-subtitle {
     text-align: center;
+    font-size: 100%;
     color: #ffffff;
 }
 
-/* Hide nav-toggle checkbox */
-#nav-toggle {
+.logo-heading a {
+    text-decoration: none;
+}
+
+/* Hide nav-site-toggle checkbox */
+#nav-site-toggle {
     display: none;
 }
 
-/* Checking the checkbox makes nav menu appear, unchecking makes it disappear again. */
-#nav-toggle:checked~nav {
+/* Checking the nav-site checkbox makes nav-site menu appear, unchecking makes it disappear again. */
+#nav-site-toggle:checked~#nav-site .menu {
     display: block;
 }
 
-/* nav menu (initially hidden) */
-nav {
+/* nav-site menu (initially hidden) */
+#nav-site .menu {
     display: none;
     background-color: #ffffff;
-    width: 100%;
-    left: 0;
+    width: 200px;
+    right: 15px;
     padding: 0 1rem;
     box-shadow: 0 2px 2px rgb(18, 55, 34);
     position: absolute;
@@ -145,16 +132,46 @@ nav {
     color: seagreen;
 }
 
-.nav-toggle-label {
+#nav-site a {
+    text-decoration: none;
+    color: inherit
+}
+
+.nav-site-toggle-label {
     font-size: 2rem;
     color: #ffffff;
     align-self: center;
 }
 
-/* underline link to active page */
+
+/* underline link to active page on nav-site menu */
 .active {
     border-bottom: 1px solid seagreen;
 }
+
+
+/* Hide nav-anchor-toggle checkbox */
+#nav-anchor-toggle {
+    display: none;
+}
+
+/* Checking the nav-anchor checkbox makes nav-site menu appear, unchecking makes it disappear again. */
+#nav-anchor-toggle:checked~#nav-anchor {
+    display: block;
+}
+
+#nav-anchor {
+    display: none;
+    background-color: #ffffff;
+    width: 200px;
+    right: 15px;
+    padding: 0 1rem;
+    box-shadow: 0 2px 2px rgb(18, 55, 34);
+    position: absolute;
+    top: 100%;
+    color: seagreen;
+}
+
 
 /* main section styling */
 main {
