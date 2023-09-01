@@ -27,7 +27,7 @@
     <header>
         <input type="checkbox" id="nav-anchor-toggle" name="nav-anchor-toggle">
         <label for="nav-anchor-toggle" class="nav-anchor-toggle-label">
-            <div class="anchor-icon-container">
+            <div class="anchor-icon-container grow">
                 <i class="fa-solid fa-tractor"></i>
                 <i class="fa-solid fa-robot"></i>
                 <i class="fa-solid fa-brain"></i>
@@ -41,12 +41,12 @@
             <p class="logo-subtitle">Futures in food production</p>
         </div>
         
-        <input type="checkbox" id="nav-site-toggle" name="nav-toggle">
+        <input type="checkbox" id="nav-site-toggle" name="nav-site-toggle">
         <label for="nav-site-toggle" class="nav-site-toggle-label">
             <i class="fa-solid fa-bars"></i>
         </label>
 
-        <nav id="nav-site">
+        <nav id="nav-site" class="nav-site">
             <ul class="menu">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="present.html">The Present</a></li>
@@ -56,13 +56,14 @@
             </ul>
         </nav>
 
-        <nav id="nav-anchor">
+        <nav id="nav-anchor" class="nav-anchor">
             <i class="fa-solid fa-tractor fa-lg"></i>
             <i class="fa-solid fa-robot fa-lg"></i>
             <i class="fa-solid fa-brain fa-lg"></i>
         </nav>
     </header>
-    <!--The main section contains three sections: a hero section, a main content section ("breakthroughs")
+
+    <!--The main element contains three sections: a hero section, a main content section ("breakthroughs")
          and an "events" section, all of which are responsive. The events sections responsiveness is 
         achieved simply using flex presentation, while the other two sections require media queries
         (see below).-->

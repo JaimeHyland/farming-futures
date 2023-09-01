@@ -9,6 +9,7 @@
     box-sizing: border-box;
 }
 
+
 /* Body styling */
 body {
     min-height: 100vh;
@@ -16,6 +17,17 @@ body {
     display: flex;
     flex-direction: column;
     color: seagreen;
+}
+
+
+/* default simple animation of all link elements on site */
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
+
 }
 
 /* Header styling */
@@ -30,14 +42,15 @@ header {
     z-index: 9;
     box-shadow: 0 2px 2px rgb(18, 55, 34);
     justify-content: space-between;
-    padding: 20px 2rem;
-    align-content: center;
+    padding: 20px 1rem;
 }
 
 /* overlapping icons on the left of the header */
 /* icon container */
 .anchor-icon-container {
-    height: 80%;
+    margin: 6px;
+    height: 30px;
+    width: 30px;
     position: relative;
 }
 
@@ -75,19 +88,28 @@ header {
     z-index: 3;
 }
 
-#nav-anchor {
+.nav-anchor {
     position: absolute;
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    height: 32px;
+    width: 80px;
     top: 0;
     left: 0;
     flex-direction: column;
-    width: 200px;
-    height: 50px;
-    background: rgb(46, 139, 87);
-    color:#fafafa;
     border: 2px black;
     box-shadow: -5px 5px 5px -5px;
-    transition: background 0.3s ease-in;
 }
+
+.nav-anchor i {
+    color: seagreen;
+    background-color: #ffffff;
+    align-self: center;
+    padding: 3px;
+}
+
 
 /* main header title text */
 .logo-title {
@@ -114,14 +136,17 @@ header {
     display: none;
 }
 
-/* Checking the nav-site checkbox makes nav-site menu appear, unchecking makes it disappear again. */
-#nav-site-toggle:checked~#nav-site .menu {
+/* Checking the nav-site checkbox makes nav-site menu appear, unchecking makes it disappear again. Using id as this is a 1-1 check. */
+#nav-site-toggle:checked~#nav-site {
     display: block;
 }
 
-/* nav-site menu (initially hidden) */
-#nav-site .menu {
+/* nav-site (initially hidden) */
+#nav-site {
     display: none;
+}
+
+#nav-site .menu {
     background-color: #ffffff;
     width: 200px;
     right: 15px;
@@ -130,6 +155,7 @@ header {
     position: absolute;
     top: 100%;
     color: seagreen;
+    list-style: none;
 }
 
 #nav-site a {
@@ -155,13 +181,14 @@ header {
     display: none;
 }
 
-/* Checking the nav-anchor checkbox makes nav-site menu appear, unchecking makes it disappear again. */
+/* Checking the nav-anchor checkbox makes nav-anchor menu appear, unchecking makes it disappear again. Using id as this is a 1-1 check. */
 #nav-anchor-toggle:checked~#nav-anchor {
     display: block;
 }
 
 #nav-anchor {
     display: none;
+    position: absolute;
     background-color: #ffffff;
     width: 200px;
     right: 15px;
