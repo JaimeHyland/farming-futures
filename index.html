@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +20,11 @@
 </head>
 
 <body>
+
+    <!-- This page is divided into three main sections: a header, a main section, and a footer -->
+    <!-- The header contains anchor icons on the left to navigate the main section of the page, a title 
+        and subtitle and a nav icon (for mobile screens only), which turns into a menu when
+    clicked. The menu appears directly in tablets and larger-sized screens.-->
     <header>
         <div id="anchor-icons">
             <i class="fa-solid fa-tractor"></i>
@@ -45,7 +51,13 @@
             </ul>
         </nav>
     </header>
+    <!--The main section contains three sections: a hero section, a main content section ("breakthroughs")
+         and an "events" section, all of which are responsive. The events sections responsiveness is 
+        achieved simply using flex presentation, while the other two sections require media queries
+        (see below).-->
     <main>
+        <!--The hero section will in the future provide further well-structured information on the page via
+            links to modal dialogs.-->
         <section id="hero">
             <div id="cover-text">
                 <h1>The Next Revolution</h1>
@@ -88,6 +100,10 @@
                 <hr class="secondary">
             </div>
         </section>
+        <!--The events section is divided into upcoming events, which in the future the user will click to 
+            receive further informaton, including "how to get there" details, and recent events, each of 
+            which the user will click in future to see a gallery and/or reports on and materials from the
+            event.-->
         <section id="events">
             <h2 id="events-title">Events</h2>
             <h3 id="upcoming-events-subtitle">Upcoming events</h3>
@@ -163,17 +179,21 @@
             </div>
         </section>
     </main>
+    <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
+        "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
     <footer>
         <ul id="social-networks">
             <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new browser tab)"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our twitter timeline (opens in new browser tab)"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our twitter timeline (opens in new browser tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
             <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our youtube channel (opens in new browser tab)"><i class="fa-brands fa-youtube"></i></a></li>
             <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new browser tab)"><i class="fa-brands fa-instagram"></i></a></li>
         </ul>
         <button>Imprimatur</button>
     </footer>
 
-    <!-- Font Awesome kit -->
+    
+    <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
+        (for standardized icons in the case of this website) -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 
