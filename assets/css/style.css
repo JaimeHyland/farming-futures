@@ -348,7 +348,6 @@ footer {
     padding: 20px 0;
     display: flex;
     flex-wrap: nowrap;
-    position: fixed;
     background-color: #ffffff;
     padding: 10px;
     bottom: 0;
@@ -368,6 +367,8 @@ ul#social-networks a {
     color: seagreen;
 
 }
+
+/* imprimatur button */
 footer button {
     flex: 1;
     max-width: 90px;
@@ -378,7 +379,7 @@ footer button {
     box-shadow: inset;
 }
 
-/* code for header outside homepage */
+/* code for header other than on homepage */
 
 #home-icon {
     font-size: 30px;
