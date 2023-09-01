@@ -108,10 +108,12 @@ header h1 {
     text-align: center;
     color: #ffffff;
     font-size: 150%;
+    text-transform: uppercase;
 }
 
 header a {
     text-decoration: none;
+    color: inherit
 }
 
 /* sub-heading */
@@ -391,7 +393,7 @@ footer button {
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
-    
+
 }
 
 /* Media query: large-screen phones or landscape views (576px and upwards) */
