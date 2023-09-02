@@ -21,14 +21,23 @@ body {
 
 
 /* default simple animation of all link elements on site */
-.grow {
+.icon-grow,
+.text-grow {
     transition: all .2s ease-in-out;
 }
 
-.grow:hover {
+/* the icons need to grow a little more than the text */
+.text-grow:hover,
+.text-grow:active {
     transform: scale(1.1);
-
 }
+
+.icon-grow:hover,
+.icon-grow:active {
+    transform: scale(1.2);
+    border-top: 1px solid seagreen;
+}
+
 
 /* Header styling */
 header {
@@ -45,69 +54,117 @@ header {
     padding: 20px 1rem;
 }
 
-/* overlapping icons on the left of the header */
+/* ANCHOR LINKS */
+/* Offsets any jump to any anchor link from any anchor link to prevent the anchor point being covered by the header. Adjust the px when changing the header height.  */
+/* 'scroll-behavior: smooth;' turns what would otherwise have been a sudden jump into a smooth scrolling movement. */
+body,
+html {
+    scroll-padding-top: 87px;
+    scroll-behavior: smooth;
+}
+
+/* Hide nav-anchor-toggle checkbox */
+#nav-anchor-toggle {
+    display: none;
+}
+
+/* Checking the nav-anchor checkbox makes nav-anchor menu appear, unchecking makes it disappear again. Using id as this is a 1-1 check. */
+#nav-anchor-toggle:checked~#nav-anchor {
+    display: flex;
+    flex-direction: column;
+}
+
+#nav-anchor {
+    display: none;
+    position: absolute;
+    background-color: #fafafa;
+    right: 15px;
+    box-shadow: 0 2px 2px rgb(18, 55, 34);
+    position: absolute;
+    top: 100%;
+    color: seagreen;
+    align-content: flex-end;
+    justify-content: space-between;
+}
+
+#nav-anchor i {
+    margin: 3px 3px;
+}
+
+/* overlapping small icons on the left of the header */
 /* icon container */
 .anchor-icon-container {
     margin: 6px;
     height: 30px;
-    width: 30px;
+    width: 24px;
     position: relative;
 }
 
-/* all three icons */
+/* all three small icons on left of header */
 .anchor-icon-container .fa-solid {
     font-size: 12px;
     background-color: seagreen;
-    color: #ffffff;
+    color: #fafafa;
     position: absolute;
+    padding: 1px;
     border-radius: 2px;
+    margin-top: 4px;
+    margin-right: 4px;
 }
 
-/* tractor-ag-science */
+/* small tractor icon */
 .anchor-icon-container .fa-tractor {
-    top: 0;
-    left: 0;
+    top: 3;
+    left: 3;
     z-index: 1;
 }
 
-/* robot */
+/* small robot icon */
 .anchor-icon-container .fa-robot {
-    top: 6px;
-    left: 6px;
-    margin-top: 3px;
-    margin-left: 3px;
+    top: 7px;
+    left: 9px;
     z-index: 2;
 }
 
-/* AI */
+/* small AI icon */
 .anchor-icon-container .fa-brain {
-    top: 12px;
-    left: 0;
-    margin-top: 3px;
-    margin-right: 3px;
-    z-index: 3;
+    top: 15px;
+    left: 3;
+    z-index: 99;
 }
 
+/* icon menu */
 .nav-anchor {
     position: absolute;
-    display:flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-between;
-    height: 32px;
-    width: 80px;
-    top: 0;
-    left: 0;
+    display: flex;
     flex-direction: column;
-    border: 2px black;
-    box-shadow: -5px 5px 5px -5px;
+    left: 15px;
+    width: 140px;
+    height: 120px;
+    justify-content:center;
+    align-content: space-around;
+}
+
+.nav-anchor a {
+    text-decoration: none;
+    align-self: left;
+    padding-left: 5px;
+    margin: 1px;
+    color: seagreen;
+    font-weight: 500;
+}
+
+.nav-anchor a:first-child {
+    margin-top: 6px;
+}
+
+.nav-anchor a:last-child {
+    margin-bottom: 6px;
 }
 
 .nav-anchor i {
     color: seagreen;
-    background-color: #ffffff;
-    align-self: center;
-    padding: 3px;
+    background-color: #fafafa;
 }
 
 
@@ -115,8 +172,8 @@ header {
 .logo-title {
     text-align: center;
     letter-spacing: 1px;
-    color: #ffffff;
-    font-size: 110%;
+    color: #fafafa;
+    font-size: 130%;
     text-transform: uppercase;
 }
 
@@ -124,11 +181,12 @@ header {
 .logo-subtitle {
     text-align: center;
     font-size: 100%;
-    color: #ffffff;
+    color: #fafafa;
 }
 
 .logo-heading a {
     text-decoration: none;
+
 }
 
 /* Hide nav-site-toggle checkbox */
@@ -143,29 +201,40 @@ header {
 
 /* nav-site (initially hidden) */
 #nav-site {
+    background-color: #fafafa;
+    padding: 0 14px;
     display: none;
+    position: absolute;
+    top: 100%;
+    right: 15px;
+    border-top: 1px solid #fafafa;
+    box-shadow: 0 2px 2px rgb(18, 55, 34);
 }
 
 #nav-site .menu {
-    background-color: #ffffff;
-    width: 200px;
-    right: 15px;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px rgb(18, 55, 34);
-    position: absolute;
-    top: 100%;
+    background-color: #fafafa;
     color: seagreen;
+    width: 110px;
+    top: 100%;
     list-style: none;
+}
+
+#nav-site li {
+    color: seagreen;
+    background-color: #fafafa;
+    margin-top: 4px;
+    margin-bottom: 4px;
 }
 
 #nav-site a {
     text-decoration: none;
-    color: inherit
+    color: seagreen;
+    font-weight: 500;
 }
 
 .nav-site-toggle-label {
     font-size: 2rem;
-    color: #ffffff;
+    color: #fafafa;
     align-self: center;
 }
 
@@ -176,35 +245,13 @@ header {
 }
 
 
-/* Hide nav-anchor-toggle checkbox */
-#nav-anchor-toggle {
-    display: none;
-}
-
-/* Checking the nav-anchor checkbox makes nav-anchor menu appear, unchecking makes it disappear again. Using id as this is a 1-1 check. */
-#nav-anchor-toggle:checked~#nav-anchor {
-    display: block;
-}
-
-#nav-anchor {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    width: 200px;
-    right: 15px;
-    padding: 0 1rem;
-    box-shadow: 0 2px 2px rgb(18, 55, 34);
-    position: absolute;
-    top: 100%;
-    color: seagreen;
-}
-
-
 /* main section styling */
 main {
     background-color: white;
     flex: 1 0 auto;
-    margin-top: 45px;
+    top: 87px;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
 #hero {
@@ -216,7 +263,7 @@ main {
 
 #cover-text {
     background-color: rgba(46, 139, 87, .6);
-    color: #ffffff;
+    color: #fafafa;
     font-size: 110%;
     position: absolute;
     bottom: 30px;
@@ -251,37 +298,39 @@ main {
 }
 
 .primary {
-    height:2px;
-    border-width:0;
-    color:seagreen;
-    background-color:seagreen;
+    height: 2px;
+    border-width: 0;
+    color: seagreen;
+    background-color: seagreen;
     margin-bottom: 5px;
 }
 
 .secondary {
-    height:1px;
-    border-width:0;
-    color:seagreen;
-    background-color:seagreen;
+    height: 1px;
+    border-width: 0;
+    color: seagreen;
+    background-color: seagreen;
     margin-bottom: 15px;
 }
 
-#robotics, #artificial-intelligence {
+#robotics,
+#artificial-intelligence {
     margin-top: 10px;
 }
 
 /* Events styling */
-
 #events-title {
     text-align: center;
 }
 
-#upcoming-events-subtitle, #recent-events-subtitle {
+#upcoming-events-subtitle,
+#recent-events-subtitle {
     text-align: center;
 }
 
-#upcoming-events, #recent-events {
-    color: #ffffff;
+#upcoming-events,
+#recent-events {
+    color: #fafafa;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -296,7 +345,8 @@ main {
     background: url("../images/laser-weeding-at-sunset.webp") no-repeat center/cover;
 }
 
-.upcoming, .recent {
+.upcoming,
+.recent {
     min-width: 120px;
     max-width: 400px;
     margin: 10px 10px;
@@ -304,8 +354,8 @@ main {
     text-indent: -15px;
     flex-grow: 1;
 }
-    
-.upcoming  {
+
+.upcoming {
     background-color: rgba(46, 139, 87, .7);
 }
 
@@ -341,7 +391,7 @@ main {
     background-color: rgba(250, 250, 250, .8);
 }
 
-#text-inputs  {
+#text-inputs {
     display: flex;
     flex-direction: column;
 }
@@ -375,13 +425,13 @@ main {
     float: right;
     width: 10em;
     margin-left: 1em;
-    }
+}
 
 .subscribe-button {
     margin-top: 20px;
     border-radius: 2px;
     background-color: #454b1b;
-    color:#fafafa;
+    color: #fafafa;
     font-size: 100%;
     padding: 15px 32px 15px 32px;
 }
@@ -392,13 +442,13 @@ footer {
     padding: 20px 0;
     display: flex;
     flex-wrap: nowrap;
-    background-color: #ffffff;
+    background-color: #fafafa;
     padding: 10px;
     bottom: 0;
     width: 100%;
 }
 
-footer > ul#social-networks {
+footer>ul#social-networks {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -418,7 +468,7 @@ footer button {
     max-width: 90px;
     min-width: 60px;
     background-color: seagreen;
-    color: #fff;
+    color: #fafafa;
     border-radius: 20%;
     box-shadow: inset;
 }
@@ -428,7 +478,7 @@ footer button {
 #home-icon {
     font-size: 30px;
     background-color: seagreen;
-    color: #ffffff;
+    color: #fafafa;
     position: absolute;
     border-radius: 2px;
     margin-top: 12px;
@@ -437,21 +487,14 @@ footer button {
 }
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
-
-}
+@media screen and (min-width: 768px) {}
 
 /* Media query: large-screen phones or landscape views (576px and upwards) */
-@media screen and (min-width: 576px) {
-
-}
+@media screen and (min-width: 576px) {}
 
 /* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {
-}
+@media screen and (min-width: 992px) {}
 
 
 /* Large desktops */
-@media screen and (min-width: 1200px) {    
-    
-}
+@media screen and (min-width: 1200px) {}

@@ -27,47 +27,49 @@
     <header>
         <input type="checkbox" id="nav-anchor-toggle" name="nav-anchor-toggle">
         <label for="nav-anchor-toggle" class="nav-anchor-toggle-label">
-            <div class="anchor-icon-container grow">
+            <div class="anchor-icon-container icon-grow">
                 <i class="fa-solid fa-tractor"></i>
                 <i class="fa-solid fa-robot"></i>
                 <i class="fa-solid fa-brain"></i>
             </div>
         </label>
-        
+
         <div class="logo-heading">
             <a href="index.html">
-                <h1 class="logo-title">Farming Futures</h1>
+                <h1 class="logo-title text-grow">Farming Futures</h1>
             </a>
             <p class="logo-subtitle">Futures in food production</p>
         </div>
-        
+
         <input type="checkbox" id="nav-site-toggle" name="nav-site-toggle">
         <label for="nav-site-toggle" class="nav-site-toggle-label">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars icon-grow"></i>
         </label>
+
+        <nav id="nav-anchor" class="nav-anchor">
+            <a href="#ag-science" class="text-grow"><i class="fa-solid fa-tractor fa-lg"></i> Ag Science</a>
+            <a href="#robotics" class="text-grow"><i class="fa-solid fa-robot fa-lg"></i> Robotics</a>
+            <a href="#artificial-intelligence" class="text-grow"><i class="fa-solid fa-brain fa-lg"></i> AI</a>
+            <a href="#events" class="text-grow"><i class="fa-regular fa-calendar-days fa-lg"></i> Events</a>
+        </nav>
 
         <nav id="nav-site" class="nav-site">
             <ul class="menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="present.html">The Present</a></li>
-                <li><a href="future.html">The Future</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
+                <li class="text-grow"><a href="index.html" class="active">Home</a></li>
+                <li class="text-grow"><a href="present.html">The Present</a></li>
+                <li class="text-grow"><a href="future.html">The Future</a></li>
+                <li class="text-grow"><a href="gallery.html">Gallery</a></li>
+                <li class="text-grow"><a href="subscribe.html">Subscribe</a></li>
             </ul>
         </nav>
 
-        <nav id="nav-anchor" class="nav-anchor">
-            <i class="fa-solid fa-tractor fa-lg"></i>
-            <i class="fa-solid fa-robot fa-lg"></i>
-            <i class="fa-solid fa-brain fa-lg"></i>
-        </nav>
     </header>
 
     <!--The main element contains three sections: a hero section, a main content section ("breakthroughs")
          and an "events" section, all of which are responsive. The events sections responsiveness is 
         achieved simply using flex presentation, while the other two sections require media queries
         (see below).-->
-    <main>
+    <main id="main">
         <!--The hero section will in the future provide further well-structured information on the page via
             links to modal dialogs.-->
         <section id="hero">
@@ -78,8 +80,8 @@
         </section>
         <section id="breakthroughs">
             <h2><i class="fa-solid fa-bolt"></i> Disruptive developments</h2>
-            <div id="ag-science" class="right">
-                <h3>Domain knowledge - ag science <i class="fa-solid fa-tractor"></i></h3>
+            <div id="ag-science" class="anchor right">
+                <h3 id="domain-knowledge">Domain knowledge - ag science <i class="fa-solid fa-tractor"></i></h3>
                 <hr class="primary">
                 <div class="tap-for-modal left" id="breeding"><i class="fa-solid fa-seedling fa-xs"></i> Plant
                     breeding</i></div>
@@ -89,8 +91,8 @@
                     climate science</div>
                 <hr class="secondary">
             </div>
-            <div id="robotics" class="left">
-                <h3><i class="fa-solid fa-robot"></i> Not all robots are equal</h3>
+            <div id="robotics" class="anchor left">
+                <h3 id="robotics"><i class="fa-solid fa-robot"></i> Not all robots are equal</h3>
                 <hr class="primary">
                 <div class="tap-for-modal right" id="design-paradigms">New design paradigms <i
                         class="fa-solid fa-pen-ruler fa-xs"></i></div>
@@ -100,8 +102,8 @@
                         class="fa-solid fa-screwdriver fa-xs"></i></div>
                 <hr class="secondary">
             </div>
-            <div id="artificial-intelligence" class="right">
-                <h3>Information & how to use it <i class="fa-solid fa-lightbulb"></i></h3>
+            <div id="artificial-intelligence" class=" anchor right">
+                <h3 id="artificial-intelligence">Information & how to use it <i class="fa-solid fa-lightbulb"></i></h3>
                 <hr class="primary">
                 <div class="tap-for-modal left" id="data-collection"><i class="fa-solid fa-database fa-xs"></i> Data
                     collection</div>
@@ -173,7 +175,7 @@
                 <div class="recent">
                     <hr class="secondary">
                     Hands-on workshop: "Adjusting cutting-edge manipulator for soft-fruit picking"</p>
-                    <p><i class="fa-solid fa-building"></i> Northern Irish Fruit Growers' guild</p>
+                    <p><i class="fa-solid fa-building"></i> Northern Irish Fruit Growers' Guild</p>
                     <p><i class="fa-solid fa-location-dot"></i> Dungannon Community Centre, Dungannon, Co. Down</p>
                     <p><i class="fa-solid fa-calendar-day"></i> 20 June 2023</p>
                     <p><i class="fa-solid fa-clock"></i> 08:00 to 16:30</p>
