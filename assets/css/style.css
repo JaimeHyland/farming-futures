@@ -246,7 +246,7 @@ html {
 
 
 /* main section wrapper to facilitate back-to-top button. 
-This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button */
+This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ */
 .content-wrapper {
     display: grid;
     grid-template-columns: auto 0px;
@@ -292,12 +292,12 @@ main {
 
 .left {
     text-align: left;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 .right {
     text-align: right;
-    margin: 0px 10px;
+    margin: 0px 8px;
 }
 
 .tap-for-modal {
@@ -371,6 +371,9 @@ main {
     background-color: rgba(40, 85, 40, .7);
 }
 
+
+/* The back-to-top button. 
+This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ */
 .back-to-top {
     position: sticky;
     text-decoration: none;

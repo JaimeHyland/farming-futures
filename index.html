@@ -65,7 +65,8 @@
 
     </header>
 
-    <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. -->
+    <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. 
+    This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
     <content class="content-wrapper">
 
         <!--The main element contains three sections: a hero section, a main content section ("breakthroughs")
@@ -73,17 +74,18 @@
         achieved simply using flex presentation, while the other two sections require media queries
         (see below).-->
         <main id="main">
-            <!--The hero section will in the future provide further well-structured information on the page via
+            <!--The hero section will at some time in the future provide further well-structured information on the page via
             links to modal dialogs.-->
             <section id="hero">
                 <div id="cover-text">
                     <h1>The Next Revolution</h1>
-                    <h3>Where we'll see change</h3>
+                    <h3>Where we're set to see changes</h3>
                 </div>
             </section>
+
             <section id="breakthroughs">
                 <h2><i class="fa-solid fa-bolt"></i> Disruptive developments</h2>
-                <div id="ag-science" class="anchor right">
+                <div id="ag-science" class="anchor left">
                     <h3 id="domain-knowledge">Domain knowledge - ag science <i class="fa-solid fa-tractor"></i></h3>
                     <hr class="primary">
                     <div class="tap-for-modal left" id="breeding"><i class="fa-solid fa-seedling fa-xs"></i> Plant
@@ -96,7 +98,7 @@
                         climate science</div>
                     <hr class="secondary">
                 </div>
-                <div id="robotics" class="anchor left">
+                <div id="robotics" class="anchor right">
                     <h3 id="robotics"><i class="fa-solid fa-robot"></i> Not all robots are equal</h3>
                     <hr class="primary">
                     <div class="tap-for-modal right" id="design-paradigms">New design paradigms <i
@@ -107,7 +109,7 @@
                             class="fa-solid fa-screwdriver fa-xs"></i></div>
                     <hr class="secondary">
                 </div>
-                <div id="artificial-intelligence" class=" anchor right">
+                <div id="artificial-intelligence" class="anchor left">
                     <h3 id="artificial-intelligence">Information & how to use it <i class="fa-solid fa-lightbulb"></i>
                     </h3>
                     <hr class="primary">
@@ -121,6 +123,7 @@
                     <hr class="secondary">
                 </div>
             </section>
+
             <!--The events section is divided into upcoming events, which in the future the user will click to 
             receive further informaton, including "how to get there" details, and recent events, each of 
             which the user will click in future to see a gallery and/or reports on and materials from the
@@ -202,10 +205,15 @@
                 </div>
             </section>
         </main>
+
+
+        <!-- The Back-to-top sticky button appears when the user scrolls down. 
+        This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
         <a href="#" class="back-to-top">
             <i class="fa-solid fa-arrow-up fa-lg"></i>
         </a>
     </content>
+
 
     <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
         "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
