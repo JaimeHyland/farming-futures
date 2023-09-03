@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +9,18 @@
         content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, production, futures">
     <!-- Website title -->
     <title>Farming Futures</title>
-    <!-- Favicon -->
+    <!-- Favicon (I copied this code directly from Jo Heyndels' walkthrough project) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+    <!-- This page is divided into three main sections: a header, a main section, and a footer -->
+    <!-- The header contains anchor icons on the left to navigate the main section of the page, a title 
+        and subtitle and a nav icon (for mobile screens only), which turns into a menu when
+    clicked. The menu appears directly in tablets and larger-sized screens.-->
     <header>
         <div class="home-icon-container">
             <a href="index.html"><i class="fa-solid fa-house-chimney" id="home-icon"></i></a>
@@ -26,16 +28,14 @@
         
         <div class="logo-heading">
             <a href="index.html">
-                <h1 class="logo-title">Farming Futures</h1>
+                <h1 class="logo-title text-grow">Farming Futures</h1>
             </a>
             <p class="logo-subtitle">Futures in food production</p>
         </div>
-        
-        <input type="checkbox" id="nav-site-toggle" name="nav-toggle">
+        <input type="checkbox" id="nav-site-toggle" name="nav-site-toggle">
         <label for="nav-site-toggle" class="nav-site-toggle-label">
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars icon-grow"></i>
         </label>
-
         <nav id="nav-site">
             <ul class="menu">
                 <li><a href="index.html">Home</a></li>
@@ -47,23 +47,33 @@
         </nav>
     </header>
     <main>
-
     </main>
     
-    <footer>
-        <ul id="social-networks">
-            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new browser tab)"><i class="fa-brands fa-facebook"></i></a></li>
-            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our twitter timeline (opens in new browser tab)"><i class="fa-brands fa-x-twitter"></i></a></li>
-            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="Visit our youtube channel (opens in new browser tab)"><i class="fa-brands fa-youtube"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Visit our Instagram page (opens in new browser tab)"><i class="fa-brands fa-instagram"></i></a></li>
-        </ul>
-        <button>Imprimatur</button>
-    </footer>
-
+    <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
+        "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
+        <footer>
+            <ul id="social-networks">
+                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Facebook page (opens in new browser tab)"><i
+                            class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our twitter timeline (opens in new browser tab)"><i
+                            class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our youtube channel (opens in new browser tab)"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Visit our Instagram page (opens in new browser tab)"><i
+                            class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+            <button>Imprimatur</button>
+        </footer>
     
-    <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
-        (for standardized icons in the case of this website) -->
-    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-</body>
-
-</html>
+    
+        <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
+            (for standardized icons in the case of this website). I copied this code directly from
+            Jo Heyndels' walkthrough project. -->
+        <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+    </body>
+    
+    </html>

@@ -10,7 +10,7 @@
         content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, production, futures">
     <!-- Website title -->
     <title>Farming Futures</title>
-    <!-- Favicon -->
+    <!-- Favicon (I copied this code directly from Jo Heyndels' walkthrough project) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -65,135 +65,148 @@
 
     </header>
 
-    <!--The main element contains three sections: a hero section, a main content section ("breakthroughs")
+    <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. -->
+    <content class="content-wrapper">
+
+        <!--The main element contains three sections: a hero section, a main content section ("breakthroughs")
          and an "events" section, all of which are responsive. The events sections responsiveness is 
         achieved simply using flex presentation, while the other two sections require media queries
         (see below).-->
-    <main id="main">
-        <!--The hero section will in the future provide further well-structured information on the page via
+        <main id="main">
+            <!--The hero section will in the future provide further well-structured information on the page via
             links to modal dialogs.-->
-        <section id="hero">
-            <div id="cover-text">
-                <h1>The Next Revolution</h1>
-                <h3>Where we'll see change</h3>
-            </div>
-        </section>
-        <section id="breakthroughs">
-            <h2><i class="fa-solid fa-bolt"></i> Disruptive developments</h2>
-            <div id="ag-science" class="anchor right">
-                <h3 id="domain-knowledge">Domain knowledge - ag science <i class="fa-solid fa-tractor"></i></h3>
-                <hr class="primary">
-                <div class="tap-for-modal left" id="breeding"><i class="fa-solid fa-seedling fa-xs"></i> Plant
-                    breeding</i></div>
-                <div class="tap-for-modal left" id="polyculture"><i class="fa-solid fa-wheat-awn fa-xs"></i> Polyculture
+            <section id="hero">
+                <div id="cover-text">
+                    <h1>The Next Revolution</h1>
+                    <h3>Where we'll see change</h3>
                 </div>
-                <div class="tap-for-modal left" id="soil-climate-science"><i class="fa-solid fa-worm fa-xs"></i> Soil &
-                    climate science</div>
-                <hr class="secondary">
-            </div>
-            <div id="robotics" class="anchor left">
-                <h3 id="robotics"><i class="fa-solid fa-robot"></i> Not all robots are equal</h3>
-                <hr class="primary">
-                <div class="tap-for-modal right" id="design-paradigms">New design paradigms <i
-                        class="fa-solid fa-pen-ruler fa-xs"></i></div>
-                <div class="tap-for-modal right" id="standardization">Standardization <i
-                        class="fa-solid fa-plug fa-xs"></i></div>
-                <div class="tap-for-modal right" id="specialized-parts">Specialized parts & software <i
-                        class="fa-solid fa-screwdriver fa-xs"></i></div>
-                <hr class="secondary">
-            </div>
-            <div id="artificial-intelligence" class=" anchor right">
-                <h3 id="artificial-intelligence">Information & how to use it <i class="fa-solid fa-lightbulb"></i></h3>
-                <hr class="primary">
-                <div class="tap-for-modal left" id="data-collection"><i class="fa-solid fa-database fa-xs"></i> Data
-                    collection</div>
-                <div class="tap-for-modal left" id="deep-learning"><i class="fa-solid fa-laptop-file fa-xs"></i> Machine
-                    learning</div>
-                <div class="tap-for-modal left" id="synthesis"><i class="fa-solid fa-graduation-cap fa-xs"></i>
-                    Synthesis of new knowledge</div>
-                <hr class="secondary">
-            </div>
-        </section>
-        <!--The events section is divided into upcoming events, which in the future the user will click to 
+            </section>
+            <section id="breakthroughs">
+                <h2><i class="fa-solid fa-bolt"></i> Disruptive developments</h2>
+                <div id="ag-science" class="anchor right">
+                    <h3 id="domain-knowledge">Domain knowledge - ag science <i class="fa-solid fa-tractor"></i></h3>
+                    <hr class="primary">
+                    <div class="tap-for-modal left" id="breeding"><i class="fa-solid fa-seedling fa-xs"></i> Plant
+                        breeding</i></div>
+                    <div class="tap-for-modal left" id="polyculture"><i class="fa-solid fa-wheat-awn fa-xs"></i>
+                        Polyculture
+                    </div>
+                    <div class="tap-for-modal left" id="soil-climate-science"><i class="fa-solid fa-worm fa-xs"></i>
+                        Soil &
+                        climate science</div>
+                    <hr class="secondary">
+                </div>
+                <div id="robotics" class="anchor left">
+                    <h3 id="robotics"><i class="fa-solid fa-robot"></i> Not all robots are equal</h3>
+                    <hr class="primary">
+                    <div class="tap-for-modal right" id="design-paradigms">New design paradigms <i
+                            class="fa-solid fa-pen-ruler fa-xs"></i></div>
+                    <div class="tap-for-modal right" id="standardization">Standardization <i
+                            class="fa-solid fa-plug fa-xs"></i></div>
+                    <div class="tap-for-modal right" id="specialized-parts">Specialized parts & software <i
+                            class="fa-solid fa-screwdriver fa-xs"></i></div>
+                    <hr class="secondary">
+                </div>
+                <div id="artificial-intelligence" class=" anchor right">
+                    <h3 id="artificial-intelligence">Information & how to use it <i class="fa-solid fa-lightbulb"></i>
+                    </h3>
+                    <hr class="primary">
+                    <div class="tap-for-modal left" id="data-collection"><i class="fa-solid fa-database fa-xs"></i> Data
+                        collection</div>
+                    <div class="tap-for-modal left" id="deep-learning"><i class="fa-solid fa-laptop-file fa-xs"></i>
+                        Machine
+                        learning</div>
+                    <div class="tap-for-modal left" id="synthesis"><i class="fa-solid fa-graduation-cap fa-xs"></i>
+                        Synthesis of new knowledge</div>
+                    <hr class="secondary">
+                </div>
+            </section>
+            <!--The events section is divided into upcoming events, which in the future the user will click to 
             receive further informaton, including "how to get there" details, and recent events, each of 
             which the user will click in future to see a gallery and/or reports on and materials from the
             event.-->
-        <section id="events">
-            <h2 id="events-title">Events</h2>
-            <h3 id="upcoming-events-subtitle">Upcoming events</h3>
-            <div id="upcoming-events">
-                <div class="upcoming">
-                    <hr class="secondary">
-                    <p><i class="fa-solid fa-comments"></i> Seminar:
-                        "Precision watering & feeding strawberries"</p>
-                    <p><i class="fa-solid fa-building"></i> Enniscorthy Coop</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Main Street, Enniscorthy, Co. Wexford</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 25 September 2023</p>
-                    <p><i class="fa-solid fa-clock"></i> 12:30</p>
-                    <hr class="secondary">
+            <section id="events">
+                <h2 id="events-title">Events</h2>
+                <h3 id="upcoming-events-subtitle">Upcoming events</h3>
+                <div id="upcoming-events">
+                    <div class="upcoming">
+                        <hr class="secondary">
+                        <p><i class="fa-solid fa-comments"></i> Seminar:
+                            "Precision watering & feeding strawberries"</p>
+                        <p><i class="fa-solid fa-building"></i> Enniscorthy Coop</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Main Street, Enniscorthy, Co. Wexford</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 25 September 2023</p>
+                        <p><i class="fa-solid fa-clock"></i> 12:30</p>
+                        <hr class="secondary">
+                    </div>
+                    <div class="upcoming">
+                        <hr class="secondary">
+                        <p><i class="fa-solid fa-screwdriver-wrench"></i> Hands-on workshop: "Adjusting manipulator for
+                            soft-fruit picking"</p>
+                        <p><i class="fa-solid fa-building"></i>UCC School of BEES: Agricultural Robotics Team</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Distillery Fields, North Mall Campus, University
+                            College
+                            Cork</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 20 November 2023</p>
+                        <p><i class="fa-solid fa-clock"></i> 08:00 to 16:30</p>
+                        <hr class="secondary">
+                    </div>
+                    <div class="upcoming">
+                        <hr class="secondary">
+                        <p><i class="fa-solid fa-person-chalkboard"></i> Lecture: "AI in Horticulture: a long-range
+                            perspective"</p>
+                        <p><i class="fa-solid fa-building"></i> UCG Department of Agricultural Science</p>
+                        <p><i class="fa-solid fa-location-dot"></i> ENG-G018, Alice Perry Engineering Building, UCG</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 28 November 2023</p>
+                        <p><i class="fa-solid fa-clock"></i> 20:30</p>
+                        <hr class="secondary">
+                    </div>
+                    <div class="upcoming">
+                        <hr class="secondary">
+                        <p><i class="fa-solid fa-building-columns"></i> Townhall meeting: "Employment in horticulture in
+                            a
+                            changing industry"</p>
+                        <p><i class="fa-solid fa-building"></i> Farming Futures</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Skerries Community Centre, Thomas Hand St,
+                            Townparks,
+                            Skerries, Co. Dublin</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 30 January 2024</p>
+                        <p><i class="fa-solid fa-clock"></i> 19:30</p>
+                        <hr class="secondary">
+                    </div>
                 </div>
-                <div class="upcoming">
-                    <hr class="secondary">
-                    <p><i class="fa-solid fa-screwdriver-wrench"></i> Hands-on workshop: "Adjusting manipulator for
-                        soft-fruit picking"</p>
-                    <p><i class="fa-solid fa-building"></i>UCC School of BEES: Agricultural Robotics Team</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Distillery Fields, North Mall Campus, University
-                        College
-                        Cork</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 20 November 2023</p>
-                    <p><i class="fa-solid fa-clock"></i> 08:00 to 16:30</p>
-                    <hr class="secondary">
+                <hr class="primary">
                 </div>
-                <div class="upcoming">
-                    <hr class="secondary">
-                    <p><i class="fa-solid fa-person-chalkboard"></i> Lecture: "AI in Horticulture: a long-range
-                        perspective"</p>
-                    <p><i class="fa-solid fa-building"></i> UCG Department of Agricultural Science</p>
-                    <p><i class="fa-solid fa-location-dot"></i> ENG-G018, Alice Perry Engineering Building, UCG</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 28 November 2023</p>
-                    <p><i class="fa-solid fa-clock"></i> 20:30</p>
-                    <hr class="secondary">
+                <h3 id="recent-events-subtitle">Recent events</h3>
+                <div id="recent-events">
+                    <div class="recent">
+                        <hr class="secondary">
+                        Hands-on workshop: "Adjusting cutting-edge manipulator for soft-fruit picking"</p>
+                        <p><i class="fa-solid fa-building"></i> Northern Irish Fruit Growers' Guild</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Dungannon Community Centre, Dungannon, Co. Down</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 20 June 2023</p>
+                        <p><i class="fa-solid fa-clock"></i> 08:00 to 16:30</p>
+                        <hr class="secondary">
+                    </div>
+                    <div class="recent">
+                        <hr class="secondary">
+                        Seminar: "Finding heatsinks in winter greenhouses"</p>
+                        <p><i class="fa-solid fa-building"></i> Leinster Horticulture Ltd.</p>
+                        <p><i class="fa-solid fa-location-dot"></i> Technological University of the Shannon, Thurles,
+                            Co.
+                            Tipperary</p>
+                        <p><i class="fa-solid fa-calendar-day"></i> 10 March 2023</p>
+                        <p><i class="fa-solid fa-clock"></i> 19:00</p>
+                        <hr class="secondary">
+                    </div>
                 </div>
-                <div class="upcoming">
-                    <hr class="secondary">
-                    <p><i class="fa-solid fa-building-columns"></i> Townhall meeting: "Employment in horticulture in
-                        a
-                        changing industry"</p>
-                    <p><i class="fa-solid fa-building"></i> Farming Futures</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Skerries Community Centre, Thomas Hand St,
-                        Townparks,
-                        Skerries, Co. Dublin</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 30 January 2024</p>
-                    <p><i class="fa-solid fa-clock"></i> 19:30</p>
-                    <hr class="secondary">
-                </div>
-            </div>
-            <hr class="primary">
-            </div>
-            <h3 id="recent-events-subtitle">Recent events</h3>
-            <div id="recent-events">
-                <div class="recent">
-                    <hr class="secondary">
-                    Hands-on workshop: "Adjusting cutting-edge manipulator for soft-fruit picking"</p>
-                    <p><i class="fa-solid fa-building"></i> Northern Irish Fruit Growers' Guild</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Dungannon Community Centre, Dungannon, Co. Down</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 20 June 2023</p>
-                    <p><i class="fa-solid fa-clock"></i> 08:00 to 16:30</p>
-                    <hr class="secondary">
-                </div>
-                <div class="recent">
-                    <hr class="secondary">
-                    Seminar: "Finding heatsinks in winter greenhouses"</p>
-                    <p><i class="fa-solid fa-building"></i> Leinster Horticulture Ltd.</p>
-                    <p><i class="fa-solid fa-location-dot"></i> Technological University of the Shannon, Thurles, Co.
-                        Tipperary</p>
-                    <p><i class="fa-solid fa-calendar-day"></i> 10 March 2023</p>
-                    <p><i class="fa-solid fa-clock"></i> 19:00</p>
-                    <hr class="secondary">
-                </div>
-            </div>
-        </section>
-    </main>
+            </section>
+        </main>
+        <a href="#" class="back-to-top">
+            <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </a>
+    </content>
+
     <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
         "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
     <footer>
@@ -211,12 +224,13 @@
                     aria-label="Visit our Instagram page (opens in new browser tab)"><i
                         class="fa-brands fa-instagram"></i></a></li>
         </ul>
-        <button>Imprimatur</button>
+        <a href="imprimatur.html" class="footer-link text-grow">Imprimatur</a>
     </footer>
 
 
     <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
-        (for standardized icons in the case of this website) -->
+        (for standardized icons in the case of this website). I copied this code directly from
+        Jo Heyndels' walkthrough project. -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 

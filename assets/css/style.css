@@ -141,7 +141,7 @@ html {
     left: 15px;
     width: 140px;
     height: 120px;
-    justify-content:center;
+    justify-content: center;
     align-content: space-around;
 }
 
@@ -168,7 +168,7 @@ html {
 }
 
 
-/* main header title text */
+/* central header title text */
 .logo-title {
     text-align: center;
     letter-spacing: 1px;
@@ -245,11 +245,19 @@ html {
 }
 
 
+/* main section wrapper to facilitate back-to-top button. 
+This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: auto 0px;
+}
+
+
 /* main section styling */
 main {
-    background-color: white;
+    background-color: #fafafa;
     flex: 1 0 auto;
-    top: 87px;
+    margin-top: 87px;
     overflow: hidden;
     overflow-y: scroll;
 }
@@ -363,8 +371,70 @@ main {
     background-color: rgba(40, 85, 40, .7);
 }
 
-/* Subscribe page */
+.back-to-top {
+    position: sticky;
+    text-decoration: none;
+    padding: 10px;
+    color: #fafafa;
+    background: seagreen;
+    border-radius: 100px;
+    place-self: end;
+    position: sticky;
+    bottom: 20px;
+    --offset: 100px; 
+    margin-top: calc(100vh + var(--offset));  
+}
 
+
+/* footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #fafafa;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer>ul#social-networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex: 1;
+    width: 100%;
+}
+
+ul#social-networks a {
+    color: seagreen;
+}
+
+
+/* imprimatur link at bottom right (home link on the imprimatur page) */
+.footer-link {
+    margin: 0 10px;
+    font-size: 16px;
+    color: seagreen;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Code for the home icon at top left on any other page than the home page (the home icon replaces the anchor menu icons on all child pages)  */
+#home-icon {
+    font-size: 30px;
+    background-color: seagreen;
+    color: #fafafa;
+    position: absolute;
+    border-radius: 2px;
+    margin-top: 12px;
+    height: 80%;
+    position: relative;
+}
+
+/* Code for the Subscribe page */
 #subscribe-form {
     display: flex;
     flex-direction: column;
@@ -419,8 +489,6 @@ main {
     padding: 5px;
 }
 
-
-
 .radio-label {
     float: right;
     width: 10em;
@@ -436,55 +504,50 @@ main {
     padding: 15px 32px 15px 32px;
 }
 
-/* footer styling */
-footer {
-    text-align: center;
-    padding: 20px 0;
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #fafafa;
-    padding: 10px;
-    bottom: 0;
-    width: 100%;
-}
 
-footer>ul#social-networks {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    list-style-type: none;
-    flex: 1;
-    width: 100%;
-}
-
-ul#social-networks a {
-    color: seagreen;
-
-}
-
-/* imprimatur button */
-footer button {
-    flex: 1;
-    max-width: 90px;
-    min-width: 60px;
+/* code for the imprimatur */
+.legal-blurb {
+    padding: 6px 12px;
     background-color: seagreen;
     color: #fafafa;
-    border-radius: 20%;
-    box-shadow: inset;
 }
 
-/* code for header other than on homepage */
 
-#home-icon {
-    font-size: 30px;
+.legal-blurb a {
+    color: #fafafa;
+    font-weight: 700;
+}
+
+.legal-blurb p {
+    padding: 0 8px;
+    font-size: 14px;
+
     background-color: seagreen;
     color: #fafafa;
-    position: absolute;
-    border-radius: 2px;
-    margin-top: 12px;
-    height: 80%;
-    position: relative;
 }
+
+.blurb-heading {
+    font-size: x-large;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 8px 0;
+}
+
+.declaration {
+    margin: 8px 0;
+}
+
+address {
+    padding: 18px 12px;
+    font-style: italic;
+}
+
+.name-value>span {
+    padding: 8px 0;
+    font-weight: bolder;
+}
+
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {}
