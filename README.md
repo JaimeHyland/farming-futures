@@ -87,6 +87,7 @@ Naturally enough, have researched widely to find out how to implement features n
 - https://stackoverflow.com/
 - https://www.freecodecamp.org/
 - https://www.bestcolleges.com/
+- https://css-tricks.com/
 ...
 
 However, aside from Jo's walkthrough project, the only source from which I directly copied was freecodecamp.org, from which I more or less directly copied the back-to-top button functionality (https://www.freecodecamp.org/news/css-only-back-to-top-button/). The place where I copied that code is therefore the only place in my projecgt I have marked any code as being other than my own.

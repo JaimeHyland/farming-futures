@@ -391,8 +391,11 @@ This function was copied almost line-by-line from https://www.freecodecamp.org/n
 }
 
 
-/* footer styling */
+/* footer styling (the position and top attributes are added first to make the footer stick to the bottom of the 
+page where the header and content cover less than the screen height) */
 footer {
+    position: sticky;
+    top: 100vh;
     text-align: center;
     padding: 20px 0;
     display: flex;

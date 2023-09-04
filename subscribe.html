@@ -54,53 +54,59 @@
     <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. 
     This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
     <content class="content-wrapper">
-    <main>
-        <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
-            <h2><i class="fa-solid fa-inbox"></i> Subscribe to our newsletter!</h2>
-            <div id="shaded-area">
-                <div id="text-inputs">
-                    <label for="first-name">First Name</Label>
-                    <input type="text" id="first-name" name="first-name" class="text-input" required>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name" name="last-name" class="text-input" required>
-                    <label for="email-address">Email Address</label>
-                    <input type="email" name="email-address" id="email-address" class="text-input" required>
-                    <label for="last-name">Postal Address</label>
-                    <input type="text" id="address" name="address" class="text-input">
+        <main>
+            <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
+                <h2><i class="fa-solid fa-inbox"></i> Subscribe to our newsletter!</h2>
+                <div id="shaded-area">
+                    <div id="text-inputs">
+                        <label for="first-name">First Name</Label>
+                        <input type="text" id="first-name" name="first-name" class="text-input" required>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" class="text-input" required>
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="email-address" id="email-address" class="text-input" required>
+                        <label for="last-name">Postal Address</label>
+                        <input type="text" id="address" name="address" class="text-input">
+                    </div>
+                    <div id="radio-buttons">
+                        <label for="email" class="radio-label">Email only</label>
+                        <input type="radio" name="subscription-type" id="email" value="email" required checked><br>
+                        <label for="hard-copy" class="radio-label">Hard copy only (by mail)</label>
+                        <input type="radio" name="subscription-type" id="hard-copy" value="hard-copy" required><br>
+                        <label for="both" class="radio-label">Both</label>
+                        <input type="radio" name="subscription-type" id="both" value="both" required><br>
+                    </div>
+                    <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
                 </div>
-                <div id="radio-buttons">
-                    <label for="email" class="radio-label">Email only</label>
-                    <input type="radio" name="subscription-type" id="email" value="email" required checked><br>
-                    <label for="hard-copy" class="radio-label">Hard copy only (by mail)</label>
-                    <input type="radio" name="subscription-type" id="hard-copy" value="hard-copy" required><br>
-                    <label for="both" class="radio-label">Both</label>
-                    <input type="radio" name="subscription-type" id="both" value="both" required><br>
-                </div>
-                <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
-            </div>
-        </form>
-    </main>
+            </form>
+        </main>
+
+        <!-- The Back-to-top sticky button appears when the user scrolls down. 
+        This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
+        <a href="#" class="back-to-top">
+            <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </a>
     </content>
-    
-        <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
+
+    <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
         "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
-        <footer>
-            <ul id="social-networks">
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in new browser tab)"><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our twitter timeline (opens in new browser tab)"><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our youtube channel (opens in new browser tab)"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in new browser tab)"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-            <a href="imprimatur.html" class="footer-link text-grow">Imprimatur</a>
-        </footer>
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in new browser tab)"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our twitter timeline (opens in new browser tab)"><i
+                        class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our youtube channel (opens in new browser tab)"><i
+                        class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in new browser tab)"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <a href="imprimatur.html" class="footer-link text-grow">Imprimatur</a>
+    </footer>
 
 
     <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
