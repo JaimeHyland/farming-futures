@@ -381,7 +381,7 @@ This function was copied almost line-by-line from https://www.freecodecamp.org/n
     text-decoration: none;
     padding: 10px;
     color: #fafafa;
-    background: seagreen;
+    background: #2e8b57;
     border-radius: 100px;
     place-self: end;
     position: sticky;
