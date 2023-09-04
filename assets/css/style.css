@@ -286,10 +286,11 @@ main {
     font-weight: 700;
 }
 
-/* breakthroughs section */
-#breakthroughs h2 {
+
+/* Breakthroughs section */
+#breakthroughs-heading {
     text-align: center;
-    margin: 15px 15px;
+    margin: 15px auto;
 }
 
 .left {
@@ -323,9 +324,41 @@ main {
     margin-bottom: 15px;
 }
 
-#robotics,
+#robotics {
+    text-align: right;
+}
+
+#ai-left {
+    display: none;
+    text-align: left;
+}
+
+#ai-right {
+    text-align: right;
+}
+
+
 #artificial-intelligence {
     margin-top: 10px;
+}
+
+/* Place the lettuce picture at the centre of the breakthroughs section */
+/* This code is almost entirely copied from the 'love-running site */
+#breakthroughs-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#cover-bg {
+    background: url('../images/lettuce.webp') no-repeat top center / cover;
+    height: 90vw;
+    width: 90vw;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
 }
 
 /* Events styling */
@@ -386,8 +419,8 @@ This function was copied almost line-by-line from https://www.freecodecamp.org/n
     place-self: end;
     position: sticky;
     bottom: 20px;
-    --offset: 100px; 
-    margin-top: calc(100vh + var(--offset));  
+    --offset: 100px;
+    margin-top: calc(100vh + var(--offset));
 }
 
 
@@ -599,8 +632,27 @@ address {
 /* Media query: large-screen phones or landscape views (576px and upwards) */
 @media screen and (min-width: 576px) {}
 
-/* Large devices (laptops and desktops, 992px and up) */
-@media screen and (min-width: 992px) {}
+/* Large devices (laptops and desktops, 950px and up) */
+@media screen and (min-width: 900px) {
+
+    /* breakthroughs section displays horizontally */
+    #breakthroughs {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #breakthroughs>div {
+        flex: 1;
+    }
+
+    #ai-left {
+        display: block;
+    }
+
+    #ai-right {
+        display: none;
+    }
+}
 
 
 /* Large desktops */
