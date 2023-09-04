@@ -1,3 +1,5 @@
+<base target="_blank">
+
 # Farming Futures - An AI- and robotics-insired site showcasing future changes in agriculture
 
 ## Code Institute - First Milestone Project: Create a responsive, user-centred static website.
@@ -29,7 +31,7 @@ As a user, I want to:
 - be inspired, excited and concerned about such potential changes;
 - find out where I can get more concrete information, both from Farming Futures and other sources;
 - be able to sign up to either a hard copy or digital version of the site owner's newsletter;
-- find out about relevant events related to AI and robotics in agriculture. 
+- find out about relevant events related to AI and robotics in agriculture, especially in Ireland. 
 
 As a user, I will not expect to:
 - find detailed concrete or practical text-based technical or academic information within this site.

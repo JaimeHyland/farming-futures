@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Farming futures. Information on AI in farming. Discussing agriculture, horticulture, robotics, artificial intelligence, technology, deep learning, automation, food">
+        content="Farming futures. Information on AI in farming. Discussing agriculture, horticulture, robotics, artificial intelligence, technology, deep learning, 
+        automation, food, reference, internet links">
     <meta name="keywords"
-        content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, production, futures">
+        content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, 
+        production, futures, reference, links, hyperlinks">
     <!-- Website title -->
     <title>Farming Futures</title>
     <!-- Favicon (I copied this code directly from Jo Heyndels' walkthrough project) -->
@@ -23,7 +25,7 @@
         <div class="home-icon-container">
             <a href="index.html"><i class="fa-solid fa-house-chimney" id="home-icon"></i></a>
         </div>
-        
+
         <div class="logo-heading">
             <a href="index.html">
                 <h1 class="logo-title text-grow">Farming Futures</h1>
@@ -36,21 +38,31 @@
             <i class="fa-solid fa-bars icon-grow"></i>
         </label>
 
-        <nav id="nav-site">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="present.html">The Present</a></li>
-                <li><a href="future.html" class="active">The Future</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
+        <nav id="nav-anchor" class="nav-anchor">
+            <a href="#ag-science" class="text-grow"><i class="fa-solid fa-tractor fa-lg"></i> Ag Science</a>
+            <a href="#robotics" class="text-grow"><i class="fa-solid fa-robot fa-lg"></i> Robotics</a>
+            <a href="#artificial-intelligence" class="text-grow"><i class="fa-solid fa-brain fa-lg"></i> AI</a>
+            <a href="#events" class="text-grow"><i class="fa-regular fa-calendar-days fa-lg"></i> Events</a>
+        </nav>
+
+        <nav id="nav-site" class="nav-site">
+            <ul id="site-menu">
+                <li class="text-grow"><a href="index.html">Home</a></li>
+                <li class="text-grow"><a href="gallery.html">Gallery</a></li>
+                <li class="text-grow"><a href="explore.html" class="active">Explore</a></li>
+                <li class="text-grow"><a href="subscribe.html">Subscribe</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. 
+    This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
+    <content class="content-wrapper">
+        <main>
 
-    </main>
-    
+        </main>
+    </content>
+
     <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
         "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
     <footer>
@@ -68,13 +80,13 @@
                     aria-label="Visit our Instagram page (opens in new browser tab)"><i
                         class="fa-brands fa-instagram"></i></a></li>
         </ul>
-        <button>Imprimatur</button>
+        <a href="imprimatur.html" class="footer-link text-grow">Imprimatur</a>
     </footer>
 
 
     <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
-        (for standardized icons in the case of this website). I copied this code directly from
-        Jo Heyndels' walkthrough project. -->
+            (for standardized icons in the case of this website). I copied this code directly from
+            Jo Heyndels' walkthrough project. -->
     <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
 </body>
 
