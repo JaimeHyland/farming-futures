@@ -133,7 +133,7 @@ html {
     z-index: 99;
 }
 
-/* icon menu */
+/* icon for anchor menu */
 .nav-anchor {
     position: absolute;
     display: flex;
@@ -201,22 +201,24 @@ html {
 
 /* nav-site (initially hidden) */
 #nav-site {
+    display: none;
     background-color: #fafafa;
     padding: 0 14px;
-    display: none;
     position: absolute;
     top: 100%;
     right: 15px;
-    border-top: 1px solid #fafafa;
     box-shadow: 2px 2px 2px rgb(18, 55, 34);
 }
 
-#nav-site .menu {
+#nav-site .site-menu {
     background-color: #fafafa;
-    color: seagreen;
+    color: #2e8b57;
     width: 110px;
     top: 100%;
-    list-style: none;
+}
+
+#nav-site ul {
+    list-style-type: none;
 }
 
 #nav-site li {
@@ -551,9 +553,45 @@ address {
 }
 
 
-
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+
+    /* Header - turn vertical site menu into horizontal menu imbedded into header proper and turn vertical anchor menu into sub-menu of the "home" menu item */
+    #nav-site {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        background-color: #2e8b57;
+        color: #fafafa;
+    }
+
+    #site-menu {
+        display: flex;
+    }
+
+    #site-menu li {
+        padding-left: 1rem;
+        background-color: #2e8b57;
+        color: #fafafa;
+    }
+
+    #site-menu a {
+        background-color: #2e8b57;
+        color: #fafafa;
+    }
+
+    .active {
+        border-bottom: 1px solid #fafafa;
+    }
+
+    .nav-site-toggle-label {
+        display: none;
+    }
+}
 
 /* Media query: large-screen phones or landscape views (576px and upwards) */
 @media screen and (min-width: 576px) {}
