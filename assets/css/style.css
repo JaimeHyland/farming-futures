@@ -171,22 +171,24 @@ html {
 /* central header title text */
 .logo-title {
     text-align: center;
-    letter-spacing: 1px;
-    color: #fafafa;
+    letter-spacing: 2px;
+    font-weight: 700;
     font-size: 130%;
+    color: #fafafa;
     text-transform: uppercase;
 }
 
 /* sub-heading */
 .logo-subtitle {
     text-align: center;
+    letter-spacing: 1px;
+    font-weight: 600;
     font-size: 100%;
     color: #fafafa;
 }
 
 .logo-heading a {
     text-decoration: none;
-
 }
 
 /* Hide nav-site-toggle checkbox */
@@ -287,10 +289,14 @@ main {
 }
 
 
-/* Breakthroughs section */
+/* breakthroughs section */
 #breakthroughs-heading {
     text-align: center;
     margin: 15px auto;
+}
+
+#breakthroughs h3 {
+    font-size: 150%;
 }
 
 .left {
@@ -343,14 +349,14 @@ main {
 }
 
 /* Place the lettuce picture at the centre of the breakthroughs section */
-/* This code is almost entirely copied from the 'love-running site */
+/* This code is almost entirely copied from the 'love-running' site */
 #breakthroughs-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
+/* A covering that makes the lettuce image look out a round window */
 #cover-bg {
     background: url('../images/lettuce.webp') no-repeat top center / cover;
     height: 90vw;
@@ -360,6 +366,7 @@ main {
     max-width: 300px;
     max-height: 300px;
 }
+
 
 /* Events styling */
 #events-title {
@@ -421,6 +428,8 @@ This function was copied almost line-by-line from https://www.freecodecamp.org/n
     bottom: 20px;
     --offset: 100px;
     margin-top: calc(100vh + var(--offset));
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -589,10 +598,15 @@ address {
 }
 
 
+/* Media query: large-screen phones or landscape views (576px and upwards) */
+@media screen and (min-width: 576px) {}
+
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
-    /* Header - turn vertical site menu into horizontal menu imbedded into header proper and turn vertical anchor menu into sub-menu of the "home" menu item */
+    /* Header - turn vertical site menu into horizontal menu imbedded into header proper and turn vertical anchor menu 
+    into sub-menu of the "home" menu item */
     #nav-site {
         display: flex;
         flex-direction: row;
@@ -605,8 +619,11 @@ address {
         color: #fafafa;
     }
 
+
+    /* Bring the site menu down to closer to the bottom of the header */
     #site-menu {
         display: flex;
+        margin-top: 30px;
     }
 
     #site-menu li {
@@ -627,13 +644,44 @@ address {
     .nav-site-toggle-label {
         display: none;
     }
+
+    /* Increase the size of the logo title and subheading text */
+    .logo-title {
+        letter-spacing: 3px;
+        font-size: 180%;
+    }
+    
+    /* sub-heading */
+    .logo-subtitle {
+        font-size: 140%;
+    }
+
+    /* Move the now no longer centred heading text element to the left to rebalance the header. */
+    .logo-heading {
+        margin-left: -45px;
+    }
+
+
+    /* Make the hero cover text less broad and send it to the right. */
+    #cover-text {
+        width: 300px;
+        right: 50px;
+    }
+
+
+    /* Push the main content down to accommodate the bigger header */
+    main {
+        margin-top: 101px;
+    }
 }
 
-/* Media query: large-screen phones or landscape views (576px and upwards) */
-@media screen and (min-width: 576px) {}
+/* Large devices (laptops and desktops, 960px and up) */
+@media screen and (min-width: 960px) {
 
-/* Large devices (laptops and desktops, 950px and up) */
-@media screen and (min-width: 900px) {
+    /* Move the header yet further to the left. */
+    .logo-heading {
+        margin-left: -160px;
+    }
 
     /* breakthroughs section displays horizontally */
     #breakthroughs {
@@ -655,5 +703,12 @@ address {
 }
 
 
-/* Large desktops */
-@media screen and (min-width: 1200px) {}
+
+/* Large laptops and desktops */
+@media screen and (min-width: 1200px) {
+
+    /* Move the header another bit further to the left. */
+    .logo-heading {
+        margin-left: -300px;
+    }
+}

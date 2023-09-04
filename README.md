@@ -80,27 +80,6 @@ I used background images in several places on the home page and on the form cont
 All pages include a **go-to-top button**, which appears at bottom right, just above the footer as soon as the user has scrolled at least 100px. Where the information on the page is limited and/or when viewing on a screen size where no scrolling is necessary, the go-to-top button never appears.
 
 
-![contact_section](./assets/readme-assets/Footer.PNG)
-
-
-### Features Left to Implement
-In the future, 
-* I would like to add the Portfolio section to the online CV, where I can add links to the websites that I have designed, along with a link to Github. If an employer is interested in my work, they can go in and have a look.
-* I would like to make the contact form functional.
-* I would like to improve the performance of the website.
-
-
-### Validator Testing
-* **HTML**
-  No errors were returned when passing through the official [W3C validator](./assets/readme-assets/validator_result_html.PNG)
-
-* **CSS**
-  No errors were found when passing through the official [(Jigsaw) validator](./assets/readme-assets/css-validator_result.PNG)
-  
-* **Accessibility**
-  I confirmed that the colors and fonts chosen are easy to read and accessible by running it through [Lighthouse DevTools](./assets/readme-assets/site_accessibility.PNG)
-
-
 ## Accessibility
 I have given all images used (other than merely decorative background images) a sr-readable alt text. Throughout the website, font colours appear on sufficiently contrasting backgrounds, with the addition where necessary of semi-opaque background colours over background images.
 
@@ -119,9 +98,9 @@ My original wireframe design can be found here (in pdf format): (./documentation
 The code was written on a section-by-section according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the "Lessons learnt" section below.
 
 ### Commits
-I committed new changes relatively often, and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor tweaks. I made pretty intensive use of the "git diff HEAD" command to check. I intend to add a step to this process the next time I'm working on a similar project (see One-person agile programming below).
+I committed new changes relatively often (between once and a dozen time a day), and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor tweaks. I made pretty intensive use of the "git diff HEAD" command to check. I intend to add a step to this process the next time I'm working on a similar project (see One-person agile programming below).
 
-### Minimising clutter
+### Minimising code clutter
 I have tried to follow a "clean programming" paradigm in my work. I have therefore:
 - not added code for any as-yet unimplemented functionalities (whether commented out or simply never called)
 - deleted rather than commented out redundant lines of code
@@ -140,8 +119,8 @@ Committed code was deployed via github on a daily basis.
 
 ## Testing
 ### Iterative testing, validation and troubleshooting - during ongoing development and before final submission.
-The main browser against which my code was tested in an iterative process (running a smoke test before every commit at the very least) was the latest version of Google Chrome (using the development toolkit provided by Google). Near the end of the development process, I used my own Samsung Galaxy A7 (running on the latest version of Chrome), my ipod (running on the latest version of Safari), and my laptop, using the latest versions of Chrome, Microsoft Edge and Firefox. Owing to lack of time, I was unable to do any testing on any legacy versions of these or on any other browsers or machines.
-Testing included checking the images (including background images) on different screen sizes for unsightly pixilation.
+The main browser against which my code was tested in an iterative process (running a smoke test before every commit at the very least) was the latest version of Google Chrome (using the development toolkit provided by Google). Near the end of the development process, I used my own Samsung Galaxy A7 (running on the latest version of Chrome), my ipod (running on the latest version of Safari), and my laptop, using the latest versions of Chrome, Microsoft Edge and Firefox. Owing to lack of time, I was unable to do any testing on any legacy versions of these or on any other browsers or machines, with the exception of an informal test on an iphone (version unknown) in dark mode using Safari.
+Testing also included checking the images (including background images) on different screen sizes for unsightly pixilation.
 
 ### Final testing and validation before submission
 All internal and external links were smoke-checked systematically before submitting the project for assessment.
@@ -179,9 +158,10 @@ Some functionality is incomplete in the project, especially the following:
 Pressure of time and my current ignorance of the finer points of aesthetic web design has meant that:
 -  I haven't been able to use a range of tints, much less adopt and implement a fully-fledged colour palette.
 - The favicon images are not particularly attractive in basic design or colour scheme. If I had my time over, I would have made them very differently.
-- I would like to have implemented one or two more features based on css-only modal dialogs.
+- I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
+- I would have liked to implement interactivity with the events, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
 
-Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project. 
+Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
 
 Also due to lack of time, some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). In a real-life site, that wouldn't happen.
 
