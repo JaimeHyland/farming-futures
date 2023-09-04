@@ -484,7 +484,7 @@ ul#social-networks a {
     position: relative;
 }
 
-/* Code for the Subscribe page */
+/* Styling code for the subscribe page */
 #subscribe-form {
     display: flex;
     flex-direction: column;
@@ -502,56 +502,61 @@ ul#social-networks a {
     margin: 0;
 }
 
-#subscribe h2 {
-    color: black;
-    margin-bottom: 20px;
+
+/* Set default margin for the form */
+#subscribe-form * {
+    margin: 0 10px; 
 }
 
 #shaded-area {
-    background-color: rgba(250, 250, 250, .8);
+    background-color: rgba(250, 250, 250, 0.8);
+    margin: 0;
 }
 
+/* style heading */
+#subscribe-form h2 {
+    margin: 0 10px;
+    text-align: center;
+}
+
+#subscribe-form input {
+    border-radius: 5px;
+    border-color: #2e8b57;
+}
+
+#subscribe-form h2 {
+    margin-bottom: 10px;
+}
+
+#subscribe-form label {
+    margin-top: 10px;
+}
+
+#subscribe h2 {
+    color: #454b1b;
+    margin-bottom: 20px;
+}
 #text-inputs {
     display: flex;
     flex-direction: column;
 }
 
 .text-input {
-    height: 25px;
     background-color: transparent;
-    color: #fafafa;
-    border: 1px solid #fafafa;
-    border-radius: 2px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border: 1px solid black;
-    border-radius: 2px;
-}
-
-#radio-buttons {
-    display: block;
-    flex-direction: column;
-    justify-content: space-evenly;
-    border: 1px solid seagreen;
-    height: 100%;
-    padding: 5px;
-}
-
-.radio-label {
-    float: right;
-    width: 10em;
-    margin-left: 1em;
+    color: #454b1b;
+    border-radius: 3px;
+    width: 240px;
+    height: 25px;
 }
 
 .subscribe-button {
-    margin-top: 20px;
+    margin: 0 20px;
+    align-self: center;
+    height: 32px;
+    width: 120px;
     border-radius: 2px;
-    background-color: #454b1b;
+    background-color: #2e8b57;
     color: #fafafa;
-    font-size: 100%;
-    padding: 15px 32px 15px 32px;
 }
 
 
@@ -675,6 +680,7 @@ address {
     }
 }
 
+
 /* Large devices (laptops and desktops, 960px and up) */
 @media screen and (min-width: 960px) {
 
@@ -703,8 +709,7 @@ address {
 }
 
 
-
-/* Large laptops and desktops */
+/* Large desktops */
 @media screen and (min-width: 1200px) {
 
     /* Move the header another bit further to the left. */

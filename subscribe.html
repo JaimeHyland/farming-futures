@@ -4,11 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Farming futures. Information on AI in farming. Discussing agriculture, horticulture, robotics, artificial intelligence, technology, deep learning, 
+    <meta name="description" content="Farming futures. Information on AI in farming. Discussing agriculture, horticulture, robotics, artificial intelligence, technology, deep learning, 
         automation, food, newsletter">
-    <meta name="keywords"
-        content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, 
+    <meta name="keywords" content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, 
         production, futures, newsletter">
     <!-- Website title -->
     <title>Farming Futures</title>
@@ -61,27 +59,65 @@
             <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
                 <h2><i class="fa-solid fa-inbox"></i> Subscribe to our newsletter!</h2>
                 <div id="shaded-area">
-                    <div id="text-inputs">
-                        <label for="first-name">First Name</Label>
-                        <input type="text" id="first-name" name="first-name" class="text-input" required>
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last-name" class="text-input" required>
-                        <label for="email-address">Email Address</label>
-                        <input type="email" name="email-address" id="email-address" class="text-input" required>
-                        <label for="last-name">Postal Address</label>
-                        <input type="text" id="address" name="address" class="text-input">
+                    <div id="name-inputs">
+                        <label for="first-name">First name</Label>
+                        <input type="text" id="first-name" class="text-input" name="first-name"
+                            placeholder="Please enter your forename ..." required>
+                        <label for="last-name">Surname</label>
+                        <input type="text" id="last-name" class="text-input" name="last-name"
+                            placeholder="Please enter your surname ..." class="text-input" required>
                     </div>
                     <div id="radio-buttons">
-                        <label for="email" class="radio-label">Email only</label>
-                        <input type="radio" name="subscription-type" id="email" value="email" required checked><br>
-                        <label for="hard-copy" class="radio-label">Hard copy only (by mail)</label>
-                        <input type="radio" name="subscription-type" id="hard-copy" value="hard-copy" required><br>
-                        <label for="both" class="radio-label">Both</label>
-                        <input type="radio" name="subscription-type" id="both" value="both" required><br>
+                        <div id="radio-email">
+                            <label for="email">Email only</label>
+                            <input type="radio" id="email" value="email" class="radio" name="subscription-type" required
+                                checked>
+                        </div>
+                        <div id="radio-hard-copy">
+                            <label for="hard-copy">Hard copy only (by post)</label>
+                            <input type="radio" id="hard-copy" value="hard-copy" class="radio" name="subscription-type"
+                                required>
+                        </div>
+                        <div id="radio-both">
+                            <label for="both">Both</label>
+                            <input type="radio" id="both" value="both" class="radio" name="subscription-type" required>
+                        </div>
                     </div>
-                    <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
+                    <div id="email-address">
+                        <label for="email-address">Email Address</label>
+                        <input type="email" id="email-address" name="email-address"
+                            placeholder="Please enter your email address ..." class="text-input">
+                    </div>
+                    <div class="address-inputs">
+                        <div id="postal-address1">
+                            <label for="Address">Postal Address Line 1</label>
+                            <input type="text" id="postal-address1" name="postal-address1" class="text-input">
+                        </div>
+                        <div id="postal-address2">
+                            <label for="Address">Postal Address Line 2</label>
+                            <input type="text" id="postal-address2" name="postal-address2" class="text-input">
+                        </div>
+                        <div id="postal-address-county">
+                            <label for="Address">City/County</label>
+                            <input type="text" id="city-county" name="city-county" class="text-input">
+                        </div>
+                        <div id="postal-address-postcode">
+                            <label for="Address">Postcode</label>
+                            <input type="text" id="postcode" name="postcode" class="text-input">
+                        </div>
+                        <div id="country">
+                            <label for="Address">Country</label>
+                            <input type="text" id="country" name="country" class="text-input">
+                        </div>
+                    </div>
+                    <div>
+                        <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
                 </div>
             </form>
+            <div class="blurb">
+                <p>If our checks show your e-mail and or postal address to be genuine, you will receive your first Farming Futures newsletter within a few days. You will then receive new issues regularly. Our newsletter is currently published monthly.</p>
+                <p>You can cancel your email subscription at any time by pressing the button provided on your newsletter email. If you have ordered the newsletter by post only, to unsubscribe, please call +353 1 000 0000 or send empty email to unsubscribe@farmingfutures.ie.</p>
+            </div>
         </main>
 
         <!-- The Back-to-top sticky button appears when the user scrolls down. 
