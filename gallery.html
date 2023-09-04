@@ -23,57 +23,68 @@
         <div class="home-icon-container">
             <a href="index.html"><i class="fa-solid fa-house-chimney" id="home-icon"></i></a>
         </div>
-        
+
         <div class="logo-heading">
             <a href="index.html">
                 <h1 class="logo-title text-grow">Farming Futures</h1>
             </a>
             <p class="logo-subtitle">Futures in food production</p>
         </div>
-        
+
         <input type="checkbox" id="nav-site-toggle" name="nav-site-toggle">
         <label for="nav-site-toggle" class="nav-site-toggle-label">
             <i class="fa-solid fa-bars icon-grow"></i>
         </label>
 
-        <nav id="nav-site">
-            <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="present.html">The Present</a></li>
-                <li><a href="future.html">The Future</a></li>
-                <li><a href="gallery.html" class="active">Gallery</a></li>
-                <li><a href="subscribe.html">Subscribe</a></li>
+        <nav id="nav-anchor" class="nav-anchor">
+            <a href="#ag-science" class="text-grow"><i class="fa-solid fa-tractor fa-lg"></i> Ag Science</a>
+            <a href="#robotics" class="text-grow"><i class="fa-solid fa-robot fa-lg"></i> Robotics</a>
+            <a href="#artificial-intelligence" class="text-grow"><i class="fa-solid fa-brain fa-lg"></i> AI</a>
+            <a href="#events" class="text-grow"><i class="fa-regular fa-calendar-days fa-lg"></i> Events</a>
+        </nav>
+
+        <nav id="nav-site" class="nav-site">
+            <ul id="site-menu">
+                <li class="text-grow"><a href="index.html">Home</a></li>
+                <li class="text-grow"><a href="gallery.html" class="active">Gallery</a></li>
+                <li class="text-grow"><a href="subscribe.html">Subscribe</a></li>
             </ul>
         </nav>
     </header>
-    <main>
 
-    </main>
-    
+    <!-- The content wrapper is there simply to facilitate the back-to-top sticky button that appears when the user scrolls down. 
+    This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ -->
+    <content class="content-wrapper">
+        <main>
+
+        </main>
+    </content>
+
     <!-- The footer includes a noopener link to four commonly-used social media, as well as to a link to a simple 
-        <footer>
-            <ul id="social-networks">
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Facebook page (opens in new browser tab)"><i
-                            class="fa-brands fa-facebook"></i></a></li>
-                <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our twitter timeline (opens in new browser tab)"><i
-                            class="fa-brands fa-x-twitter"></i></a></li>
-                <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our youtube channel (opens in new browser tab)"><i
-                            class="fa-brands fa-youtube"></i></a></li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-                        aria-label="Visit our Instagram page (opens in new browser tab)"><i
-                            class="fa-brands fa-instagram"></i></a></li>
-            </ul>
-            <button>Imprimatur</button>
-        </footer>
-    
-    
-        <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
+        "imprimatur" page, inspired by the "impressum" page required by German, Austrian and Swiss law.-->
+    <footer>
+        <ul id="social-networks">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in new browser tab)"><i
+                        class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our twitter timeline (opens in new browser tab)"><i
+                        class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our youtube channel (opens in new browser tab)"><i
+                        class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in new browser tab)"><i
+                        class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+        <a href="imprimatur.html" class="footer-link text-grow">Imprimatur</a>
+    </footer>
+
+
+    <!-- Font Awesome kit. This script allows the user to benefit from Font Awesome utilities 
             (for standardized icons in the case of this website). I copied this code directly from
             Jo Heyndels' walkthrough project. -->
-        <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+    <script src="https://kit.fontawesome.com/3b20d96fa9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
