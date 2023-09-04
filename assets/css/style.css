@@ -503,19 +503,28 @@ ul#social-networks a {
 }
 
 
-/* Set default margin for the form */
+/* Make form flex */
+#subscribe-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Set default margin for all children in the form */
 #subscribe-form * {
     margin: 0 10px; 
 }
 
+/* styles all divisions within the subscription form except the its h2 heading */
 #shaded-area {
+    display: flex;
+    flex-direction: column;
     background-color: rgba(250, 250, 250, 0.8);
-    margin: 0;
+    width: 290px;
 }
 
 /* style heading */
 #subscribe-form h2 {
-    margin: 0 10px;
     text-align: center;
 }
 
@@ -536,9 +545,33 @@ ul#social-networks a {
     color: #454b1b;
     margin-bottom: 20px;
 }
+#name-inputs,
+#radio-buttons,
+#email-address,
+#address-inputs,
 #text-inputs {
     display: flex;
     flex-direction: column;
+    max-width: 267px;
+}
+
+#radio-buttons {
+    justify-items: center;
+    align-items: end;
+}
+
+#radio-both, 
+#radio-hard-copy,
+#radio-email {
+    display: flex;
+    flex-direction: row;
+}
+
+#radio-buttons div:last-child,
+#name-inputs input:last-child,
+#address-inputs input:last-child, 
+#submit {
+    margin-bottom: 10px;
 }
 
 .text-input {
