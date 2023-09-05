@@ -496,6 +496,8 @@ ul#social-networks a {
 /* Remove the space between the photos */
 #photos {
     line-height: 0;
+    column-count: 1;
+    column-gap: 0;
 }
 
 /* Styling code for the subscribe form. Make the form a complex flex division. */
@@ -515,7 +517,7 @@ ul#social-networks a {
 
 /* Set default margin for all children in the form */
 #subscribe-form * {
-    margin: 0 10px; 
+    margin: 0 10px;
 }
 
 /* Styles all divisions within the subscription form except the heading. Add shade. */
@@ -565,7 +567,7 @@ ul#social-networks a {
 
 ::placeholder {
     color: rgb(54, 160, 100);
-  }
+}
 
 /* The code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ (see comment below) complicates 
 the formatting and div structure of both the radio buttons and the address inputs! */
@@ -579,7 +581,7 @@ the formatting and div structure of both the radio buttons and the address input
 #radio-both {
     display: block;
     margin: 0 30px;
-    
+
 }
 
 /* The radio button itself */
@@ -595,7 +597,7 @@ the formatting and div structure of both the radio buttons and the address input
 
 .footnote {
     font-size: x-small;
-    color:#454b1b;
+    color: #454b1b;
     font-style: italic;
     padding: 15px;
 }
@@ -606,17 +608,17 @@ the formatting and div structure of both the radio buttons and the address input
     opacity: 0;
     max-height: 0;
     overflow: hidden;
-  }
+}
 
 /* Postal address inputs appear when needed 
 This code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ */
-input[type="radio"]:checked ~ #address-inputs {
+input[type="radio"]:checked~#address-inputs {
     opacity: 1;
     max-height: 295px;
     overflow: visible;
     transform: scale(1);
     transition: 0.5s;
-} 
+}
 
 #email-address {
     margin-bottom: 20px;
@@ -651,12 +653,12 @@ main.nowrap .legal-blurb {
 /* Make blurb text just a little wider than the shaded area */
 main.nowrap .legal-blurb p,
 main.nowrap .legal-blurb h3 {
-    width: 320px;   
+    width: 320px;
 }
 
 main.nowrap .legal-blurb h3 {
     text-align: center;
-    margin: 20px 0 10px;  
+    margin: 20px 0 10px;
 }
 
 main.nowrap .legal-blurb p {
@@ -709,7 +711,11 @@ address {
 
 
 /* Media query: large-screen phones or landscape views and larger (576px and upwards) */
-@media screen and (min-width: 576px) {}
+@media screen and (min-width: 576px) {
+    #photos {
+        column-count: 2;
+    }
+}
 
 
 /* Media query: tablets and larger (768px and up) */
@@ -760,7 +766,7 @@ address {
         letter-spacing: 3px;
         font-size: 180%;
     }
-    
+
     /* sub-heading */
     .logo-subtitle {
         font-size: 140%;
@@ -811,6 +817,11 @@ address {
     #ai-right {
         display: none;
     }
+
+    /* Make the gallery show three columns */
+    #photos {
+        column-count: 3;
+    }
 }
 
 
@@ -822,11 +833,24 @@ address {
         margin-left: -300px;
     }
 
+
+    /* Make the gallery show four columns */
+    #photos {
+        column-count: 4;
+    }
+}
+
+
 /* Larger desktops and larger */
 @media screen and (min-width: 1500px) {
 
     /* Move the header another bit further to the left. */
     .logo-heading {
         margin-left: -700px;
+    }
+
+    /* Make the gallery show five columns */
+    #photos {
+        column-count: 5;
     }
 }
