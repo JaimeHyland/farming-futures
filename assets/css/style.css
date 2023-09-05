@@ -16,7 +16,7 @@ body {
     font-family: 'Nunito Sans', sans-serif;
     display: flex;
     flex-direction: column;
-    color: seagreen;
+    color: #2e8b57;
 }
 
 
@@ -356,7 +356,7 @@ main {
     justify-content: center;
 }
 
-/* A covering that makes the lettuce image look out a round window */
+/* A covering that makes the lettuce image look out of a round window */
 #cover-bg {
     background: url('../images/lettuce.webp') no-repeat top center / cover;
     height: 90vw;
@@ -446,6 +446,7 @@ footer {
     padding: 10px;
     bottom: 0;
     width: 100%;
+    box-shadow: 0 -2px 2px -2px rgb(18, 55, 34);
 }
 
 footer>ul#social-networks {
@@ -484,30 +485,20 @@ ul#social-networks a {
     position: relative;
 }
 
-/* Styling code for the subscribe page */
-#subscribe-form {
-    display: flex;
-    flex-direction: column;
-    flex: 1 0 auto;
-    background-image: url('../images/agricultural-drone.webp');
-    background-size: cover;
-    background-position: 75%;
-    padding: 20px 10% 0 10%;
-    margin-top: 47px;
-    margin-bottom: 30px;
-    margin-left: 10%;
-    margin-right: 10%;
-    color: black;
-    padding: 30px;
-    margin: 0;
-}
 
-
-/* Make form flex */
+/* Styling code for the subscribe form. Make the form a flex form. */
 #subscribe-form {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 0 auto;
+    background-image: url('../images/agricultural-drone.webp');
+    background-size: cover;
+    background-position: 75%;
+    padding: 20px 10%;
+    margin: 47px 10% 30px;
+    color: black;
+    margin: 0;
 }
 
 /* Set default margin for all children in the form */
@@ -515,7 +506,7 @@ ul#social-networks a {
     margin: 0 10px; 
 }
 
-/* styles all divisions within the subscription form except the its h2 heading */
+/* Styles all divisions within the subscription form exceptg the heading. Add shade. */
 #shaded-area {
     display: flex;
     flex-direction: column;
@@ -523,28 +514,25 @@ ul#social-networks a {
     width: 290px;
 }
 
-/* style heading */
+
+/* style subscription form heading */
 #subscribe-form h2 {
     text-align: center;
+    margin-bottom: 10px;
 }
 
+
+/* Style input fields and labels */
 #subscribe-form input {
     border-radius: 5px;
     border-color: #2e8b57;
-}
-
-#subscribe-form h2 {
-    margin-bottom: 10px;
 }
 
 #subscribe-form label {
     margin-top: 10px;
 }
 
-#subscribe h2 {
-    color: #454b1b;
-    margin-bottom: 20px;
-}
+/* Set all input divs in their own column */
 #name-inputs,
 #radio-buttons,
 #email-address,
@@ -555,35 +543,70 @@ ul#social-networks a {
     max-width: 267px;
 }
 
-#radio-buttons {
-    justify-items: center;
-    align-items: end;
-}
-
-#radio-both, 
-#radio-hard-copy,
-#radio-email {
-    display: flex;
-    flex-direction: row;
-}
-
-#radio-buttons div:last-child,
-#name-inputs input:last-child,
-#address-inputs input:last-child, 
-#submit {
-    margin-bottom: 10px;
-}
-
 .text-input {
     background-color: transparent;
     color: #454b1b;
     border-radius: 3px;
-    width: 240px;
+    max-width: 240px;
     height: 25px;
 }
 
+::placeholder {
+    color: rgb(54, 160, 100);
+  }
+
+/* The code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ (see comment below) complicates 
+the formatting and div structure of both the radio buttons and the address inputs! */
+#radio-email {
+    display: flex;
+    flex-direction: row;
+    margin: 0 30px;
+    justify-content: space-between;
+}
+
+#radio-both {
+    display: block;
+    margin: 0 30px;
+    
+}
+
+/* The radio button itself */
+#both {
+    float: right;
+}
+
+
+#address-inputs * {
+    width: 290px;
+    margin-left: -20px;
+}
+
+.footnote {
+    font-size: x-small;
+    color:#454b1b;
+    font-style: italic;
+}
+
+
+/* no postal address inputs are shown when no postal address is needed */
+#address-inputs {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+/* Postal address inputs appear when needed 
+This code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ */
+input[type="radio"]:checked ~ #address-inputs {
+    opacity: 1;
+    max-height: 295px;
+    overflow: visible;
+    transform: scale(1);
+    transition: 0.5s;
+} 
+
 .subscribe-button {
-    margin: 0 20px;
+    margin: 30px 20px;
     align-self: center;
     height: 32px;
     width: 120px;
@@ -593,7 +616,40 @@ ul#social-networks a {
 }
 
 
-/* code for the imprimatur */
+
+/* Make the info text the same width as the form */
+main.nowrap .legal-blurb {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 0 auto;
+    background-color: #2e8b57;
+    color: #fafafa;
+    background-size: cover;
+    background-position: 75%;
+    padding: 10px 0 30px;
+    margin: 0;
+}
+
+
+/* Make blurb text just a little wider than the shaded area */
+main.nowrap .legal-blurb p,
+main.nowrap .legal-blurb h3 {
+    width: 320px;   
+}
+
+main.nowrap .legal-blurb h3 {
+    text-align: center;
+    margin: 20px 0 10px;  
+}
+
+main.nowrap .legal-blurb p {
+    text-align: justify;
+    padding-left: 0;
+}
+
+
+/* code for the imprimatur (also used in subscribe) */
 .legal-blurb {
     padding: 6px 12px;
     background-color: seagreen;
@@ -618,7 +674,7 @@ ul#social-networks a {
     font-size: x-large;
     font-weight: 700;
     letter-spacing: 1px;
-    margin: 8px 0;
+    margin: 20px 0;
 }
 
 .declaration {
@@ -636,7 +692,7 @@ address {
 }
 
 
-/* Media query: large-screen phones or landscape views (576px and upwards) */
+/* Media query: large-screen phones or landscape views and larger (576px and upwards) */
 @media screen and (min-width: 576px) {}
 
 
@@ -714,7 +770,7 @@ address {
 }
 
 
-/* Large devices (laptops and desktops, 960px and up) */
+/* Medium-screen devices (laptops and smaller desktop screens) and larger, 960px and up) */
 @media screen and (min-width: 960px) {
 
     /* Move the header yet further to the left. */
@@ -742,11 +798,19 @@ address {
 }
 
 
-/* Large desktops */
+/* larger laptops, desktops and larger */
 @media screen and (min-width: 1200px) {
 
     /* Move the header another bit further to the left. */
     .logo-heading {
         margin-left: -300px;
+    }
+
+/* Larger desktops and larger */
+@media screen and (min-width: 1500px) {
+
+    /* Move the header another bit further to the left. */
+    .logo-heading {
+        margin-left: -700px;
     }
 }

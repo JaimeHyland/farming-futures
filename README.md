@@ -83,6 +83,9 @@ All pages include a **go-to-top button**, which appears at bottom right, just ab
 ## Accessibility
 I have given all images used (other than merely decorative background images) a sr-readable alt text. Throughout the website, font colours appear on sufficiently contrasting backgrounds, with the addition where necessary of semi-opaque background colours over background images.
 
+## Responsiveness
+My main approach to achieving responsiveness was simply to look at my code using Google Chrome on larger second PC screen with developer tools enabled, switching between emulated screen sizes and intervening by adjusting flex attributes or adding screen queries wherever it seemed necessary. I also used the https://www.rapidtables.com/  site to identify viewing window sizes too large to see with the Google developer inspection tool in use.
+
 
 ## Development & implementation environment, and deployment
 All the code created during this project was written using gitpod.io, with version control using git, and deployed via github on a daily basis.
@@ -146,31 +149,35 @@ One issue I haven't had yet time to research is the implications of differing us
 ## What doesn't work
 ### ... because it's outside the scope of project
 Some functionality is incomplete in the project, especially the following:
-- Social media links are to the home pages of the respective media
-- No account exists for the e-mail link that appears on the imprimatur page
-- All addresses are fictional
-- Form data entered via the site is sent to code institute's test environment rather than being collected and saved
-- The traditional splashscreen to conform with EU GPDR regulations is unnecessary, as no data is being collected in reality
-- Various functionalities requiring javascript have not been implemented as the site is designed to use effectively exclusively html and css technologies
- - The menus should disappear when the user selects an item on them or taps/clicks anywhere else on the screen (as this is done most effectively using javascript, I have postponed implementing this and similar functionalities until I have learnt a little javascript)
+- Social media links are to the home pages of the respective media.
+- No account exists for the e-mail link that appears on the imprimatur page.
+- All addresses are fictional.
+- Form data entered via the site is sent to code institute's test environment rather than being collected and saved.
+ - The 'required' functionality for the postal address section of the subscription page has not been implemented because there appears to be no easy way to remove the required attribute from hidden data input fields using purely html and css.
+- The traditional splashscreen to conform with EU GPDR regulations is unnecessary, as no data is being collected in reality.
+- Various other functionalities requiring javascript have not been implemented as the site is designed to use effectively exclusively html and css technologies, for example, the menus should really disappear when the user selects an item on them or taps/clicks anywhere else on the screen (as this is done most effectively using javascript, I have postponed implementing this and similar functionalities until I have learnt a little javascript).
 
-### ... for lack of time & skill
+
+### ... for lack of time, skill and/or data
 Pressure of time and my current ignorance of the finer points of aesthetic web design has meant that:
--  I haven't been able to use a range of tints, much less adopt and implement a fully-fledged colour palette.
-- The favicon images are not particularly attractive in basic design or colour scheme. If I had my time over, I would have made them very differently.
+- I haven't been able to use a range of tints, much less adopt and implement a fully-fledged colour palette.
+- I'm not very happy with basic design of the various favicon images I created (see Favicons). I deployed them anyway to demonstrate that I understand how to deal with such images ... and because the colours at least match the site. If I had my time over, I would have used a simpler, more iconic image.
 - I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
 - I would have liked to implement interactivity with the events, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
+- I originally intended to hide the top-left anchor link on the home page for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
 
 Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
 
-Also due to lack of time, some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). In a real-life site, that wouldn't happen.
+Also due to lack of time, some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). Some of the pictures used as background images appear once more in the gallery. I would rarely allow that on a real-life website.
 
-Aside from all that, I have included fictional references on the 'Explore' page that simply link to Wikipedia pages. They'd be genuine external links to an authoritative source in a real-life situation.
+Aside from all that, I have included fictional references on the 'Explore' page that simply link to Wikipedia entries. For all the respect I have for Wikipedia, I doubt it would often make sense for a specialist reference webpage to provide links to Wikipedia. In a real-life situation, online references would usually contain genuine external links to an authoritative and/or professional source.
+
+Finally, the footer on each page doesn't look quite right if the main section above it is too small to require scrolling. This is due to the wrong value for the length of the main section being calculated in the code used to implement the 'back to top' button. I have worked around this issue by ensuring that scrolling is necessary on all common screen sizes (except in the case of the gallery, which still shows the problem). Repairing this issue would be my first step in any future development of the site.
 
 
 ## Credits and sources
 ### Code institute's own resources
-Almost all the code is my own, though much of it either follows closely or takes direct lessons from the code created by Jo Heyndels for the 'Love Running' walkthrough project and/or Anne Greaves' 'Coders Coffeehouse' site. Many thanks are due to both Jo and Anne for their beautiful static websites and their clear instructions and high-quality learning material. I have included an appropriate comment beside the one or two snippets of code directly copied from Jo's walkthrough project. Implicit thanks go to everyone involved in authoring the Code Institute learning materials for this part of the course.
+Almost all the code is my own, though much of it either follows closely or takes direct lessons from the code created by Jo Heyndels for the 'Love Running' walkthrough project and/or Anne Greaves' 'Coders Coffeehouse' site. Many thanks are due to both Jo and Anne for their beautiful static websites, their clear instructions and high-quality learning material. I have included an appropriate comment beside the one or two snippets of code directly copied from Jo's walkthrough project. Implicit thanks go to everyone involved in authoring the Code Institute learning materials for this part of the course.
 
 ### External technical sources
 Naturally enough, have researched widely to find out how to implement a variety of features not explicitly included in Code Institute's learning materials, including several visits to the following sites:
@@ -180,8 +187,13 @@ Naturally enough, have researched widely to find out how to implement a variety 
 - https://www.bestcolleges.com/
 - https://css-tricks.com/
 - https://developer.mozilla.org/
+- https://www.codecademy.com/
 
 However, the only external source from which I directly copied was freecodecamp.org, from which I more or less directly copied the back-to-top button functionality (https://www.freecodecamp.org/news/css-only-back-to-top-button/). The place where I copied that code is therefore the only place in my project I have marked any code as being other than my own (though this approach probably does an injustice to Jo).
+
+### Favicons
+
+I created a primitive 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
 
 ### Acknowledgements for images used
 With the exception of the very rough and ready set of favicon files that I cobbled together, none of the images used on this project were original to me. I have provided acknowlegements for each of the images individually below.
@@ -208,9 +220,10 @@ Apart from Jo and Anne and the authors of the various online resources I used, I
 - add tooltip to anchor icon
 - add an iframe
 - add screenshots and feature explanations to readme
+- create links on readme and ensure that they work
+- check for excessive blank lines in css and html
 - complete comments in code
-- check file names for consistency, conformity and logic
 - check attribute names and values for consistency, conformity and logic
 - check for correct use of ids and classes
 - check headers and footers for function and consistency on each page
-- implement main sections on gallery, explore and imprimatur pages
+- implement main sections on gallery and explore pages
