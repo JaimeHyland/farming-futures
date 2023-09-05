@@ -73,11 +73,20 @@ I have selected a plain dark green color (seagreen: #2e8b57) as the site's main 
 Throughout the website, font colours appear on sufficiently contrasting backgrounds. the addition of semi-opaque background colours are overlaid overbackground images to absolutely ensure readibility.
 
 ### Background images
-I used background images in several places on the home page and on the form contained in the subscribe page. 
+I used background images in several places on the home page was well as on the subscribe page. I have ensured that all the text overlying the images is readable at various screen resolutions.
 
 
 ## Other features
+I have implemented a number of other features, some of the most prominent being the following:
+
+### Favicons
+I created a primitive 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
+
+### Go-to-top button
 All pages include a **go-to-top button**, which appears at bottom right, just above the footer as soon as the user has scrolled at least 100px. Where the information on the page is limited and/or when viewing on a screen size where no scrolling is necessary, the go-to-top button never appears.
+
+### Unnecessary input fields hidden
+In subscription screen I implemented a simple css-only function to keep non-essential postal address input fields hidden until clicking a radio button makes them relevant.
 
 
 ## Accessibility
@@ -190,10 +199,6 @@ Naturally enough, have researched widely to find out how to implement a variety 
 - https://www.codecademy.com/
 
 However, the only external source from which I directly copied was freecodecamp.org, from which I more or less directly copied the back-to-top button functionality (https://www.freecodecamp.org/news/css-only-back-to-top-button/). The place where I copied that code is therefore the only place in my project I have marked any code as being other than my own (though this approach probably does an injustice to Jo).
-
-### Favicons
-
-I created a primitive 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
 
 ### Acknowledgements for images used
 With the exception of the very rough and ready set of favicon files that I cobbled together, none of the images used on this project were original to me. I have provided acknowlegements for each of the images individually below.

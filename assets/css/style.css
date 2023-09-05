@@ -506,7 +506,7 @@ ul#social-networks a {
     margin: 0 10px; 
 }
 
-/* Styles all divisions within the subscription form exceptg the heading. Add shade. */
+/* Styles all divisions within the subscription form except the heading. Add shade. */
 #shaded-area {
     display: flex;
     flex-direction: column;
@@ -585,6 +585,7 @@ the formatting and div structure of both the radio buttons and the address input
     font-size: x-small;
     color:#454b1b;
     font-style: italic;
+    padding: 15px;
 }
 
 
@@ -605,6 +606,10 @@ input[type="radio"]:checked ~ #address-inputs {
     transition: 0.5s;
 } 
 
+#email-address {
+    margin-bottom: 20px;
+}
+
 .subscribe-button {
     margin: 30px 20px;
     align-self: center;
@@ -614,7 +619,6 @@ input[type="radio"]:checked ~ #address-inputs {
     background-color: #2e8b57;
     color: #fafafa;
 }
-
 
 
 /* Make the info text the same width as the form */
