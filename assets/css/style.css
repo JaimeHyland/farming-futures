@@ -486,7 +486,19 @@ ul#social-networks a {
 }
 
 
-/* Styling code for the subscribe form. Make the form a flex form. */
+/* Styling code for the gallery page. */
+/* Make them fit in their column */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+/* Remove the space between the photos */
+#photos {
+    line-height: 0;
+}
+
+/* Styling code for the subscribe form. Make the form a complex flex division. */
 #subscribe-form {
     display: flex;
     flex-direction: column;
