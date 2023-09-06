@@ -254,7 +254,7 @@ Naturally enough, have researched widely to find out how to implement a variety 
 
 However, the only external source from which I directly copied was freecodecamp.org, from whom I more or less directly copied the [back-to-top button functionality](https://www.freecodecamp.org/news/css-only-back-to-top-button/).
 
-I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com/](https://markdowntohtml.com/) for some of the work on the Explore page.
+I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com](https://markdowntohtml.com/) for some of the work on the Explore page.
 
 ### Acknowledgements for images used
 None of the images used on this project were original to me. I have provided acknowledgments for each of the images individually below.
@@ -270,20 +270,24 @@ As mentioned above, all icons were taken from [Font Awesome](https://fontawesome
 
 
 ### Personal thanks
-Apart from Jo and Anne and the authors of the various online resources I used, I owe special thanks to the following people:
+Apart from Jo and Anne and the authors of the various online resources I (because they were all made by humans!), I owe special thanks to the following people:
 - My mentor, Oluwafemi Medale, for being available every time I needed him, and for providing high-quality, relevant and timely advice;
-- David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up to submission deadline, and who provided the service of a second mentor;
-- Code Institute's tutoring team, whose help I probably didn't lean on as much as I should have, and whose time I am determined to infringe on much more intensely in the run-up to my next deadline;
+- David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up to submission deadline, and who generally acted as a supplementary mentor;
+- Code Institute's excellent tutoring team, whose help I probably didn't lean on as much as I should have;
 - My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
 
 
 ## todo
 - add an iframe
 - add a video
+KEEP AN EYE OUT FOR INCONSISTENT CODING
+- sort out the formatting issue David pointed out
 - check for excessive blank lines in css and html
 - check headers and footers for function and consistency on each page
-- add video and image acknowledgements
 - check all external and internal links
-- tidy up styling
+- fix hidden go-to-top button on gallery page
+- add video and image acknowledgements
+- tidy up and unify styling
 - run smoke checks
 - run code validation
+- generate table of contents
