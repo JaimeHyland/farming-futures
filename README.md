@@ -14,7 +14,7 @@ TOC
 
 ## The website as it looks on-screen
 
-[Images of the website on various screen sizes](.assets/readme.assets/site-responsive.png)
+[Images of the website on various screen sizes](.assets/readme-assets/site-responsive.png)
 
 ### A live demo to the website can be found [here](https://jaimehyland.github.io/farming-futures/)
 
