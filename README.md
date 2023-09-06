@@ -146,7 +146,7 @@ I have implemented a number of other features, some of the most prominent being 
 
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
-I created a primitive 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
+I created a 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
 
 <!-- TOC --><a name="go-to-top-button"></a>
 ### Go-to-top button
@@ -291,9 +291,9 @@ Naturally enough, have researched widely to find out how to implement a variety 
 - https://developer.mozilla.org/
 - https://www.codecademy.com/
 
-However, the only external source from which I directly copied was freecodecamp.org, from which I more or less directly copied the back-to-top button functionality (https://www.freecodecamp.org/news/css-only-back-to-top-button/). The place where I copied that code is therefore the only place in my project I have marked any code as being other than my own (though this approach probably does an injustice to Jo).
+However, the only external source from which I directly copied was freecodecamp.org, from whom I more or less directly copied the [back-to-top button functionality](https://www.freecodecamp.org/news/css-only-back-to-top-button/).
 
-I used https://derlin.github.io/bitdowntoc/ to generate this readme file's table of contents.
+I used https://derlin.github.io/bitdowntoc/ to generate this readme file's table of contents. I also used [markdowntohtml.com/](https://markdowntohtml.com/) to convert the markdown code I wrote for the explore page into raw html.
 
 <!-- TOC --><a name="acknowledgements-for-images-used"></a>
 ### Acknowledgements for images used

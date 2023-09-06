@@ -20,13 +20,12 @@ body {
 }
 
 
-/* default simple animation of all link elements on site */
+/* default animation of link elements */
 .icon-grow,
 .text-grow {
     transition: all .2s ease-in-out;
 }
 
-/* the icons need to grow a little more than the text */
 .text-grow:hover,
 .text-grow:active {
     transform: scale(1.1);
@@ -35,8 +34,10 @@ body {
 .icon-grow:hover,
 .icon-grow:active {
     transform: scale(1.2);
-    border-top: 1px solid seagreen;
+    border-bottom: 1px solid seagreen;
 }
+
+
 
 
 /* Header styling */
