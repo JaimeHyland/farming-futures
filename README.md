@@ -10,8 +10,9 @@ This website was developed to showcase my ability to design and create a static 
 ## Introduction
 This website was prepared for presentation as a first portfolio project for my online course in Full-Stack programming with Code Institute, based in Blackrock, Co. Dublin. I have interpreted the task as being to exhibit my ability to produce a simple website using almost exclusively html and css technologies. This includes a requirement to ensure that the website functions correctly and looks professional and complete, but as my course is not in creative web design, I have spent less time and effort on finer aesthetic questions. As the project will be judged according to the criteria set out in the relevant assessment guide contained in the Code Institute LMS, I have tried to be guided by that document.
 
+<details>
+  <summary>Table of Contents</summary>
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
 - [The website as it looks on-screen](#the-website-as-it-looks-on-screen)
   * [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
 - [User experience](#user-experience)
@@ -58,8 +59,7 @@ This website was prepared for presentation as a first portfolio project for my o
   * [Acknowledgements for images used](#acknowledgements-for-images-used)
   * [Personal thanks](#personal-thanks)
 - [todo](#todo)
-
-<!-- TOC end -->
+</details>
 
 <!-- TOC --><a name="the-website-as-it-looks-on-screen"></a>
 ## The website as it looks on-screen
@@ -264,6 +264,7 @@ Pressure of time and my current ignorance of the finer points of aesthetic web d
 - I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
 - I would have liked to implement interactivity with the events, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
 - I originally intended to hide the top-left anchor link on the home page for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
+- The gallery displays images in the order in which I inserted them. In future, they should display in random order. As development continues, they will become more responsive to 
 
 Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
 
