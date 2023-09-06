@@ -38,8 +38,6 @@ body {
 }
 
 
-
-
 /* Header styling */
 header {
     display: flex;
@@ -56,8 +54,6 @@ header {
 }
 
 /* ANCHOR LINKS */
-/* Offsets any jump to any anchor link from any anchor link to prevent the anchor point being covered by the header. Adjust the px when changing the header height.  */
-/* 'scroll-behavior: smooth;' turns what would otherwise have been a sudden jump into a smooth scrolling movement. */
 body,
 html {
     scroll-padding-top: 87px;
@@ -250,8 +246,7 @@ html {
 }
 
 
-/* main section wrapper to facilitate back-to-top button. 
-This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ */
+/* main section wrapper to facilitate back-to-top button. */
 .content-wrapper {
     display: grid;
     grid-template-columns: auto 0px;
@@ -264,7 +259,6 @@ main {
     flex: 1 0 auto;
     margin-top: 87px;
     overflow: hidden;
-    overflow-y: scroll;
 }
 
 #hero {
@@ -349,15 +343,13 @@ main {
     margin-top: 10px;
 }
 
-/* Place the lettuce picture at the centre of the breakthroughs section */
-/* This code is almost entirely copied from the 'love-running' site */
+/* Place the lettuce at the centre of the breakthroughs section */
 #breakthroughs-image {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* A covering that makes the lettuce image look out of a round window */
 #cover-bg {
     background: url('../images/lettuce.webp') no-repeat top center / cover;
     height: 90vw;
@@ -415,8 +407,7 @@ main {
 }
 
 
-/* The back-to-top button. 
-This function was copied almost line-by-line from https://www.freecodecamp.org/news/css-only-back-to-top-button/ */
+/* The back-to-top button.*/
 .back-to-top {
     position: sticky;
     text-decoration: none;
@@ -427,15 +418,14 @@ This function was copied almost line-by-line from https://www.freecodecamp.org/n
     place-self: end;
     position: sticky;
     bottom: 20px;
-    --offset: 100px;
+    --offset: 87px;
     margin-top: calc(100vh + var(--offset));
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
 
-/* footer styling (the position and top attributes are added first to make the footer stick to the bottom of the 
-page where the header and content cover less than the screen height) */
+/* footer styling  */
 footer {
     position: sticky;
     top: 100vh;
@@ -464,7 +454,7 @@ ul#social-networks a {
 }
 
 
-/* imprimatur link at bottom right (home link on the imprimatur page) */
+/* imprimatur */
 .footer-link {
     margin: 0 10px;
     font-size: 16px;
@@ -474,7 +464,7 @@ ul#social-networks a {
 }
 
 
-/* Code for the home icon at top left on any other page than the home page (the home icon replaces the anchor menu icons on all child pages)  */
+/* home icon at top left on all child pages  */
 #home-icon {
     font-size: 30px;
     background-color: seagreen;
@@ -487,21 +477,38 @@ ul#social-networks a {
 }
 
 
-/* Styling code for the gallery page. */
-/* Make them fit in their column */
+/* Gallery */
 #photos img {
     width: 100%;
     line-height: 1em;
 }
 
-/* Remove the space between the photos */
 #photos {
     line-height: 0;
     column-count: 1;
     column-gap: 0;
 }
 
-/* Styling code for the subscribe form. Make the form a complex flex division. */
+
+/* Explore page */
+.explore {
+    margin: 8px 30px;
+}
+
+h1.explore,
+h2.explore  {
+    padding-top: 30px;
+}
+
+h1.explore {
+    text-align: center;
+}
+
+p.explore {
+    text-align: justify;
+}
+
+/* Subscribe page. */
 #subscribe-form {
     display: flex;
     flex-direction: column;
@@ -521,23 +528,18 @@ ul#social-networks a {
     margin: 0 10px;
 }
 
-/* Styles all divisions within the subscription form except the heading. Add shade. */
 #shaded-area {
     display: flex;
     flex-direction: column;
     background-color: rgba(250, 250, 250, 0.8);
-    width: 290px;
+    width: 330px;
 }
 
-
-/* style subscription form heading */
 #subscribe-form h2 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-
-/* Style input fields and labels */
 #subscribe-form input {
     border-radius: 5px;
     border-color: #2e8b57;
@@ -570,8 +572,7 @@ ul#social-networks a {
     color: rgb(54, 160, 100);
 }
 
-/* The code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ (see comment below) complicates 
-the formatting and div structure of both the radio buttons and the address inputs! */
+/* all the divs are there to make it possible to align the hidden inputs (when they appear) with the visible ones.  */
 #radio-email {
     display: flex;
     flex-direction: row;
@@ -596,15 +597,6 @@ the formatting and div structure of both the radio buttons and the address input
     margin-left: -20px;
 }
 
-.footnote {
-    font-size: x-small;
-    color: #454b1b;
-    font-style: italic;
-    padding: 15px;
-}
-
-
-/* no postal address inputs are shown when no postal address is needed */
 #address-inputs {
     opacity: 0;
     max-height: 0;
@@ -635,8 +627,15 @@ input[type="radio"]:checked~#address-inputs {
     color: #fafafa;
 }
 
+.footnote {
+    font-size: x-small;
+    color: #454b1b;
+    font-style: italic;
+    padding: 15px;
+}
 
-/* Make the info text the same width as the form */
+
+/* Style info text */
 main.nowrap .legal-blurb {
     display: flex;
     flex-direction: column;
@@ -650,8 +649,7 @@ main.nowrap .legal-blurb {
     margin: 0;
 }
 
-
-/* Make blurb text just a little wider than the shaded area */
+/* bllurb text */
 main.nowrap .legal-blurb p,
 main.nowrap .legal-blurb h3 {
     width: 320px;
@@ -668,7 +666,7 @@ main.nowrap .legal-blurb p {
 }
 
 
-/* code for the imprimatur (also used in subscribe) */
+/* code for the imprimatur */
 .legal-blurb {
     padding: 6px 12px;
     background-color: seagreen;
@@ -684,7 +682,6 @@ main.nowrap .legal-blurb p {
 .legal-blurb p {
     padding: 0 8px;
     font-size: 14px;
-
     background-color: seagreen;
     color: #fafafa;
 }
@@ -715,6 +712,11 @@ address {
 @media screen and (min-width: 576px) {
     #photos {
         column-count: 2;
+    }
+
+    /* Increase l & r margins on the Explore page */
+    .explore {
+        margin: 8px 45px;
     }
 }
 
@@ -787,10 +789,20 @@ address {
     }
 
 
-    /* Push the main content down to accommodate the bigger header */
+    /* Push the main content down to accommodate the bigger header, adjust the back-to-top button */
     main {
         margin-top: 101px;
     }
+
+    #back-to-top {
+        --offset: 101px;
+        margin-top: calc(100vh + var(--offset));
+    }
+
+    .explore {
+        margin: 8px 70px;
+    }
+
 }
 
 
@@ -824,21 +836,29 @@ address {
     #photos {
         column-count: 3;
     }
+
+    
+    .explore {
+        margin: 8px 110px;
+    }
 }
 
 
 /* larger laptops, desktops and larger */
 @media screen and (min-width: 1200px) {
 
-    /* Move the header another bit further to the left. */
     .logo-heading {
         margin-left: -300px;
     }
 
 
-    /* Make the gallery show four columns */
     #photos {
         column-count: 4;
+    }
+
+    
+    .explore {
+        margin: 8px 170px;
     }
 }
 
@@ -851,8 +871,14 @@ address {
         margin-left: -700px;
     }
 
-    /* Make the gallery show five columns */
+    
+
     #photos {
         column-count: 5;
+    }
+
+
+    .explore {
+        margin: 8px 250px;
     }
 }

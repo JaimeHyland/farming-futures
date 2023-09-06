@@ -4,78 +4,26 @@
 
 ## Code Institute - First Milestone Project: Create a responsive, user-centred static website.
 
-This website was developed to showcase my ability to design and create a static website.
+![Image of the website on various screen sizes](assets/readme-assets/site-responsive.png)
 
+This website was originally developed to showcase my ability to design and create a static website.
+
+- - -
+
+TOC
+
+- - -
 
 ## Introduction
 This website was prepared for presentation as a first portfolio project for my online course in Full-Stack programming with Code Institute, based in Blackrock, Co. Dublin. I have interpreted the task as being to exhibit my ability to produce a simple website using almost exclusively html and css technologies. This includes a requirement to ensure that the website functions correctly and looks professional and complete, but as my course is not in creative web design, I have spent less time and effort on finer aesthetic questions. As the project will be judged according to the criteria set out in the relevant assessment guide contained in the Code Institute LMS, I have tried to be guided by that document.
 
-<details>
-  <summary>Table of Contents</summary>
-<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-- [The website as it looks on-screen](#the-website-as-it-looks-on-screen)
-  * [A live demo to the website can be found here](#a-live-demo-to-the-website-can-be-found-here)
-- [User experience](#user-experience)
-  * [User stories](#user-stories)
-- [Functional structure](#functional-structure)
-  * [Initial structure](#initial-structure)
-  * [Website pages](#website-pages)
-  * [Page sections](#page-sections)
-- [Technical structure](#technical-structure)
-  * [Skeleton and file storage](#skeleton-and-file-storage)
-- [Accessibility](#accessibility)
-  * [Images and alt texts](#images-and-alt-texts)
-  * [Colors](#colors)
-  * [Background images](#background-images)
-- [Other features](#other-features)
-  * [Favicons](#favicons)
-  * [Go-to-top button](#go-to-top-button)
-  * [Unnecessary input fields hidden](#unnecessary-input-fields-hidden)
-- [Accessibility](#accessibility-1)
-- [Responsiveness](#responsiveness)
-- [Development & implementation environment, and deployment](#development-implementation-environment-and-deployment)
-- [Design, development & coding philosophy; approach to version control](#design-development-coding-philosophy-approach-to-version-control)
-  * [Wireframe](#wireframe)
-  * [Sequence of coding steps](#sequence-of-coding-steps)
-  * [Commits](#commits)
-  * [Minimising code clutter](#minimising-code-clutter)
-  * [ID vs class](#id-vs-class)
-  * [Comments in code and order of appearance of css selectors on the style.css file](#comments-in-code-and-order-of-appearance-of-css-selectors-on-the-stylecss-file)
-  * [Iterative deployment](#iterative-deployment)
-- [Testing](#testing)
-  * [Iterative testing, validation and troubleshooting - during ongoing development and before final submission.](#iterative-testing-validation-and-troubleshooting-during-ongoing-development-and-before-final-submission)
-  * [Final testing and validation before submission](#final-testing-and-validation-before-submission)
-- [Lessons learnt](#lessons-learnt)
-  * [Mobile first](#mobile-first)
-  * [One-person agile programming](#one-person-agile-programming)
-  * [Time management](#time-management)
-- [Lessons not (yet) learned](#lessons-not-yet-learned)
-- [What doesn't work](#what-doesnt-work)
-  * [... because it's outside the scope of project](#-because-its-outside-the-scope-of-project)
-  * [... for lack of time, skill and/or data](#-for-lack-of-time-skill-andor-data)
-- [Credits and sources](#credits-and-sources)
-  * [Code institute's own resources](#code-institutes-own-resources)
-  * [External technical sources](#external-technical-sources)
-  * [Acknowledgements for images used](#acknowledgements-for-images-used)
-  * [Personal thanks](#personal-thanks)
-- [todo](#todo)
-</details>
+**A live demo of the website, as deployed within github's hosting environment, can be found [here]**(https://jaimehyland.github.io/farming-futures/)
 
-<!-- TOC --><a name="the-website-as-it-looks-on-screen"></a>
-## The website as it looks on-screen
+- - -
 
-![Images of the website on various screen sizes](assets/readme-assets/site-responsive.png)
-
-<!-- TOC --><a name="a-live-demo-to-the-website-can-be-found-here"></a>
-### A live demo to the website can be found [here](https://jaimehyland.github.io/farming-futures/)
-
-
-<!-- TOC --><a name="user-experience"></a>
 ## User experience
 Farming Futures is a website intended to attract, inform and inspire **professionals in the agricultural industry** (whether actually on the farm or producing goods and services for the industry) whose skills are not specialised in agricultural AI or robotics. It may also inspire **laypeople** with an interest in the future of agriculture. From the point of view of the **site owner** (a fictional Irish-based specialist charity going by the name of _Farming Futures_), the site is aimed at inspiring confidence among users in the owner body's professionalism and expertise on the relevant topics.
 
-
-<!-- TOC --><a name="user-stories"></a>
 ### User stories
 As a user, I want to:
 - understand the purpose of the website almost immediately upon visiting it;
@@ -90,164 +38,185 @@ As a user, I want to:
 As a user, I will not expect to:
 - find detailed concrete or practical text-based technical or academic information within this site.
 
+- - -
 
-<!-- TOC --><a name="functional-structure"></a>
-## Functional structure
-<!-- TOC --><a name="initial-structure"></a>
-### Initial structure
-I have followed a paradigm in which the main content of the site is contained within the home page and in which the other pages on the site contain ancilliary information and services. This paradigm, however, is likely to change as the site further develops. The home page will likely shrink to become more like a simple attractive landing page and starting point for user exploration.
+## Structure from the user's point of view
+### Basic initial structure
+I have followed a paradigm in which the main content of the site is contained within the home page and in which the other pages on the site contain ancilliary information and services. This paradigm, however, is likely to change as the site further develops. The home page will likely shrink to become more like a simple, yet attractive landing page and starting point for user exploration.
 
-<!-- TOC --><a name="website-pages"></a>
 ### Website pages
 The site consists of:
-1. **_Home page:_** The main page of the site, containing inspirational information and links to other parts of the site.
+1. **_Home page:_** The main page of the site, which contains inspirational key concepts, information on upcoming and recent events and links to other parts of the site.
 2. **_Gallery:_** A page showing additional inspirational images of AI and robotics in action in agriculture.
-3. **_Subscribe:_** A page providing the user the opportunity to sign up to the site owner's (fictional) hard-copy or online newsletter.
-4. **_Explore:_** A page providing links to outside information on robotics and AI in agriculture. It should be considered a non-academic reference page.
-5. **_Imprimatur:_** A page accessible only via a link on the footer, giving the user basic information on the bodies and people legally responsible for the content of the website. It is excluded from the navigation menu on the header to prevent clutter.
+3. **_Subscribe:_** A page providing the user with the opportunity to sign up to the site owner's (fictional) hard-copy or online newsletter.
+4. **_Explore:_** A page providing links to outside information on robotics and AI in agriculture. It should be considered a starting point for further exploration, not as a scholarly reference list.
+5. **_Imprimatur:_** A page accessible only via a link on the footer. It provides the user with basic information on the bodies and human beings legally responsible for the content of the website. Following the established convention for such pages, it is excluded from the navigation menu on the header to prevent clutter.
 
-<!-- TOC --><a name="page-sections"></a>
 ### Page sections
 Each page contains three sections:
 1. **_Header:_** The header contains the main navigation functions. It is almost identical on each page, though the home page includes an anchor menu to help the user explore the various sections within the page.
 2. **_Content:_** Contains the main content of the page. This section is most substantial on the home page, which contains several subsections.
-3. **_Footer:_** Contains links to the site-owner's (fictional) social media accounts, and to the **imprimatur** page. The footer is identical on all pages.
+3. **_Footer:_** Contains links to the site-owner's (fictional) social media accounts, as well as to the **Imprimatur** page. The footer is identical on all pages with the exception of the _imprimatur_ page where the link becomes yet another link back to _Home_.
 
+- - -
 
-<!-- TOC --><a name="technical-structure"></a>
-## Technical structure
-<!-- TOC --><a name="skeleton-and-file-storage"></a>
-### Skeleton and file storage
-The website contains just two layers of files: the home page and its four direct children. All html files are located directly in the site's root directory.
-All assets are contained in an assets subdirectory placed within the root directory, with style assets contained in the _assets/css subdirectory_, photographs (in webp format) in _assets/images_ and favicon assets in _assets/favicon_.
+## Technical structure (what it looks like under the bonnet)
+This simple website contains just two layers of html files: the home page and its four direct children. However, all html files are located at a single level directly in the site's root directory.
+All the required assets are contained in an assets subdirectory placed within the root directory, with style assets contained in the _assets/css subdirectory_, photographs (in webp format) in _assets/images_ and favicon assets in _assets/favicon_.
 
+- - -
 
-<!-- TOC --><a name="accessibility"></a>
-## Accessibility
-<!-- TOC --><a name="images-and-alt-texts"></a>
-### Images and alt texts
-I have given all images used (other than merely decorative background images) a sr-readable alt text. 
+## Features
+I have implemented a number of features, among them the following:
 
+### Navigation
+The website has appropriate and clear navigation features, reflecting its structured layout. Information and specific features are easy to find.
+- A clear and intuitive **anchor menu** on the main homepage, allowing speedy access to the homepage's four main sections.
+- A clear and uncluttered **site menu**, bringing the user to the child pages of the website.
+- The site menu indicates to users which page they are currently on by underlining the appropriate text entry.
+- a sticky **go-to-top button** on each page, so the user does not have to scroll back up manually.
 
-<!-- TOC --><a name="colors"></a>
-### Colors
-I have selected a plain dark green color (seagreen: #2e8b57) as the site's main background colour and an off-white for most texts. These two colours are reversed in several places on the site. I have chosen these colours to reflect the agricultural side of the topic. Pressure of time and my current ignorance of the finer points of aesthetic web design largely prevented me from using other tints or adopting a fully-fledged colour palette.
+### Fonts
+I have implemented a combination of two modern sans-serif fonts (with [Nunito sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
 
-Throughout the website, font colours appear on sufficiently contrasting backgrounds. the addition of semi-opaque background colours are overlaid overbackground images to absolutely ensure readibility.
+### Colours
+Colours are appropriate to the subject matter and to **accessibility guidelines**. Given the agricultural theme, a plain dark green color (seagreen: #2e8b57) was chosen as the site's main background colour and an off-white (#fafafa) as its text and icon color (or vice versa).
 
-<!-- TOC --><a name="background-images"></a>
-### Background images
-I used background images in several places on the home page was well as on the subscribe page. I have ensured that all the text overlying the images is readable at various screen resolutions.
+### Responsiveness
+- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](testing) section below).
 
-
-<!-- TOC --><a name="other-features"></a>
-## Other features
-I have implemented a number of other features, some of the most prominent being the following:
-
-<!-- TOC --><a name="favicons"></a>
 ### Favicons
-I created a 960x960-px image using Microsoft Paint and converted it to the necessary favicon formats using https://favicon.io/favicon-converter/.
+Appropriate favicon images were created based on the site colour scheme and subject matter (using Microsoft Paint to create a 920 x 920px png file and converting it using [favicon.io/favicon-converter](https://favicon.io/favicon-converter/)).
 
-<!-- TOC --><a name="go-to-top-button"></a>
-### Go-to-top button
-All pages include a **go-to-top button**, which appears at bottom right, just above the footer as soon as the user has scrolled at least 100px. Where the information on the page is limited and/or when viewing on a screen size where no scrolling is necessary, the go-to-top button never appears.
+### Images
+- All images are attractive and appropriate to the topic at hand. 
+- Where there is doubt about readability, texts overlying background images are presented over a semi-transparent division. 
+- Images that look excessively pixilated on being stretched over large screen sizes have been avoided.
+- All images used (other than merely decorative background images) have been given an sr-readable alt text.
 
-<!-- TOC --><a name="unnecessary-input-fields-hidden"></a>
-### Unnecessary input fields hidden
-In subscription screen I implemented a simple css-only function to keep non-essential postal address input fields hidden until clicking a radio button makes them relevant.
+### Icons
+- Intensive use has been made of appropriate icons taken from the [fontawesome.com](https://fontawesome.com/). They were carefully chosen to reflect the concept they represent. They were, however, all in Fontawsome's free range.
 
+### Other visual details
+- A certain degree of three-dimensionality is provided by subtle box shadows under the header and above the footer, and by the change of size of some icons when the user hovers over them. This last aspect is not implemented for touchscreens.
 
-<!-- TOC --><a name="accessibility-1"></a>
-## Accessibility
-I have given all images used (other than merely decorative background images) a sr-readable alt text. Throughout the website, font colours appear on sufficiently contrasting backgrounds, with the addition where necessary of semi-opaque background colours over background images.
+### Video and audio
+- The _Explore_ page contains embedded audio and video.
+- The user has complete control of whether and when to play these resources.
 
-<!-- TOC --><a name="responsiveness"></a>
-## Responsiveness
-My main approach to achieving responsiveness was simply to look at my code using Google Chrome on larger second PC screen with developer tools enabled, switching between emulated screen sizes and intervening by adjusting flex attributes or adding screen queries wherever it seemed necessary. I also used the https://www.rapidtables.com/  site to identify viewing window sizes too large to see with the Google developer inspection tool in use.
+### Subscription form:
+- The the _Subscriptions_ page has a form allowing the user to subscribe to the site owner's newsletter. 
+- The input fields do not appear if they are not relevant to the users' needs, which are indicated by choosing a radio button requesting either the online newsletter only or both its hard-copy and online version.
+- The email input field only allows entries in the valid email address structure.
 
+### Background images
+- I used background images in several places on the homepage was well as on the _Subscribe_ page.
+- I have ensured that all text overlying the images is readable at all tested screen resolutions.
 
-<!-- TOC --><a name="development-implementation-environment-and-deployment"></a>
-## Development & implementation environment, and deployment
-All the code created during this project was written using gitpod.io, with version control using git, and deployed via github on a daily basis.
+- - -
 
+## Development & implementation environment
+All the code created during this project was written using gitpod.io, with version control using git.
 
-<!-- TOC --><a name="design-development-coding-philosophy-approach-to-version-control"></a>
-## Design, development & coding philosophy; approach to version control
-<!-- TOC --><a name="wireframe"></a>
+- - -
+
+## Technologies used
+Almost exclusively HTML and CSS.
+The few utilities used as tools to help creating this site efficiently are mentioned in the relevant sections.
+
+---
+
+## Deployment
+The steps for deploying the website to its github host pages are as follows:
+- Choose the Settings icon in the right Github repository.
+- Under the list headed 'General', find the 'Pages' item from the 'Code and automation' menu.
+- Select 'Deploy from a branch' from the drop-down list labelled 'Source'.
+- Select 'main' as your branch Branch, select 'main' from the drop-down list and Save.
+- The URL of your site will appear in a box near the top of the page.
+- Click on the URL or on the 'Visit site' icon to open your newly deployed site in a new tab.
+- The site will then update automatically every time you push a new commit to the master branch.
+
+- - -
+
+## Design, development & coding philosophy
 ### Wireframe
-At the initial design stage I created a wireframe using Balsamiq software to provide a starting point for my development work. It provided a low-resolution first approximation of the appearance and structure of the website as seen on a mobile device. All deviations from the original design were based on the learning experience during work on the project. I did not update the wireframe to reflect deviations from it that accumulated during my development work.
+![The original wireframe sketches for the site's homepage](assets/readme-assets/wireframe-mockup.png)
 
-My original wireframe design can be found here (in pdf format): (./documentation/wireFrame.pdf)
+The design process began by creating a low-resolution wireframe using [Balsamiq](https://balsamiq.com/). Since the programming paradigm (see below) was mobile first, and since the website's main features were on the homepage, a single wireframe was made for each of the sections of the main page based on a no-name mobile phone screen. All deviations from the original design and changes made in response to different viewport resolutions were based on learning experiences during work on the project.
 
-<!-- TOC --><a name="sequence-of-coding-steps"></a>
+The original wireframe design (with the accompanying rough notes) can be found [here](documentation/wireFrame.pdf)(in pdf format). 
+
 ### Sequence of coding steps
-The code was written on a section-by-section according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the "Lessons learnt" section below.
+The code was written on a section-by-section according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the [Lessons learnt](Lessons-learnt) section below.
 
-<!-- TOC --><a name="commits"></a>
 ### Commits
-I committed new changes relatively often (between once and a dozen time a day), and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor tweaks. I made pretty intensive use of the "git diff HEAD" command to check. I intend to add a step to this process the next time I'm working on a similar project (see One-person agile programming below).
+I committed new changes relatively often (between once and a dozen time a day), and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor  (often using ``git diff HEAD`` to check). I intend to add a step to this process the next time I'm working on a similar project (See [One-person agile programming](#one-person-agile-programming) below).
 
-<!-- TOC --><a name="minimising-code-clutter"></a>
 ### Minimising code clutter
 I have tried to follow a "clean programming" paradigm in my work. I have therefore:
-- not added code for any as-yet unimplemented functionalities (whether commented out or simply never called)
-- deleted rather than commented out redundant lines of code
-- avoided repetition in my css code as much as possible
-Given that javascript programming is outside the scope of the project, quite a deal of cutting and pasting was required in my html code (for the almost identical headers and footers on each page, for example). This is a source of clutter, confusion and unnecessary work. It should be eliminated as far as possible and soon as possible in the future.
+- not added code for any as-yet unimplemented functionalities (whether commented out or simply never called).
+- deleted rather than commented out redundant lines of code.
+- avoided repetition as much as possible.
+- kept inline comments on code as terse as feasible.
+Given that javascript programming is outside the scope of the project, quite a deal of cutting and pasting was required in my html code (for the almost identical headers and footers on each page, for example). This is a source of clutter, confusion and unnecessary work. It should be eliminated as far and soon as possible in the future.
 
-<!-- TOC --><a name="id-vs-class"></a>
-### ID vs class
-In relation to the question of when to use the class attribute and when to use id to identify elements to style in the style.css file, I have preferred the class attribute unless the element in question is both unique in the relevant styling context and is likely to remain unique in new iterations of the site development process.
-
-<!-- TOC --><a name="comments-in-code-and-order-of-appearance-of-css-selectors-on-the-stylecss-file"></a>
 ### Comments in code and order of appearance of css selectors on the style.css file
-I have tried to err on the side of too many rather than too few comments in my code files, as the point in this case it to show the assessors that I understand what I'm doing, and not simply cutting and pasting code from elsewhere. In real-life programming would be far more terse. As is required in css code, I have tried to organise my selectors from generally applicable selectors to more particular ones, from homepage to linked pages (in order of appearance on the homepage menu), and within pages from left to right and from top to bottom. Selectors are separated by one blank line, while thematic groups of selectors are separated by two.
+I have tried to keep comments in my code as terse as possible. I have kept all styling selectors in my _style.css_ file. I have tried to organise my style file starting with generally applicable selectors and moving down to more particular ones, and from homepage to each child page in turn (in order of their appearance on the main site menu), and within pages from what appears on the user screen from left to right and from top to bottom. Selectors are separated by one blank line, while thematic groups of selectors are separated by two.
 
-<!-- TOC --><a name="iterative-deployment"></a>
 ### Iterative deployment
-Committed code was deployed via github on a daily basis.
+Committed code was deployed via github (using the ``git push`` command) on a daily basis at least.
 
 
-<!-- TOC --><a name="testing"></a>
 ## Testing
-<!-- TOC --><a name="iterative-testing-validation-and-troubleshooting-during-ongoing-development-and-before-final-submission"></a>
-### Iterative testing, validation and troubleshooting - during ongoing development and before final submission.
-The main browser against which my code was tested in an iterative process (running a smoke test before every commit at the very least) was the latest version of Google Chrome (using the development toolkit provided by Google). Near the end of the development process, I used my own Samsung Galaxy A7 (running on the latest version of Chrome), my ipod (running on the latest version of Safari), and my laptop, using the latest versions of Chrome, Microsoft Edge and Firefox. Owing to lack of time, I was unable to do any testing on any legacy versions of these or on any other browsers or machines, with the exception of an informal test on an iphone (version unknown) in dark mode using Safari.
-Testing also included checking the images (including background images) on different screen sizes for unsightly pixilation.
+### Iterative testing, validation and troubleshooting -- during ongoing development
+- The main browser against which my code was smoke-tested in an iterative process in the development environment (running a **smoke test** on before every commit at the very least) was the latest version of Google Chrome. 
+- Towards the end of the development process, I then began to smoke-check each affected page on the deployed site after every major deployment on all the following machines with increasing frequency: 
+- Samsung Galaxy A8 (360 x 740px effective size, running on the latest version of Chrome)
+- ipod (768px x 1024px viewport size, running on the latest version of Safari)
+- HP laptop (1920 x 1080px) and Dell second screen (1920 x 1200px) both running on latest versions of Chrome, Microsoft Edge and Firefox 
 
-<!-- TOC --><a name="final-testing-and-validation-before-submission"></a>
+Owing to lack of time, I was unable to do any testing on any legacy versions of these or on any other browsers or machines, with the exception of an informal test on an iphone (version unknown) in dark mode using Safari.
+I ran the html code on each page through the officila 
+
+
 ### Final testing and validation before submission
+- A systematic test on each of the machines and at each effective resolutions listed above (in portrait and landscape mode where appropriate) for:
+-- Obvious visual issues in relation to accessibility, responsiveness and functionality.
+-- The correct functioning of the above-listed functions.
+-- The relevant _Code Institute_ assessment criteria for pass, merit and distinction.
+
+- A final smoke-test after deployment running the above tests on each of the above-described devices and resolutions.
+- All html pages was validated against the 
+
+
+### 
 All internal and external links were smoke-checked systematically before submitting the project for assessment.
 
-I validated my html and css code regularly during development via direct input into the validation services provided by W3C at https://validator.w3.org/ and https://jigsaw.w3.org/css-validator/. My final code passes both validation tests.
+I validated my html and css code regularly during development via direct input into the validation services provided by W3C at [validator.w3.org](https://validator.w3.org/) and [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/). My final code passes both validation tests.
 
+- - -
 
-<!-- TOC --><a name="lessons-learnt"></a>
 ## Lessons learnt
-<!-- TOC --><a name="mobile-first"></a>
 ### Mobile first
 The next time I do a similar project, I will continue follow the "mobile first" design paradigm, but in future I will embed that approach iteratively within the development of each section of the site. The effect of completing a round of coding for the whole site before switching to media-query-based coding was that I repeatedly needed reacquaint myself with the code in each section before beginning work on media-query-based changes. I hope in future that if I start work on the media-query-based selectors as soon as I finish the basic styling for each section, the code for that section will still be fresh in my mind, thus saving me time and effort.
 
-<!-- TOC --><a name="one-person-agile-programming"></a>
 ### One-person agile programming
 Another lesson I have learnt is that immediately following each push, I should hold a mini "stand-up" meeting with myself to identify the tasks to be completed before the next commit. 
 
-<!-- TOC --><a name="time-management"></a>
 ### Time management
 When faced with the inevitable coding challenges of a beginner coder, I could sometimes have managed my time a little better. I often spent too long on bugs without looking for help. In addition, some of my decisions on pages and features to be included were over-ambitious.
 
+- - -
 
-<!-- TOC --><a name="lessons-not-yet-learned"></a>
 ## Lessons not (yet) learned
 One issue I haven't had yet time to research is the implications of differing user interactions on touchscreens as opposed to desktop and laptop screens. As a result, some of the icons do not respond to user interaction in as elegant a manner as I would have hoped on starting out on this little adventure. This is a deficit I need to remedy.
 
+- - -
 
-<!-- TOC --><a name="what-doesnt-work"></a>
 ## What doesn't work
-<!-- TOC --><a name="-because-its-outside-the-scope-of-project"></a>
 ### ... because it's outside the scope of project
 Some functionality is incomplete in the project, especially the following:
-- Social media links are to the home pages of the respective media.
+- Social media links are to the homepages of the respective media.
 - No account exists for the e-mail link that appears on the imprimatur page.
 - All addresses are fictional.
 - Form data entered via the site is sent to code institute's test environment rather than being collected and saved.
@@ -255,34 +224,24 @@ Some functionality is incomplete in the project, especially the following:
 - The traditional splashscreen to conform with EU GPDR regulations is unnecessary, as no data is being collected in reality.
 - Various other functionalities requiring javascript have not been implemented as the site is designed to use effectively exclusively html and css technologies, for example, the menus should really disappear when the user selects an item on them or taps/clicks anywhere else on the screen (as this is done most effectively using javascript, I have postponed implementing this and similar functionalities until I have learnt a little javascript).
 
-
-<!-- TOC --><a name="-for-lack-of-time-skill-andor-data"></a>
 ### ... for lack of time, skill and/or data
 Pressure of time and my current ignorance of the finer points of aesthetic web design has meant that:
 - I haven't been able to use a range of tints, much less adopt and implement a fully-fledged colour palette.
-- I'm not very happy with basic design of the various favicon images I created (see Favicons). I deployed them anyway to demonstrate that I understand how to deal with such images ... and because the colours at least match the site. If I had my time over, I would have used a simpler, more iconic image.
 - I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
 - I would have liked to implement interactivity with the events, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
-- I originally intended to hide the top-left anchor link on the home page for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
-- The gallery displays images in the order in which I inserted them. In future, they should display in random order. As development continues, they will become more responsive to 
+- I originally intended to hide the top-left anchor link on the homepage for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
+- The gallery displays images in the order in which I inserted them. In future, they should display in random order. As development continues, they will become more responsive to user interaction
+- Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
+- Some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). Some of the pictures used as background images appear once more in the gallery. I would rarely allow that on a real-life website.
+- More time would have allowed me to make this README.md file a lot _shorter_.
 
-Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
+- - -
 
-Also due to lack of time, some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). Some of the pictures used as background images appear once more in the gallery. I would rarely allow that on a real-life website.
-
-Aside from all that, I have included fictional references on the 'Explore' page that simply link to Wikipedia entries. For all the respect I have for Wikipedia, I doubt it would often make sense for a specialist reference webpage to provide links to Wikipedia. In a real-life situation, online references would usually contain genuine external links to an authoritative and/or professional source.
-
-Finally, the footer on each page doesn't look quite right if the main section above it is too small to require scrolling. This is due to the wrong value for the length of the main section being calculated in the code used to implement the 'back to top' button. I have worked around this issue by ensuring that scrolling is necessary on all common screen sizes (except in the case of the gallery, which still shows the problem). Repairing this issue would be my first step in any future development of the site.
-
-
-<!-- TOC --><a name="credits-and-sources"></a>
 ## Credits and sources
-<!-- TOC --><a name="code-institutes-own-resources"></a>
 ### Code institute's own resources
 Almost all the code is my own, though much of it either follows closely or takes direct lessons from the code created by Jo Heyndels for the 'Love Running' walkthrough project and/or Anne Greaves' 'Coders Coffeehouse' site. Many thanks are due to both Jo and Anne for their beautiful static websites, their clear instructions and high-quality learning material. I have included an appropriate comment beside the one or two snippets of code directly copied from Jo's walkthrough project. Implicit thanks go to everyone involved in authoring the Code Institute learning materials for this part of the course.
 
-<!-- TOC --><a name="external-technical-sources"></a>
-### External technical sources
+### External technical and learning resources
 Naturally enough, have researched widely to find out how to implement a variety of features not explicitly included in Code Institute's learning materials, including several visits to the following sites:
 - https://w3schools.com/
 - https://stackoverflow.com/
@@ -291,14 +250,14 @@ Naturally enough, have researched widely to find out how to implement a variety 
 - https://css-tricks.com/
 - https://developer.mozilla.org/
 - https://www.codecademy.com/
+- https://www.w3docs.com/
 
 However, the only external source from which I directly copied was freecodecamp.org, from whom I more or less directly copied the [back-to-top button functionality](https://www.freecodecamp.org/news/css-only-back-to-top-button/).
 
-I used https://derlin.github.io/bitdowntoc/ to generate this readme file's table of contents. I also used [markdowntohtml.com/](https://markdowntohtml.com/) to convert the markdown code I wrote for the explore page into raw html.
+I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com/](https://markdowntohtml.com/) for some of the work on the Explore page.
 
-<!-- TOC --><a name="acknowledgements-for-images-used"></a>
 ### Acknowledgements for images used
-With the exception of the very rough and ready set of favicon files that I cobbled together, none of the images used on this project were original to me. I have provided acknowlegements for each of the images individually below.
+None of the images used on this project were original to me. I have provided acknowledgments for each of the images individually below.
 
 | Page | Image | Usage | Original URL | Site owner |
 |................|................|................|................|................|
@@ -307,27 +266,24 @@ With the exception of the very rough and ready set of favicon files that I cobbl
 |................|................|................|................|................|
 |................|................|................|................|................|
 
+As mentioned above, all icons were taken from [Font Awesome](https://fontawesome.com/start).
 
-<!-- TOC --><a name="personal-thanks"></a>
+
 ### Personal thanks
 Apart from Jo and Anne and the authors of the various online resources I used, I owe special thanks to the following people:
 - My mentor, Oluwafemi Medale, for being available every time I needed him, and for providing high-quality, relevant and timely advice;
-- David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up
+- David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up to submission deadline, and who provided the service of a second mentor;
 - Code Institute's tutoring team, whose help I probably didn't lean on as much as I should have, and whose time I am determined to infringe on much more intensely in the run-up to my next deadline;
 - My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
 
 
-<!-- TOC --><a name="todo"></a>
 ## todo
-- add some external links (on new browser tab)
-- add video
-- add tooltip to anchor icon
 - add an iframe
-- add screenshots and feature explanations to readme
-- create links on readme and ensure that they work
+- add a video
 - check for excessive blank lines in css and html
-- complete comments in code
-- check attribute names and values for consistency, conformity and logic
-- check for correct use of ids and classes
 - check headers and footers for function and consistency on each page
-- implement main sections on gallery and explore pages
+- add video and image acknowledgements
+- check all external and internal links
+- tidy up styling
+- run smoke checks
+- run code validation
