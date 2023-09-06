@@ -10,10 +10,11 @@ This website was developed to showcase my ability to design and create a static 
 ## Introduction
 This website was prepared for presentation as a first portfolio project for my online course in Full-Stack programming with Code Institute, based in Blackrock, Co. Dublin. I have interpreted the task as being to exhibit my ability to produce a simple website using almost exclusively html and css technologies. This includes a requirement to ensure that the website functions correctly and looks professional and complete, but as my course is not in creative web design, I have spent less time and effort on finer aesthetic questions. As the project will be judged according to the criteria set out in the relevant assessment guide contained in the Code Institute LMS, I have tried to be guided by that document.
 
+TOC
 
 ## The website as it looks on-screen
 
-![Images of the website as it appears using various screen sizes ](./assets/readme-assets/device_look.PNG)
+[Images of the website on various screen sizes](.assets/readme.assets/site-responsive.png)
 
 ### A live demo to the website can be found [here](https://jaimehyland.github.io/farming-futures/)
 

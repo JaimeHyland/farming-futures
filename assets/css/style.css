@@ -721,6 +721,7 @@ address {
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
+
     /* Header - turn vertical site menu into horizontal menu imbedded into header proper and turn vertical anchor menu 
     into sub-menu of the "home" menu item */
     #nav-site {
