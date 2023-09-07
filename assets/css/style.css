@@ -411,7 +411,7 @@ main {
     text-decoration: none;
     padding: 10px;
     color: #fafafa;
-    background: #2e8b57;
+    background: #4cc27f;
     border-radius: 100px;
     place-self: end;
     position: sticky;
@@ -420,6 +420,7 @@ main {
     margin-top: calc(100vh + var(--offset));
     margin-right: 10px;
     margin-bottom: 10px;
+    box-shadow: 2px 2px #454b1b;
 }
 
 
@@ -633,7 +634,7 @@ input[type="radio"]:checked~#address-inputs {
 
 
 /* Style info text */
-main.nowrap .legal-blurb {
+ .legal-blurb {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -643,33 +644,31 @@ main.nowrap .legal-blurb {
     background-size: cover;
     background-position: 75%;
     padding: 10px 0 30px;
-    margin: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-/* bllurb text */
-main.nowrap .legal-blurb p,
-main.nowrap .legal-blurb h3 {
-    width: 320px;
+/* blurb text */
+ .legal-blurb p,
+ .legal-blurb h3 {
+    max-width: 450px;
 }
 
-main.nowrap .legal-blurb h3 {
+ .legal-blurb h3 {
     text-align: center;
     margin: 20px 0 10px;
 }
 
-main.nowrap .legal-blurb p {
+ .legal-blurb p {
     text-align: justify;
     padding-left: 0;
 }
 
-
-/* code for the imprimatur */
 .legal-blurb {
     padding: 6px 12px;
     background-color: seagreen;
     color: #fafafa;
 }
-
 
 .legal-blurb a {
     color: #fafafa;
