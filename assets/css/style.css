@@ -507,6 +507,19 @@ p.explore {
     text-align: justify;
 }
 
+.embedded-video {
+    display: block;
+    margin: 0 auto;
+    max-width: 450px;
+}
+
+.video-caption {
+    font-size: smaller;
+    font-style: italic;
+    border-bottom: 1px solid #2e8b57;
+    font
+}
+
 /* Subscribe page. */
 #subscribe-form {
     display: flex;
