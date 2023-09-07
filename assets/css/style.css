@@ -275,7 +275,6 @@ main {
     position: absolute;
     bottom: 30px;
     width: 80%;
-    min-height: 150px;
     padding: 40px 20px;
 }
 
@@ -309,12 +308,11 @@ main {
     padding: 3px 0;
 }
 
+/* Horizontal rules */
 .primary {
     height: 2px;
     border-width: 0;
-    color: seagreen;
     background-color: seagreen;
-    margin-bottom: 5px;
 }
 
 .secondary {
@@ -572,8 +570,8 @@ p.explore {
     color: rgb(54, 160, 100);
 }
 
-/* all the divs are there to make it possible to align the hidden inputs (when they appear) with the visible ones.  */
-#radio-email {
+/* a lot of divs to accommodate hide address inputs function  */
+#radio-email { 
     display: flex;
     flex-direction: row;
     margin: 0 30px;
@@ -603,8 +601,7 @@ p.explore {
     overflow: hidden;
 }
 
-/* Postal address inputs appear when needed 
-This code is adapted from https://css-tricks.com/exposing-form-fields-radio-button-css/ */
+/* Postal address inputs appear when needed */
 input[type="radio"]:checked~#address-inputs {
     opacity: 1;
     max-height: 295px;
@@ -714,11 +711,28 @@ address {
         column-count: 2;
     }
 
-    /* Increase l & r margins on the Explore page */
+    /* Increase l & r margins on events section on hp and on Explore page */
+
+    .left {
+        margin-left: 20px;
+    }
+    
+    .right {
+        margin-right: 20px;
+    }
+
     .explore {
         margin: 8px 45px;
     }
 }
+
+/* Make cover-text visible on mobile in landscape mode */
+@media screen and (min-width: 576px) and (max-height: 670px) {
+        #cover-text {
+            bottom: auto;
+            top: 30px;
+        }
+    }
 
 
 /* Media query: tablets and larger (768px and up) */
@@ -778,7 +792,7 @@ address {
 
     /* Move the now no longer centred heading text element to the left to rebalance the header. */
     .logo-heading {
-        margin-left: -45px;
+        margin-left: -30px;
     }
 
 
@@ -799,6 +813,14 @@ address {
         margin-top: calc(100vh + var(--offset));
     }
 
+    .left {
+        margin-left: 20px;
+    }
+    
+    .right {
+        margin-right: 20px;
+    }
+
     .explore {
         margin: 8px 70px;
     }
@@ -811,7 +833,7 @@ address {
 
     /* Move the header yet further to the left. */
     .logo-heading {
-        margin-left: -160px;
+        margin-left: -100px;
     }
 
     /* breakthroughs section displays horizontally */
@@ -837,7 +859,17 @@ address {
         column-count: 3;
     }
 
+
+    /* reduce margin of breakthrough divs again */
+    .left {
+        margin-left: 12px;
+    }
     
+    .right {
+        margin-right: 12px;
+    }
+
+
     .explore {
         margin: 8px 110px;
     }
@@ -848,7 +880,7 @@ address {
 @media screen and (min-width: 1200px) {
 
     .logo-heading {
-        margin-left: -300px;
+        margin-left: -230px;
     }
 
 
@@ -857,6 +889,14 @@ address {
     }
 
     
+    .left {
+        margin-left: 20px;
+    }
+    
+    .right {
+        margin-right: 20px;
+    }
+
     .explore {
         margin: 8px 170px;
     }
@@ -868,7 +908,7 @@ address {
 
     /* Move the header another bit further to the left. */
     .logo-heading {
-        margin-left: -700px;
+        margin-left: -360px;
     }
 
     
@@ -880,5 +920,13 @@ address {
 
     .explore {
         margin: 8px 250px;
+    }
+
+    .left {
+        margin-left: 45px;
+    }
+    
+    .right {
+        margin-right: 45px;
     }
 }
