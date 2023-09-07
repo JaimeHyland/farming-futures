@@ -760,7 +760,7 @@ address {
     }
 
     #site-menu li {
-        padding-left: 1rem;
+        margin-left: 1rem;
         background-color: #2e8b57;
         color: #fafafa;
     }

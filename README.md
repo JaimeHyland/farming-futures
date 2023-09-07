@@ -101,6 +101,7 @@ Appropriate favicon images were created based on the site colour scheme and subj
 
 ### Other visual details
 - A certain degree of three-dimensionality is provided by subtle box shadows under the header and above the footer, and by the change of size of some icons when the user hovers over them. This last aspect is not implemented for touchscreens.
+- The imprimatur and subscribe pages are defined as "housekeeping" pages, and therefore share a similar layout.
 
 ### Video and audio
 - The _Explore_ page contains embedded audio and video.
@@ -247,21 +248,22 @@ Almost all the code is my own, though much of it either follows closely or takes
 
 ### External technical and learning resources
 Naturally enough, have researched widely to find out how to implement a variety of features not explicitly included in Code Institute's learning materials, including several visits to the following sites:
-- https://w3schools.com/
-- https://stackoverflow.com/
-- https://www.freecodecamp.org/
-- https://www.bestcolleges.com/
-- https://css-tricks.com/
-- https://developer.mozilla.org/
-- https://www.codecademy.com/
-- https://www.w3docs.com/
+- [w3schools.com](https://w3schools.com/)
+- [stackoverflow.com](https://stackoverflow.com/)
+- [freecodecamp.org](https://www.freecodecamp.org/)
+- [bestcolleges.com](https://www.bestcolleges.com/)
+- [css-tricks.com](https://css-tricks.com/)
+- [developer.mozilla.org](https://developer.mozilla.org/)
+- [codecademy.com](https://www.codecademy.com/)
+- [w3docs.com](https://www.w3docs.com/)
+- [geeksforgeeks.org](https://www.geeksforgeeks.org/)
 
 However, the only external source from which I directly copied was freecodecamp.org, from whom I more or less directly copied the [back-to-top button functionality](https://www.freecodecamp.org/news/css-only-back-to-top-button/).
 
 I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com](https://markdowntohtml.com/) for some of the work on the Explore page.
 
 ### Acknowledgements for images used
-None of the images used on this project were original to me. I have provided acknowledgments for each of the images individually below.
+None of the images used on this project were original to me. I have provided acknowledgments for some of them individually below.
 
 | Page | Image | Usage | Original URL | Site owner |
 |................|................|................|................|................|
