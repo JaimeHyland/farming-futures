@@ -10,7 +10,7 @@
         content="AI, artificial intelligence, agriculture, horticulture, robotics, technology, deep learning, organic, food,  automation, IoT, internet of things, production, futures">
     <!-- Website title -->
     <title>Farming Futures</title>
-    <!-- Favicon (I copied this code directly from Jo Heyndels' walkthrough project) -->
+    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
@@ -40,7 +40,8 @@
         <label for="nav-site-toggle" class="nav-site-toggle-label">
             <i class="fa-solid fa-bars icon-grow"></i>
         </label>
-
+h
+        <!-- combines three awesome icons into a single div toggles the anchor menu -->
         <nav id="nav-anchor" class="nav-anchor">
             <a href="#ag-science" class="text-grow"><i class="fa-solid fa-tractor fa-lg"></i> Ag Science</a>
             <a href="#robotics" class="text-grow"><i class="fa-solid fa-robot fa-lg"></i> Robotics</a>
@@ -48,6 +49,7 @@
             <a href="#events" class="text-grow"><i class="fa-regular fa-calendar-days fa-lg"></i> Events</a>
         </nav>
 
+        <!-- The main navigation menu -->
         <nav id="nav-site" class="nav-site">
             <ul id="site-menu">
                 <li class="text-grow"><a href="index.html" class="active">Home</a></li>
@@ -113,9 +115,9 @@
                         <hr class="secondary">
                     </div>
 
-                    <!-- Two versions of ai for formatting on larger screens -->
-                    <div id="ai">
-                        <div id="ai-left" class="anchor right">
+                    <!-- Two versions of ai for formatting on smaller vs. larger screens -->
+                    <div id="ai" class="anchor">
+                        <div id="ai-left" class="right">
                             <h3 class="right"><i class="fa-solid fa-lightbulb"></i> Information & how to use it</h3>
                             <hr class="primary">
                             <div class="tap-for-modal right" class="data-collection">
@@ -126,7 +128,7 @@
                                 Synthesise new knowledge <i class="fa-solid fa-graduation-cap fa-xs"></i></div>
                             <hr class="secondary">
                         </div>
-                        <div id="ai-right" class="anchor left">
+                        <div id="ai-right" class="left">
                             <h3 class="left">Information & how to use it <i class="fa-solid fa-lightbulb"></i></h3>
                             <hr class="primary">
                             <div class="tap-for-modal left" class="data-collection">
@@ -144,7 +146,8 @@
                 </div>
             </section>
             <hr class="primary">
-
+            
+            <!-- events -->
             <section id="events">
                 <h2 id="events-title">Events</h2>
                 <h3 id="upcoming-events-subtitle">Upcoming events</h3>

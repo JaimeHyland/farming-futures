@@ -17,7 +17,7 @@ TOC
 ## Introduction
 This website was prepared for presentation as a first portfolio project for my online course in Full-Stack programming with Code Institute, based in Blackrock, Co. Dublin. I have interpreted the task as being to exhibit my ability to produce a simple website using almost exclusively html and css technologies. This includes a requirement to ensure that the website functions correctly and looks professional and complete, but as my course is not in creative web design, I have spent less time and effort on finer aesthetic questions. As the project will be judged according to the criteria set out in the relevant assessment guide contained in the Code Institute LMS, I have tried to be guided by that document.
 
-**A live demo of the website, as deployed within github's hosting environment, can be found [here]**(https://jaimehyland.github.io/farming-futures/)
+**A live demo of the website, as deployed within github's hosting environment, can be found [here](https://jaimehyland.github.io/farming-futures/)**
 
 - - -
 
@@ -52,11 +52,11 @@ The site consists of:
 4. **_Explore:_** A page providing links to outside information on robotics and AI in agriculture. It should be considered a starting point for further exploration, not as a scholarly reference list.
 5. **_Imprimatur:_** A page accessible only via a link on the footer. It provides the user with basic information on the bodies and human beings legally responsible for the content of the website. Following the established convention for such pages, it is excluded from the navigation menu on the header to prevent clutter.
 
-### Page sections
+### Homepage sections
 Each page contains three sections:
 1. **_Header:_** The header contains the main navigation functions. It is almost identical on each page, though the home page includes an anchor menu to help the user explore the various sections within the page.
 2. **_Content:_** Contains the main content of the page. This section is most substantial on the home page, which contains several subsections.
-3. **_Footer:_** Contains links to the site-owner's (fictional) social media accounts, as well as to the **Imprimatur** page. The footer is identical on all pages with the exception of the _imprimatur_ page where the link becomes yet another link back to _Home_.
+3. **_Footer:_** Contains links to the site-owner's (fictional) social media accounts, as well as to the **Imprimatur** page. The footer is identical on all pages with the exception of the Imprimatur page where the link becomes yet another link back to __Home__.
 
 - - -
 
@@ -67,7 +67,7 @@ All the required assets are contained in an assets subdirectory placed within th
 - - -
 
 ## Features
-I have implemented a number of features, among them the following:
+I have implemented a long list of features, among them the following:
 
 ### Navigation
 The website has appropriate and clear navigation features, reflecting its structured layout. Information and specific features are easy to find.
@@ -75,6 +75,8 @@ The website has appropriate and clear navigation features, reflecting its struct
 - A clear and uncluttered **site menu**, bringing the user to the child pages of the website.
 - The site menu indicates to users which page they are currently on by underlining the appropriate text entry.
 - a sticky **go-to-top button** on each page, so the user does not have to scroll back up manually.
+
+The anchor menu on the left is less meaningful when the site is viewed on larger screens than on a mobile phone, but as the homepage develops over time, it will become more useful, even on larger screens.
 
 ### Fonts
 I have implemented a combination of two modern sans-serif fonts (with [Nunito sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
@@ -144,7 +146,7 @@ The steps for deploying the website to its github host pages are as follows:
 
 The design process began by creating a low-resolution wireframe using [Balsamiq](https://balsamiq.com/). Since the programming paradigm (see below) was mobile first, and since the website's main features were on the homepage, a single wireframe was made for each of the sections of the main page based on a no-name mobile phone screen. All deviations from the original design and changes made in response to different viewport resolutions were based on learning experiences during work on the project.
 
-The original wireframe design (with the accompanying rough notes) can be found [here](documentation/wireFrame.pdf)(in pdf format). 
+The original wireframe design (with the accompanying rough notes) can be found [here](documentation/Robotics-Agriculture-Wireframe.pdf)(in pdf format). 
 
 ### Sequence of coding steps
 The code was written on a section-by-section according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the [Lessons learnt](Lessons-learnt) section below.
@@ -180,17 +182,18 @@ I ran the html code on each page through the officila
 
 
 ### Final testing and validation before submission
+- All unused files were carefully removed from the site's root directory and all child directories.
+- All internal and external links were smoke-checked systematically before submitting the project for assessment.
 - A systematic test on each of the machines and at each effective resolutions listed above (in portrait and landscape mode where appropriate) for:
 -- Obvious visual issues in relation to accessibility, responsiveness and functionality.
 -- The correct functioning of the above-listed functions.
--- The relevant _Code Institute_ assessment criteria for pass, merit and distinction.
+-- The relevant _Code Institute_ assessment criteria for pass, merit and distinction (where not already covered in tests already completed).
 
 - A final smoke-test after deployment running the above tests on each of the above-described devices and resolutions.
-- All html pages was validated against the 
+- All html pages and the css page were validated (see below).
 
 
-### 
-All internal and external links were smoke-checked systematically before submitting the project for assessment.
+### Final validation
 
 I validated my html and css code regularly during development via direct input into the validation services provided by W3C at [validator.w3.org](https://validator.w3.org/) and [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/). My final code passes both validation tests.
 
@@ -209,7 +212,7 @@ When faced with the inevitable coding challenges of a beginner coder, I could so
 - - -
 
 ## Lessons not (yet) learned
-One issue I haven't had yet time to research is the implications of differing user interactions on touchscreens as opposed to desktop and laptop screens. As a result, some of the icons do not respond to user interaction in as elegant a manner as I would have hoped on starting out on this little adventure. This is a deficit I need to remedy.
+One issue I haven't had yet time to research is the implications of differing user interactions on touchscreens as opposed to desktop and laptop screens. As a result, some of the icons do not respond to user interaction in as elegant a manner as I would have hoped on starting out on this little adventure. This is a deficit I need to remedy using javascript or similar.
 
 - - -
 
@@ -230,6 +233,7 @@ Pressure of time and my current ignorance of the finer points of aesthetic web d
 - I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
 - I would have liked to implement interactivity with the events, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
 - I originally intended to hide the top-left anchor link on the homepage for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
+- I would have liked to make the three icons used in the anchor menu link responsive to various screen sizes, growing as the viewport gets bigger.
 - The gallery displays images in the order in which I inserted them. In future, they should display in random order. As development continues, they will become more responsive to user interaction
 - Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
 - Some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). Some of the pictures used as background images appear once more in the gallery. I would rarely allow that on a real-life website.
@@ -278,16 +282,16 @@ Apart from Jo and Anne and the authors of the various online resources I (becaus
 
 
 ## todo
-- add an iframe
 - add a video
+- add an iframe
 KEEP AN EYE OUT FOR INCONSISTENT CODING
 - sort out the formatting issue David pointed out
 - check for excessive blank lines in css and html
 - check headers and footers for function and consistency on each page
 - check all external and internal links
-- fix hidden go-to-top button on gallery page
 - add video and image acknowledgements
 - tidy up and unify styling
 - run smoke checks
 - run code validation
 - generate table of contents
+- remove all unused files from root directory and all subdirectories
