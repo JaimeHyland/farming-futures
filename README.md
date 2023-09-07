@@ -368,5 +368,6 @@ Apart from Jo and Anne and the authors of the various online resources I (becaus
 - My mentor, Oluwafemi Medale, for being available every time I needed him, and for providing high-quality, relevant and timely advice;
 - David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up to submission deadline, and who generally acted as a supplementary mentor;
 - Code Institute's excellent tutoring team, whose help I probably didn't lean on as much as I should have;
-- My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
 - The images I used were too many for me to provide individual acknowledgements to each provider within the time available to me. Thanks to everyone involved in making and posting them!
+- My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
+
