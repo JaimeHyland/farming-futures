@@ -12,9 +12,11 @@
 
 /* Body styling */
 body {
+    display: grid;
+    grid-template-columns: auto auto;
     min-height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
-    display: flex;
+    display: grid;
     flex-direction: column;
     color: #2e8b57;
 }
@@ -412,7 +414,6 @@ main {
     background: #4cc27f;
     border-radius: 100px;
     place-self: end;
-    position: sticky;
     bottom: 20px;
     --offset: 87px;
     margin-top: calc(100vh + var(--offset));
@@ -421,6 +422,9 @@ main {
     box-shadow: 2px 2px #454b1b;
 }
 
+.back-to-top:hover {
+    background: #454b1b; 
+  }
 
 /* footer styling  */
 footer {
@@ -435,6 +439,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 2px -2px rgb(18, 55, 34);
+    
 }
 
 footer>ul#social-networks {

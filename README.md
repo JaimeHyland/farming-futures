@@ -115,6 +115,10 @@ Each page contains three sections:
 2. **_Content:_** Contains the main content of the page. This section is most substantial on the home page, which contains several subsections.
 3. **_Footer:_** Contains links to the site-owner's (fictional) social media accounts, as well as to the **Imprimatur** page. The footer is identical on all pages with the exception of the Imprimatur page where the link becomes yet another link back to __Home__.
 
+![The footer, showing social media links on the left and the link to the imprimatur page on the right](assets/readme-assets/footer-mobile.png)
+
+*The footer as shown on a smartphone, showing social media links on the left and the link to the imprimatur page on the right*
+
 - - -
 
 <!-- TOC --><a name="technical-structure-what-it-looks-like-under-the-bonnet"></a>
@@ -131,13 +135,29 @@ I have implemented a long list of features, among them the following:
 <!-- TOC --><a name="navigation"></a>
 ### Navigation
 ![The header at 820 px showing the nav menu (right)](assets/readme-assets/navbar_820px.png)
+
 *The site header at 820px, showing the anchor icon at left and the navigation menu at right.*
+
 
 The website has appropriate and clear navigation features, reflecting its structured layout. Information and specific features are easy to find.
 - A clear and intuitive **anchor menu** on the main homepage, allowing speedy access to the homepage's four main sections.
+
+![The anchor menu, as opened from the anchor icon](assets/readme-assets/anchor-menu.png)
+
+*The anchor menu, as opened from the anchor icon. It navigates the user around the homepage*
+
 - A clear and uncluttered **site menu**, bringing the user to the child pages of the website.
+
+![The site menu, as seen on a mobile device, called from the burger icon at top right of the header](assets/readme-assets/site-menu-mobile.png)
+
+*The site menu, as seen on a mobile device, called from the burger icon at top right of the header. The current page is shown by the menu item being underlined.*
+
 - The site menu indicates to users which page they are currently on by underlining the appropriate text entry.
 - a sticky **go-to-top button** on each page, so the user does not have to scroll back up manually.
+
+![The go-to-top button](assets/readme-assets/back-to-top.png)
+
+*The go-to-top button with the page fully scrolled down, shown on the right just above the imprimatur link*
 
 The anchor menu on the left is less meaningful when the site is viewed on larger screens than on a mobile phone, but as the homepage develops over time, it will become more useful, even on larger screens.
 
