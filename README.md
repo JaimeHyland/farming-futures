@@ -140,7 +140,7 @@ The anchor menu on the left is less meaningful when the site is viewed on larger
 
 <!-- TOC --><a name="fonts"></a>
 ### Fonts
-I have implemented a combination of two modern sans-serif fonts (with [Nunito sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
+I have implemented a combination of two modern sans-serif fonts (with [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
 
 <!-- TOC --><a name="colours"></a>
 ### Colours
@@ -148,7 +148,7 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 
 <!-- TOC --><a name="responsiveness"></a>
 ### Responsiveness
-- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](testing) section below).
+- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](Testing) section below).
 
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
@@ -370,4 +370,3 @@ Apart from Jo and Anne and the authors of the various online resources I (becaus
 - Code Institute's excellent tutoring team, whose help I probably didn't lean on as much as I should have;
 - The images I used were too many for me to provide individual acknowledgements to each provider within the time available to me. Thanks to everyone involved in making and posting them!
 - My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
-

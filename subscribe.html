@@ -53,7 +53,7 @@
         </nav>
     </header>
     <!-- content wrapper to facilitate the back-to-top button -->
-    <content class="content-wrapper">
+    <div class="content-wrapper">
         <main class="nowrap">
             <form id="subscribe-form" action="https://formdump.codeinstitute.net" method="post">
                 <div id="shaded-area">
@@ -65,7 +65,7 @@
                             placeholder=" Please enter your first name ..." required>
                         <label for="last-name">* Surname</label>
                         <input type="text" id="last-name" class="text-input" name="last-name"
-                            placeholder=" Please enter your surname ..." class="text-input" required>
+                            placeholder=" Please enter your surname ..." required>
                     </div>
                     <div id="radio-email">
                         <label for="email">Email only</label>
@@ -76,22 +76,22 @@
                         <label for="both">Email and hard copy</label>
                         <input type="radio" id="both" value="both" class="radio" name="subscription-type">
                         <div id="address-inputs">
-                            <label for="Address">* Postal Address Line 1</label>
+                            <label for="postal-address1">* Postal Address Line 1</label>
                             <input type="text" id="postal-address1" name="postal-address1" class="text-input">
-                            <label for="Address"> Postal Address Line 2</label>
+                            <label for="postal-address2"> Postal Address Line 2</label>
                             <input type="text" id="postal-address2" name="postal-address2" class="text-input">
-                            <label for="Address">* City/County</label>
+                            <label for="city-county">* City/County</label>
                             <input type="text" id="city-county" name="city-county" class="text-input">
-                            <label for="Address">* Postcode</label>
+                            <label for="postcode">* Postcode</label>
                             <input type="text" id="postcode" name="postcode" class="text-input">
-                            <label for="Address">* Country</label>
+                            <label for="country">* Country</label>
                             <input type="text" id="country" name="country" class="text-input">
                         </div>
                     </div>
-                    <div id="email-address">
+                    <div id="email-address-div">
                         <label for="email-address">* Email address</label>
                         <input type="email" id="email-address" name="email-address"
-                            placeholder=" Please enter your email address ..." class="text-input" required>
+                            placeholder=" Please enter your email address ..." class="email-input" required>
                     </div>
                     <input id="submit" type="submit" class="subscribe-button" value="Subscribe">
                     <p class="footnote">An asterisk (*) indicates a required field. If you do not fill in a valid postal address, you will naturally enough receive nothing in the post from us!</p>
@@ -116,7 +116,7 @@
         <a href="#" class="back-to-top">
             <i class="fa-solid fa-arrow-up fa-lg"></i>
         </a>
-    </content>
+    </div>
 
     <!-- links to social media accounts, imprimatur -->
     <footer>
