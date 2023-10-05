@@ -130,6 +130,9 @@ I have implemented a long list of features, among them the following:
 
 <!-- TOC --><a name="navigation"></a>
 ### Navigation
+![The header at 820 px showing the nav menu (right)](assets/readme-assets/navbar_820px.png)
+*The site header at 820px, showing the anchor icon at left and the navigation menu at right.*
+
 The website has appropriate and clear navigation features, reflecting its structured layout. Information and specific features are easy to find.
 - A clear and intuitive **anchor menu** on the main homepage, allowing speedy access to the homepage's four main sections.
 - A clear and uncluttered **site menu**, bringing the user to the child pages of the website.
@@ -148,15 +151,19 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 
 <!-- TOC --><a name="responsiveness"></a>
 ### Responsiveness
-- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](Testing) section below).
+- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
 
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
+![Basic favicon](assets/readme-assets/favicon_for_apple.png)
+
+*One of the stored favicons, this one is is 960 by 960px and is for use in apple devices.*
+
 Appropriate favicon images were created based on the site colour scheme and subject matter (using Microsoft Paint to create a 920 x 920px png file and converting it using [favicon.io/favicon-converter](https://favicon.io/favicon-converter/)).
 
 <!-- TOC --><a name="images"></a>
 ### Images
-- All images are attractive and appropriate to the topic at hand. 
+- All images were chosen to be attractive and appropriate to the topic at hand. 
 - Where there is doubt about readability, texts overlying background images are presented over a semi-transparent division. 
 - Images that look excessively pixilated on being stretched over large screen sizes have been avoided.
 - All images used (other than merely decorative background images) have been given an sr-readable alt text.
@@ -172,15 +179,21 @@ Appropriate favicon images were created based on the site colour scheme and subj
 
 <!-- TOC --><a name="video"></a>
 ### Video
-- The _Explore_ page containsa dummy  embedded video.
+- The _Explore_ page contains a dummy embedded video.
 - The user has complete control of whether and when to play it.
 
 <!-- TOC --><a name="subscription-form"></a>
-### Subscription form:
-- The the _Subscriptions_ page has a form allowing the user to subscribe to the site owner's newsletter. 
+### Subscription form
+![email subscription](assets/readme-assets/subscribe_email.png)
+
+*The subscription form when the user chooses only email subscription.*
+- The _Subscriptions_ page has a form allowing the user to subscribe to the site owner's newsletter. 
 - The input fields do not appear if they are not relevant to the users' needs, which are indicated by choosing a radio button requesting either the online newsletter only or both its hard-copy and online version.
 - The email input field only allows entries in the valid email address structure.
 
+![postal subscription](assets/readme-assets/subscribe_post.png)
+
+*The subscription form when the user chooses both email and postal subscription.*
 <!-- TOC --><a name="background-images"></a>
 ### Background images
 - I used background images in several places on the homepage was well as on the _Subscribe_ page.
@@ -222,11 +235,11 @@ The steps for deploying the website to its github host pages are as follows:
 
 The design process began by creating a low-resolution wireframe using [Balsamiq](https://balsamiq.com/). Since the programming paradigm (see below) was mobile first, and since the website's main features were on the homepage, a single wireframe was made for each of the sections of the main page based on a no-name mobile phone screen. All deviations from the original design and changes made in response to different viewport resolutions were based on learning experiences during work on the project.
 
-The original wireframe design (with the accompanying rough notes) can be found [here](documentation/Robotics-Agriculture-Wireframe.pdf)(in pdf format). 
+The original wireframe design (with the accompanying rough notes) can be found [here](documentation/Robotics-Agriculture-Wireframe.pdf) (in pdf format). 
 
 <!-- TOC --><a name="sequence-of-coding-steps"></a>
 ### Sequence of coding steps
-The code was written on a section-by-section according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the [Lessons learnt](Lessons-learnt) section below.
+The code was written on a section-by-section basis according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the [Lessons learnt](#lessons-learnt) section below.
 
 <!-- TOC --><a name="commits"></a>
 ### Commits
