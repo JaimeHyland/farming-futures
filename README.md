@@ -171,13 +171,13 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 
 <!-- TOC --><a name="responsiveness"></a>
 ### Responsiveness
-- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
+- The website is fully responsive over all tested screens on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
 
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
 ![Basic favicon](assets/readme-assets/favicon_for_apple.png)
 
-*One of the stored favicons, this one is is 960 by 960px and is for use in apple devices.*
+*One of the stored favicons, this one is is 960 by 960px and is for use in apple devices. All favicon files portray a similar design*
 
 Appropriate favicon images were created based on the site colour scheme and subject matter (using Microsoft Paint to create a 920 x 920px png file and converting it using [favicon.io/favicon-converter](https://favicon.io/favicon-converter/)).
 
@@ -206,14 +206,15 @@ Appropriate favicon images were created based on the site colour scheme and subj
 ### Subscription form
 ![email subscription](assets/readme-assets/subscribe_email.png)
 
-*The subscription form when the user chooses only email subscription.*
+*The subscription form in its default state: for email-only subscription.*
+
 - The _Subscriptions_ page has a form allowing the user to subscribe to the site owner's newsletter. 
 - The input fields do not appear if they are not relevant to the users' needs, which are indicated by choosing a radio button requesting either the online newsletter only or both its hard-copy and online version.
 - The email input field only allows entries in the valid email address structure.
 
 ![postal subscription](assets/readme-assets/subscribe_post.png)
 
-*The subscription form when the user chooses both email and postal subscription.*
+*The subscription form after the user chooses both email and postal subscription.*
 <!-- TOC --><a name="background-images"></a>
 ### Background images
 - I used background images in several places on the homepage was well as on the _Subscribe_ page.
