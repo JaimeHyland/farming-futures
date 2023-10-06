@@ -9,14 +9,12 @@
     box-sizing: border-box;
 }
 
-
 /* Body styling */
 body {
-    display: grid;
+    display: flex;
     grid-template-columns: auto auto;
     min-height: 100vh;
     font-family: 'Nunito Sans', sans-serif;
-    display: grid;
     flex-direction: column;
     color: #2e8b57;
 }
@@ -97,6 +95,11 @@ html {
     height: 30px;
     width: 24px;
     position: relative;
+    justify-content: center;
+}
+
+.nav-anchor-toggle-label {
+    margin-top: 5px;
 }
 
 /* all three small icons on left of header */
@@ -237,7 +240,6 @@ html {
 .nav-site-toggle-label {
     font-size: 2rem;
     color: #fafafa;
-    align-self: center;
 }
 
 
@@ -279,8 +281,9 @@ main {
     padding: 40px 20px;
 }
 
-#cover-text h1 {
+#cover-text h2 {
     font-weight: 700;
+    font-size: 140%;
 }
 
 
@@ -415,16 +418,11 @@ main {
     border-radius: 100px;
     place-self: end;
     bottom: 20px;
-    --offset: 87px;
-    margin-top: calc(100vh + var(--offset));
     margin-right: 10px;
     margin-bottom: 10px;
     box-shadow: 2px 2px #454b1b;
 }
 
-.back-to-top:hover {
-    background: #454b1b; 
-  }
 
 /* footer styling  */
 footer {
@@ -768,6 +766,7 @@ address {
     }
 
 
+
     /* Bring the site menu down to closer to the bottom of the header */
     #site-menu {
         display: flex;
@@ -802,6 +801,11 @@ address {
     /* sub-heading */
     .logo-subtitle {
         font-size: 140%;
+    }
+
+    /* Move the anchor menu further down the header to keep it centred vertically after the increas in heading text size */
+    .nav-anchor-toggle-label {
+        margin-top: 12px;
     }
 
     /* Move the now no longer centred heading text element to the left to rebalance the header. */
