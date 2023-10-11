@@ -57,8 +57,6 @@ This website was originally developed to showcase my ability to design and creat
    * [External technical and learning resources](#external-technical-and-learning-resources)
    * [Images and video](#images-and-video)
    * [Personal thanks](#personal-thanks)
-- [On   the right](#on-the-right)
-- [Use the [TOC]](#use-the-toc)
 <!-- TOC end -->
 - - -
 
