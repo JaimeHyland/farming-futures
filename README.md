@@ -1,6 +1,6 @@
-# Farming Futures - An AI- and robotics-inspired site showcasing future changes in agriculture
+# Farming Futures &mdash; An AI- and robotics-inspired site showcasing future changes in agriculture
 
-## Code Institute - First Milestone Project: Create a responsive, user-centred static website.
+## Code Institute &ndash; First Milestone Project: Create a responsive, user-centred static website.
 
 ![Image of the website on various screen sizes](assets/readme-assets/site-responsive.png)
 
@@ -71,7 +71,7 @@ This website was prepared for presentation as a first portfolio project for my o
 
 <!-- TOC --><a name="user-experience"></a>
 ## User experience
-Farming Futures is a website intended to attract, inform and inspire **professionals in the agricultural industry** (whether actually on the farm or producing goods and services for the industry) whose skills are not specialised in agricultural AI or robotics. It may also inspire **laypeople** with an interest in the future of agriculture. From the point of view of the **site owner** (a fictional Irish-based specialist charity going by the name of _Farming Futures_), the site is aimed at inspiring confidence among users in the owner body's professionalism and expertise on the relevant topics.
+Farming Futures is a website intended to attract, inform and inspire **professionals in the agricultural industry** (whether actually working on the farm or producing goods and services for the industry) whose skills are not specialised in agricultural AI or robotics. It may also inspire **laypeople** with an interest in the future of agriculture. From the point of view of the **site owner** (a fictional Irish-based specialist charity going by the name of _Farming Futures_), the site is aimed at inspiring confidence among users in the owner body's professionalism and expertise on the relevant topics.
 
 <!-- TOC --><a name="user-stories"></a>
 ### User stories
@@ -123,7 +123,7 @@ Each page contains three sections:
 <!-- TOC --><a name="technical-structure-what-it-looks-like-under-the-bonnet"></a>
 ## Technical structure (what it looks like under the bonnet)
 This simple website contains just two layers of html files: the home page and its four direct children. However, all html files are located at a single level directly in the site's root directory.
-All the required assets are contained in an assets subdirectory placed within the root directory, with style assets contained in the _assets/css subdirectory_, photographs (in webp format) in _assets/images_ and favicon assets in _assets/favicon_.
+All the required assets are contained in an assets subdirectory placed within the root directory, with all style assets contained within the _assets/css subdirectory_, photographs (in webp format) in _assets/images_ and favicon assets in _assets/favicon_.
 
 - - -
 
@@ -140,12 +140,12 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 
 <!-- TOC --><a name="responsiveness"></a>
 ### Responsiveness
-- The website is fully responsive over all tested screen, on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
+- The website is fully responsive over all tested screens, on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
 
 <!-- TOC --><a name="images"></a>
 ### Images
 - All images were chosen to be attractive and appropriate to the topic at hand. 
-- Where there is doubt about readability, texts overlying background images are presented over a semi-transparent division. 
+- Where there is any doubt about readability, texts overlying background images are presented over a semi-transparent division. 
 - Images that look excessively pixilated on being stretched over large screen sizes have been avoided.
 - All images used (other than merely decorative background images) have been given an sr-readable alt text.
 
@@ -161,7 +161,7 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 <!-- TOC --><a name="other-visual-details"></a>
 ### Other visual details
 - A certain degree of three-dimensionality is provided by subtle box shadows under the header and above the footer, and by the change of size of some icons when the user hovers over them. This last aspect is not implemented for touchscreens.
-- The imprimatur and subscribe pages are defined as "housekeeping" pages, and therefore share a similar layout.
+- The texts in the *Imprimatur* and *Subscribe* pages are both defined as "housekeeping" texts, and therefore share a similar layout.
 
 
 <!-- TOC --><a name="features"></a>
@@ -188,6 +188,12 @@ The website has appropriate and clear navigation features, reflecting its struct
 
 *The site menu, as seen on a mobile device, called from the burger icon at top right of the header. The current page is shown by the menu item being underlined.*
 
+
+
+![The site menu, as seen on a pc](assets/readme-assets/site-menu-pc.png)
+
+*Viewed from device with a larger screen, the burger menu is no longer required, and the site menu appears arranged horizontally towards the bottom right of the header section. In this case, the menu is being viewed on the Gallery page.*
+
 - The site menu indicates to users which page they are currently on by underlining the appropriate text entry.
 - a sticky **go-to-top button** on each page, so the user does not have to scroll back up manually.
 
@@ -197,11 +203,15 @@ The website has appropriate and clear navigation features, reflecting its struct
 
 The anchor menu on the left is less meaningful when the site is viewed on larger screens than on a mobile phone, but as the homepage develops over time, it will become more useful, even on larger screens.
 
+![The anchor menu icon](assets/readme-assets/anchor-menu_btn.png)
+
+*The anchor menu icon (a combination of three icons). Click or tap it to get the anchor menu for the homepage. It appears only on the homepage; on all other pages it's replaced by a homepage icon.*
+
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
 ![Basic favicon](assets/readme-assets/favicon_for_apple.png)
 
-*One of the stored favicons, this one is is 960 by 960px and is for use in apple devices.*
+*One of the stored favicons, this one measures 960 by 960px and is for use in apple devices.*
 
 Appropriate favicon images were created based on the site colour scheme and subject matter (using Microsoft Paint to create a 920 x 920px png file and converting it using [favicon.io/favicon-converter](https://favicon.io/favicon-converter/)).
 
@@ -220,7 +230,7 @@ Appropriate favicon images were created based on the site colour scheme and subj
 
 *The subscription form when the user chooses only email subscription.*
 - The _Subscriptions_ page has a form allowing the user to subscribe to the site owner's newsletter. 
-- The input fields do not appear if they are not relevant to the users' needs, which are indicated by choosing a radio button requesting either the online newsletter only or both its hard-copy and online version.
+- The input fields do not appear if they are not relevant to the users' needs, which the user indicates by choosing the appropriate radio button, requesting either the online newsletter only or both its hard-copy and online version.
 - The email input field only allows entries in the valid email address structure.
 
 ![postal subscription](assets/readme-assets/subscribe_post.png)
@@ -247,14 +257,14 @@ The few utilities used as tools to help creating this site efficiently are menti
 
 <!-- TOC --><a name="deployment"></a>
 ## Deployment
-The steps for deploying the website to its github host pages are as follows:
+The steps for deploying the website to its github host pages were as follows:
 - Choose the Settings icon in the right Github repository.
 - Under the list headed 'General', find the 'Pages' item from the 'Code and automation' menu.
 - Select 'Deploy from a branch' from the drop-down list labelled 'Source'.
-- Select 'main' as your branch Branch, select 'main' from the drop-down list and Save.
-- The URL of your site will appear in a box near the top of the page.
-- Click on the URL or on the 'Visit site' icon to open your newly deployed site in a new tab.
-- The site  then updated automatically every time I pushed a new commit to the master branch.
+- As the branch, select 'main' from the drop-down list and Save.
+- The URL of the site appeared in a box near the top of the page.
+- Click on the URL or on the 'Visit site' icon to open the newly deployed site in a new tab.
+- From that point on the site updated automatically every time I pushed a new commit to the main/master branch.
 
 - - -
 
@@ -266,17 +276,17 @@ The steps for deploying the website to its github host pages are as follows:
 ### Wireframe
 ![The original wireframe sketches for the site's homepage](assets/readme-assets/wireframe-mockup.png)
 
-The design process began by creating a low-resolution wireframe using [Balsamiq](https://balsamiq.com/). Since the programming paradigm (see below) was mobile first, and since the website's main features were on the homepage, a single wireframe was made for each of the sections of the main page based on a no-name mobile phone screen. All deviations from the original design and changes made in response to different viewport resolutions were based on learning experiences during work on the project.
+The design process began by creating a low-resolution wireframe using [Balsamiq](https://balsamiq.com/). Since the programming paradigm (see below) was *mobile first*, and since the website's main features were on the homepage, a single wireframe was made for each of the sections of the main page, based on a no-name mobile phone screen. All deviations from the original design and changes made in response to different viewport resolutions were based on learning experiences during work on the project.
 
 The original wireframe design (with the accompanying rough notes) can be found [here](documentation/Robotics-Agriculture-Wireframe.pdf) (in pdf format). 
 
 <!-- TOC --><a name="sequence-of-coding-steps"></a>
 ### Sequence of coding steps
-The code was written on a section-by-section basis according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well change my approach. I provide more details in the [Lessons learnt](#lessons-learnt) section below.
+The code was written on a section-by-section basis according to "mobile-first" principle, only building screen-query-based responsiveness into the product once the broad lines of the app were built and tested on the Galaxy-S8 emulator provided by Google. If I were to do the job again, I might well modify my approach slightly. I provide more details in the [Lessons learnt](#lessons-learnt) section below.
 
 <!-- TOC --><a name="commits"></a>
 ### Commits
-I committed new changes relatively often (between once and a dozen time a day), and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor  (often using ``git diff HEAD`` to check). I intend to add a step to this process the next time I'm working on a similar project (See [One-person agile programming](#one-person-agile-programming) below).
+I committed new changes relatively often (between once and a dozen time a day), and tried to keep a certain thematic logic to the changes included in each commit, but I did make some minor changes "on the fly" as I encountered them, sometimes not mentioning them at all in commit comments. However, I have tried to make sure such undocumented changes and bug fixes were limited to minor (often using ``git diff HEAD`` to check). I intend to add a step to this process the next time I'm working on a similar project (See [One-person agile programming](#one-person-agile-programming) below).
 
 <!-- TOC --><a name="minimising-code-clutter"></a>
 ### Minimising code clutter
@@ -284,7 +294,7 @@ I have tried to follow a "clean programming" paradigm in my work. I have therefo
 - not added code for any as-yet unimplemented functionalities (whether commented out or simply never called).
 - deleted rather than commented out redundant lines of code.
 - avoided repetition as much as possible.
-- kept inline comments on code as terse as feasible.
+- kept inline comments on code as terse as feasible (see next section below).
 Given that javascript programming is outside the scope of the project, quite a deal of cutting and pasting was required in my html code (for the almost identical headers and footers on each page, for example). This is a source of clutter, confusion and unnecessary work. It should be eliminated as far and soon as possible in the future.
 
 <!-- TOC --><a name="comments-in-code-and-order-of-appearance-of-css-selectors-on-the-stylecss-file"></a>
@@ -301,11 +311,11 @@ Committed code was deployed via github (using the ``git push`` command) on a dai
 
 <!-- TOC --><a name="iterative-testing-validation-and-troubleshooting-during-ongoing-development"></a>
 ### Iterative testing, validation and troubleshooting -- during ongoing development
-- The main browser against which my code was smoke-tested in an iterative process in the development environment (running a **smoke test** on before every commit at the very least) was the latest version of Google Chrome. 
+- The main browser against which my code was smoke-tested in an iterative process in the development environment (running a **smoke test** before every commit at the very least) was the latest version of Google Chrome. 
 - Towards the end of the development process, I then began to smoke-check each affected page on the deployed site after every major deployment on all the following machines with increasing frequency: 
-- Samsung Galaxy A8 (360 x 740px effective size, running on the latest version of Chrome)
-- ipod (768px x 1024px viewport size, running on the latest version of Safari)
-- HP laptop (1920 x 1080px) and Dell second screen (1920 x 1200px) both running on latest versions of Chrome, Microsoft Edge and Firefox 
+   - Samsung Galaxy A8 (360 x 740px effective size, running on the latest version of Chrome)
+   - ipod (768px x 1024px viewport size, running on the latest version of Safari)
+   - HP laptop (1920 x 1080px) and Dell second screen (1920 x 1200px) both running on latest versions of Chrome, Microsoft Edge and Firefox 
 
 Owing to lack of time, I was unable to do any testing on any legacy versions of these or on any other browsers or machines, with the exception of an informal test on an iphone (version unknown) in dark mode using Safari.
 I ran the html code on each page through the officila 
@@ -316,9 +326,9 @@ I ran the html code on each page through the officila
 - All unused files were carefully removed from the site's root directory and all child directories.
 - All internal and external links were smoke-checked systematically before submitting the project for assessment.
 - A systematic test on each of the machines and at each effective resolutions listed above (in portrait and landscape mode where appropriate) for:
--- Obvious visual issues in relation to accessibility, responsiveness and functionality.
--- The correct functioning of the above-listed functions.
--- The relevant _Code Institute_ assessment criteria for pass, merit and distinction (where not already covered in tests already completed).
+   - Obvious visual issues in relation to accessibility, responsiveness and functionality.
+   - The correct functioning of the above-listed functions.
+   - The relevant _Code Institute_ assessment criteria for pass, merit and distinction (where not already covered in tests already completed).
 
 - A final smoke-test after deployment running the above tests on each of the above-described devices and resolutions.
 - All html pages and the css page were validated (see below).
@@ -394,11 +404,12 @@ Pressure of time and my current ignorance of the finer points of aesthetic web d
 - I would like to have implemented one or two more features based on css-only modal dialogs, especially in the 'Breakthroughs' section of the main page.
 - I would have liked to implement interactivity with the _events_, providing the user with routing information for upcoming events on selection, and perhaps showing the user images of events in the past.
 - I originally intended to hide the top-left anchor link on the homepage for larger screen sizes, and instead to recode the <ins>Home</ins> link on the menu to make it show the anchor menu there instead. That change too will have to wait.
+- I would like my go-to-top button to become visible only after the user has scrolled a little down the relevant page. Despite several tutorials telling me this was possible with html/css only, I didn't manage to achieve that effect in the time available.
 - I would have liked to make the three icons used in the anchor menu link responsive to various screen sizes, growing as the viewport gets bigger.
 - The gallery displays images in the order in which I inserted them. In future, they should display in random order. As development continues, they will become more responsive to user interaction
 - Two pages that I originally hoped to include in my project (i.e. "The Present" and "The Future" pages) have disappeared from my project for reasons of time. 
 - Some individual pictures have appeared in several places on the site (though never on the same page ... I hope!!). Some of the pictures used as background images appear once more in the gallery. I would rarely allow that on a real-life website.
-- I should really acknowledge the makers and posters of the many images I downloaded from the internet for the site. This is a high priority for the future.
+- I should really individually acknowledge the various makers and posters of the many images I downloaded from the internet for the site. This is a high priority for the future.
 - More time would have allowed me to make this README.md file a lot _shorter_.
 
 - - -
@@ -440,13 +451,3 @@ Apart from Jo and Anne and the authors of the various online resources I used (b
 - Code Institute's excellent tutoring team, whose help I probably didn't lean on as much as I should have;
 - The images I used were too many for me to provide individual acknowledgements to each provider within the time available to me. Thanks to everyone involved in making and posting them!
 - My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
-<!-- TOC --><a name="on-the-right"></a>
-## On   the right
-
-side of this page.
-
-<!-- TOC --><a name="use-the-toc"></a>
-## Use the [TOC]
-
-placeholder to control where the TOC will appear
-        
