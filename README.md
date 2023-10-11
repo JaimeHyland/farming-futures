@@ -1,6 +1,4 @@
-<base target="_blank">
-
-# Farming Futures - An AI- and robotics-insired site showcasing future changes in agriculture
+# Farming Futures - An AI- and robotics-inspired site showcasing future changes in agriculture
 
 ## Code Institute - First Milestone Project: Create a responsive, user-centred static website.
 
@@ -11,57 +9,57 @@ This website was originally developed to showcase my ability to design and creat
 - - -
 
 <!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
-
 - [Introduction](#introduction)
 - [User experience](#user-experience)
-  * [User stories](#user-stories)
+   * [User stories](#user-stories)
 - [Structure from the user's point of view](#structure-from-the-users-point-of-view)
-  * [Basic initial structure](#basic-initial-structure)
-  * [Website pages](#website-pages)
-  * [Homepage sections](#homepage-sections)
+   * [Basic initial structure](#basic-initial-structure)
+   * [Website pages](#website-pages)
+   * [Homepage sections](#homepage-sections)
 - [Technical structure (what it looks like under the bonnet)](#technical-structure-what-it-looks-like-under-the-bonnet)
+- [Visual styling and properties](#visual-styling-and-properties)
+   * [Fonts](#fonts)
+   * [Colours](#colours)
+   * [Responsiveness](#responsiveness)
+   * [Images](#images)
+   * [Icons](#icons)
+   * [Background images](#background-images)
+   * [Other visual details](#other-visual-details)
 - [Features](#features)
-  * [Navigation](#navigation)
-  * [Fonts](#fonts)
-  * [Colours](#colours)
-  * [Responsiveness](#responsiveness)
-  * [Favicons](#favicons)
-  * [Images](#images)
-  * [Icons](#icons)
-  * [Other visual details](#other-visual-details)
-  * [Video](#video)
-  * [Subscription form:](#subscription-form)
-  * [Background images](#background-images)
+   * [Navigation](#navigation)
+   * [Favicons](#favicons)
+   * [Video](#video)
+   * [Subscription form](#subscription-form)
 - [Development & implementation environment](#development-implementation-environment)
 - [Technologies used](#technologies-used)
 - [Deployment](#deployment)
 - [Design, development & coding philosophy](#design-development-coding-philosophy)
-  * [Wireframe](#wireframe)
-  * [Sequence of coding steps](#sequence-of-coding-steps)
-  * [Commits](#commits)
-  * [Minimising code clutter](#minimising-code-clutter)
-  * [Comments in code and order of appearance of css selectors on the style.css file](#comments-in-code-and-order-of-appearance-of-css-selectors-on-the-stylecss-file)
-  * [Iterative deployment](#iterative-deployment)
+   * [Wireframe](#wireframe)
+   * [Sequence of coding steps](#sequence-of-coding-steps)
+   * [Commits](#commits)
+   * [Minimising code clutter](#minimising-code-clutter)
+   * [Comments in code and order of appearance of css selectors on the style.css file](#comments-in-code-and-order-of-appearance-of-css-selectors-on-the-stylecss-file)
+   * [Iterative deployment](#iterative-deployment)
 - [Testing](#testing)
-  * [Iterative testing, validation and troubleshooting -- during ongoing development](#iterative-testing-validation-and-troubleshooting-during-ongoing-development)
-  * [Final testing and validation before submission](#final-testing-and-validation-before-submission)
-  * [Final validation](#final-validation)
+   * [Iterative testing, validation and troubleshooting -- during ongoing development](#iterative-testing-validation-and-troubleshooting-during-ongoing-development)
+   * [Final testing and validation before submission](#final-testing-and-validation-before-submission)
+   * [Final validation](#final-validation)
 - [Lessons learnt](#lessons-learnt)
-  * [Mobile first](#mobile-first)
-  * [One-person agile programming](#one-person-agile-programming)
-  * [Time management](#time-management)
+   * [Mobile first](#mobile-first)
+   * [One-person agile programming](#one-person-agile-programming)
+   * [Time management](#time-management)
 - [Lessons not (yet) learned](#lessons-not-yet-learned)
 - [What doesn't work](#what-doesnt-work)
-  * [... because it's outside the scope of project](#-because-its-outside-the-scope-of-project)
-  * [... for lack of time, skill and/or data](#-for-lack-of-time-skill-andor-data)
+   * [... because it's outside the scope of project](#-because-its-outside-the-scope-of-project)
+   * [... for lack of time, skill and/or data](#-for-lack-of-time-skill-andor-data)
 - [Credits and sources](#credits-and-sources)
-  * [Code institute's own resources](#code-institutes-own-resources)
-  * [External technical and learning resources](#external-technical-and-learning-resources)
-  * [Images and video](#images-and-video)
-  * [Personal thanks](#personal-thanks)
-
+   * [Code institute's own resources](#code-institutes-own-resources)
+   * [External technical and learning resources](#external-technical-and-learning-resources)
+   * [Images and video](#images-and-video)
+   * [Personal thanks](#personal-thanks)
+- [On   the right](#on-the-right)
+- [Use the [TOC]](#use-the-toc)
 <!-- TOC end -->
-
 - - -
 
 <!-- TOC --><a name="introduction"></a>
@@ -71,6 +69,7 @@ This website was prepared for presentation as a first portfolio project for my o
 **A live demo of the website, as deployed within github's hosting environment, can be found [here](https://jaimehyland.github.io/farming-futures/)**
 
 - - -
+
 
 <!-- TOC --><a name="user-experience"></a>
 ## User experience
@@ -93,8 +92,10 @@ As a user, I will not expect to:
 
 - - -
 
+
 <!-- TOC --><a name="structure-from-the-users-point-of-view"></a>
 ## Structure from the user's point of view
+
 <!-- TOC --><a name="basic-initial-structure"></a>
 ### Basic initial structure
 I have followed a paradigm in which the main content of the site is contained within the home page and in which the other pages on the site contain ancilliary information and services. This paradigm, however, is likely to change as the site further develops. The home page will likely shrink to become more like a simple, yet attractive landing page and starting point for user exploration.
@@ -117,7 +118,7 @@ Each page contains three sections:
 
 ![The footer, showing social media links on the left and the link to the imprimatur page on the right](assets/readme-assets/footer-mobile.png)
 
-*The footer as shown on a smartphone, showing social media links on the left and the link to the imprimatur page on the right*
+*The footer as it appears on a smartphone, showing social media links on the left and the link to the imprimatur page on the right*
 
 - - -
 
@@ -127,6 +128,43 @@ This simple website contains just two layers of html files: the home page and it
 All the required assets are contained in an assets subdirectory placed within the root directory, with style assets contained in the _assets/css subdirectory_, photographs (in webp format) in _assets/images_ and favicon assets in _assets/favicon_.
 
 - - -
+
+<!-- TOC --><a name="visual-styling-and-properties"></a>
+## Visual styling and properties
+
+<!-- TOC --><a name="fonts"></a>
+### Fonts
+I have implemented a combination of two modern sans-serif fonts (with [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
+
+<!-- TOC --><a name="colours"></a>
+### Colours
+Colours are appropriate to the subject matter and to **accessibility guidelines**. Given the agricultural theme, a plain dark green color (seagreen: #2e8b57) was chosen as the site's main background colour and an off-white (#fafafa) as its text and icon color (or vice versa).
+
+<!-- TOC --><a name="responsiveness"></a>
+### Responsiveness
+- The website is fully responsive over all tested screen, on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
+
+<!-- TOC --><a name="images"></a>
+### Images
+- All images were chosen to be attractive and appropriate to the topic at hand. 
+- Where there is doubt about readability, texts overlying background images are presented over a semi-transparent division. 
+- Images that look excessively pixilated on being stretched over large screen sizes have been avoided.
+- All images used (other than merely decorative background images) have been given an sr-readable alt text.
+
+<!-- TOC --><a name="icons"></a>
+### Icons
+- Intensive use has been made of appropriate icons taken from the [fontawesome.com](https://fontawesome.com/). They were carefully chosen to reflect the concept they represent. They were, however, all in Fontawsome's free range.
+
+<!-- TOC --><a name="background-images"></a>
+### Background images
+- I used background images in several places on the homepage was well as on the _Subscribe_ page.
+- I have ensured that all text overlying the images is readable at all tested screen resolutions.
+
+<!-- TOC --><a name="other-visual-details"></a>
+### Other visual details
+- A certain degree of three-dimensionality is provided by subtle box shadows under the header and above the footer, and by the change of size of some icons when the user hovers over them. This last aspect is not implemented for touchscreens.
+- The imprimatur and subscribe pages are defined as "housekeeping" pages, and therefore share a similar layout.
+
 
 <!-- TOC --><a name="features"></a>
 ## Features
@@ -161,18 +199,6 @@ The website has appropriate and clear navigation features, reflecting its struct
 
 The anchor menu on the left is less meaningful when the site is viewed on larger screens than on a mobile phone, but as the homepage develops over time, it will become more useful, even on larger screens.
 
-<!-- TOC --><a name="fonts"></a>
-### Fonts
-I have implemented a combination of two modern sans-serif fonts (with [Nunito Sans](https://fonts.google.com/specimen/Nunito+Sans) being the default and selected elements being rendered in [Lato](https://fonts.google.com/specimen/Lato)) to reflect the futuristic vision expressed by the site.
-
-<!-- TOC --><a name="colours"></a>
-### Colours
-Colours are appropriate to the subject matter and to **accessibility guidelines**. Given the agricultural theme, a plain dark green color (seagreen: #2e8b57) was chosen as the site's main background colour and an off-white (#fafafa) as its text and icon color (or vice versa).
-
-<!-- TOC --><a name="responsiveness"></a>
-### Responsiveness
-- The website is fully responsive over all tested screen   on both portrait and landscape orientations, where applicable (see [Testing](#testing) section below).
-
 <!-- TOC --><a name="favicons"></a>
 ### Favicons
 ![Basic favicon](assets/readme-assets/favicon_for_apple.png)
@@ -181,26 +207,14 @@ Colours are appropriate to the subject matter and to **accessibility guidelines*
 
 Appropriate favicon images were created based on the site colour scheme and subject matter (using Microsoft Paint to create a 920 x 920px png file and converting it using [favicon.io/favicon-converter](https://favicon.io/favicon-converter/)).
 
-<!-- TOC --><a name="images"></a>
-### Images
-- All images were chosen to be attractive and appropriate to the topic at hand. 
-- Where there is doubt about readability, texts overlying background images are presented over a semi-transparent division. 
-- Images that look excessively pixilated on being stretched over large screen sizes have been avoided.
-- All images used (other than merely decorative background images) have been given an sr-readable alt text.
-
-<!-- TOC --><a name="icons"></a>
-### Icons
-- Intensive use has been made of appropriate icons taken from the [fontawesome.com](https://fontawesome.com/). They were carefully chosen to reflect the concept they represent. They were, however, all in Fontawsome's free range.
-
-<!-- TOC --><a name="other-visual-details"></a>
-### Other visual details
-- A certain degree of three-dimensionality is provided by subtle box shadows under the header and above the footer, and by the change of size of some icons when the user hovers over them. This last aspect is not implemented for touchscreens.
-- The imprimatur and subscribe pages are defined as "housekeeping" pages, and therefore share a similar layout.
-
 <!-- TOC --><a name="video"></a>
 ### Video
 - The _Explore_ page contains a dummy embedded video.
 - The user has complete control of whether and when to play it.
+
+![The video link as it appears on screen](assets/readme-assets/video.png)
+
+*Though the video link contains only a dummy sample video, I gave it a customised poster to ensure it at least looks the part.*
 
 <!-- TOC --><a name="subscription-form"></a>
 ### Subscription form
@@ -214,12 +228,9 @@ Appropriate favicon images were created based on the site colour scheme and subj
 ![postal subscription](assets/readme-assets/subscribe_post.png)
 
 *The subscription form when the user chooses both email and postal subscription.*
-<!-- TOC --><a name="background-images"></a>
-### Background images
-- I used background images in several places on the homepage was well as on the _Subscribe_ page.
-- I have ensured that all text overlying the images is readable at all tested screen resolutions.
 
 - - -
+
 
 <!-- TOC --><a name="development-implementation-environment"></a>
 ## Development & implementation environment
@@ -227,12 +238,14 @@ All the code created during this project was written using gitpod.io, with versi
 
 - - -
 
+
 <!-- TOC --><a name="technologies-used"></a>
 ## Technologies used
 Almost exclusively HTML and CSS.
 The few utilities used as tools to help creating this site efficiently are mentioned in the relevant sections.
 
 ---
+
 
 <!-- TOC --><a name="deployment"></a>
 ## Deployment
@@ -243,12 +256,14 @@ The steps for deploying the website to its github host pages are as follows:
 - Select 'main' as your branch Branch, select 'main' from the drop-down list and Save.
 - The URL of your site will appear in a box near the top of the page.
 - Click on the URL or on the 'Visit site' icon to open your newly deployed site in a new tab.
-- The site will then update automatically every time you push a new commit to the master branch.
+- The site  then updated automatically every time I pushed a new commit to the master branch.
 
 - - -
 
+
 <!-- TOC --><a name="design-development-coding-philosophy"></a>
 ## Design, development & coding philosophy
+
 <!-- TOC --><a name="wireframe"></a>
 ### Wireframe
 ![The original wireframe sketches for the site's homepage](assets/readme-assets/wireframe-mockup.png)
@@ -285,6 +300,7 @@ Committed code was deployed via github (using the ``git push`` command) on a dai
 
 <!-- TOC --><a name="testing"></a>
 ## Testing
+
 <!-- TOC --><a name="iterative-testing-validation-and-troubleshooting-during-ongoing-development"></a>
 ### Iterative testing, validation and troubleshooting -- during ongoing development
 - The main browser against which my code was smoke-tested in an iterative process in the development environment (running a **smoke test** on before every commit at the very least) was the latest version of Google Chrome. 
@@ -309,16 +325,34 @@ I ran the html code on each page through the officila
 - A final smoke-test after deployment running the above tests on each of the above-described devices and resolutions.
 - All html pages and the css page were validated (see below).
 
-
 <!-- TOC --><a name="final-validation"></a>
 ### Final validation
 
-I validated my html and css code regularly during development via direct input into the validation services provided by W3C at [validator.w3.org](https://validator.w3.org/) and [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/). My final code passes both validation tests.
+I validated my html code regularly during development via direct input into the validation services provided by W3C at [validator.w3.org](https://validator.w3.org/). All the html code in all my project's html pages passed the test with no errors and no warnings.
+
+![validation_html.png](assets/readme-assets/validation_html.png)
+
+*The message displayed by the W3C official html validation on completing validation of each of my project's html files.*
+
+My final css code also passed its W3C validation test (at [jigsaw.w3.org](https://jigsaw.w3.org/css-validator/)).
+
+![validation_css.png](assets/readme-assets/validation_css.png)
+
+*The message displayed by the W3C's official css validation on completing validation of my project's style.css file.*
+
+While the validation process did produce two warnings, I concluded that these warnings did not point to any important issue with my code.
+
+![validation_css_warnings.png](assets/readme-assets/validation_css_warnings.png)
+
+*The two warnings shown on the css validation site's results page.*
+
 
 - - -
 
+
 <!-- TOC --><a name="lessons-learnt"></a>
 ## Lessons learnt
+
 <!-- TOC --><a name="mobile-first"></a>
 ### Mobile first
 The next time I do a similar project, I will continue follow the "mobile first" design paradigm, but in future I will embed that approach iteratively within the development of each section of the site. The effect of completing a round of coding for the whole site before switching to media-query-based coding was that I repeatedly needed reacquaint myself with the code in each section before beginning work on media-query-based changes. I hope in future that if I start work on the media-query-based selectors as soon as I finish the basic styling for each section, the code for that section will still be fresh in my mind, thus saving me time and effort.
@@ -333,14 +367,17 @@ When faced with the inevitable coding challenges of a beginner coder, I could so
 
 - - -
 
+
 <!-- TOC --><a name="lessons-not-yet-learned"></a>
 ## Lessons not (yet) learned
 One issue I haven't had yet time to research is the implications of differing user interactions on touchscreens as opposed to desktop and laptop screens. As a result, some of the icons do not respond to user interaction in as elegant a manner as I would have hoped on starting out on this little adventure. This is a deficit I need to remedy using javascript or similar.
 
 - - -
 
+
 <!-- TOC --><a name="what-doesnt-work"></a>
 ## What doesn't work
+
 <!-- TOC --><a name="-because-its-outside-the-scope-of-project"></a>
 ### ... because it's outside the scope of project
 Some functionality is incomplete in the project, especially the following:
@@ -368,8 +405,10 @@ Pressure of time and my current ignorance of the finer points of aesthetic web d
 
 - - -
 
+
 <!-- TOC --><a name="credits-and-sources"></a>
 ## Credits and sources
+
 <!-- TOC --><a name="code-institutes-own-resources"></a>
 ### Code institute's own resources
 Almost all the code is my own, though much of it either follows closely or takes direct lessons from the code created by Jo Heyndels for the 'Love Running' walkthrough project and/or Anne Greaves' 'Coders Coffeehouse' site. Many thanks are due to both Jo and Anne for their beautiful static websites, their clear instructions and high-quality learning material. I have included an appropriate comment beside the one or two snippets of code directly copied from Jo's walkthrough project. Implicit thanks go to everyone involved in authoring the Code Institute learning materials for this part of the course.
@@ -389,7 +428,7 @@ Naturally enough, have researched widely to find out how to implement a variety 
 
 However, the only external source from which I directly copied was freecodecamp.org, from whom I more or less directly copied the [back-to-top button functionality](https://www.freecodecamp.org/news/css-only-back-to-top-button/).
 
-I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com](https://markdowntohtml.com/) for some of the work on the Explore page.
+I used some code I found at [https://github.com/derlin/](https://derlin.github.io/bitdowntoc/) to generate this readme file's table of contents. In addition, I took advantage of [markdowntohtml.com](https://markdowntohtml.com/) for some of the work on the *Explore* page.
 
 <!-- TOC --><a name="images-and-video"></a>
 ### Images and video
@@ -397,9 +436,19 @@ All images and video were downloaded from the internet with permission.
 
 <!-- TOC --><a name="personal-thanks"></a>
 ### Personal thanks
-Apart from Jo and Anne and the authors of the various online resources I (because they were all made by humans!), I owe special thanks to the following people:
+Apart from Jo and Anne and the authors of the various online resources I used (because they were all made by humans!), I owe special thanks to the following people:
 - My mentor, Oluwafemi Medale, for being available every time I needed him, and for providing high-quality, relevant and timely advice;
 - David Calikes of Code Institute's student welfare service, who provided encouragement when it mattered and who gave more than a few practical tips in the run up to submission deadline, and who generally acted as a supplementary mentor;
 - Code Institute's excellent tutoring team, whose help I probably didn't lean on as much as I should have;
 - The images I used were too many for me to provide individual acknowledgements to each provider within the time available to me. Thanks to everyone involved in making and posting them!
 - My family, for putting up with my absences, frequent cries of anguish and occasional roars of triumph.
+<!-- TOC --><a name="on-the-right"></a>
+## On   the right
+
+side of this page.
+
+<!-- TOC --><a name="use-the-toc"></a>
+## Use the [TOC]
+
+placeholder to control where the TOC will appear
+        
